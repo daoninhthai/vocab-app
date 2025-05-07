@@ -1,0 +1,78 @@
+[
+  {
+    "category": "Greetings",
+    "count": 40
+  },
+  {
+    "category": "Daily Life", 
+    "count": 100
+  },
+  {
+    "category": "Work & Business",
+    "count": 80
+  },
+  {
+    "category": "Shopping",
+    "count": 60
+  },
+  {
+    "category": "Travel",
+    "count": 80
+  },
+  {
+    "category": "Health",
+    "count": 60
+  },
+  {
+    "category": "Food & Dining",
+    "count": 80
+  },
+  {
+    "category": "Weather & Time",
+    "count": 60
+  },
+  {
+    "category": "Hobbies",
+    "count": 60
+  },
+  {
+    "category": "Family & Friends",
+    "count": 60
+  },
+  {
+    "category": "Education",
+    "count": 60
+  },
+  {
+    "category": "Technology",
+    "count": 60
+  },
+  {
+    "category": "Entertainment",
+    "count": 60
+  },
+  {
+    "category": "Sports",
+    "count": 50
+  },
+  {
+    "category": "Emotions",
+    "count": 50
+  },
+  {
+    "category": "Numbers & Money",
+    "count": 40
+  },
+  {
+    "category": "Directions",
+    "count": 40
+  },
+  {
+    "category": "Communication",
+    "count": 50
+  }
+
+]
+    // Updated
+    // Updated
+    // Updated

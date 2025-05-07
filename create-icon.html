@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create App Icon</title>
+</head>
+<body>
+  <h2>VocabMaster Icon Generator</h2>
+  <canvas id="canvas" width="512" height="512"></canvas>
+  <br>
+  <button onclick="downloadPNG()">Download PNG (512x512)</button>
+  <button onclick="downloadPNG(256)">Download PNG (256x256)</button>
+  <button onclick="downloadPNG(128)">Download PNG (128x128)</button>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Draw rounded rectangle background with gradient
+    const gradient = ctx.createLinearGradient(0, 0, 512, 512);
+    gradient.addColorStop(0, '#667eea');
+    gradient.addColorStop(1, '#764ba2');
+
+    ctx.fillStyle = gradient;
+    roundRect(ctx, 0, 0, 512, 512, 115);
+    ctx.fill();
+
+    // Draw book
+    ctx.save();
+    ctx.translate(106, 140);
+
+    // Book gradient
+    const bookGradient = ctx.createLinearGradient(0, 0, 0, 240);
+    bookGradient.addColorStop(0, '#fbbf24');
+    bookGradient.addColorStop(1, '#f59e0b');
+
+    // Book base
+    ctx.fillStyle = bookGradient;
+    ctx.strokeStyle = '#d97706';
+    ctx.lineWidth = 4;
+    roundRect(ctx, 40, 0, 220, 240, 15);
+    ctx.fill();
+    ctx.stroke();
+
+    // Book pages
+    ctx.fillStyle = '#fff5e6';
+    ctx.globalAlpha = 0.9;
+    roundRect(ctx, 30, 20, 240, 200, 5);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    // Letters V and M
+    ctx.font = 'bold 48px Arial';
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#667eea';
+    ctx.fillText('V', 150, 80);
+    ctx.fillStyle = '#764ba2';
+    ctx.fillText('M', 150, 140);
+
+    // Brain icon
+    ctx.save();
+    ctx.translate(210, 160);
+    ctx.fillStyle = '#f472b6';
+    ctx.strokeStyle = '#ec4899';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(40, 20);
+    ctx.quadraticCurveTo(45, 5, 55, 5);
+    ctx.quadraticCurveTo(65, 5, 67, 15);
+    ctx.quadraticCurveTo(72, 8, 80, 10);
+    ctx.quadraticCurveTo(88, 12, 88, 22);
+    ctx.quadraticCurveTo(88, 32, 85, 40);
+    ctx.quadraticCurveTo(82, 48, 75, 52);
+    ctx.lineTo(75, 70);
+    ctx.quadraticCurveTo(75, 75, 70, 75);
+    ctx.lineTo(30, 75);
+    ctx.quadraticCurveTo(25, 75, 25, 70);
+    ctx.lineTo(25, 52);
+    ctx.quadraticCurveTo(18, 48, 15, 40);
+    ctx.quadraticCurveTo(12, 32, 12, 22);
+    ctx.quadraticCurveTo(12, 12, 20, 10);
+    ctx.quadraticCurveTo(28, 8, 33, 15);
+    ctx.quadraticCurveTo(35, 5, 45, 5);
+    ctx.quadraticCurveTo(50, 5, 52, 12);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+
+    // Brain dots
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(35, 35, 3, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(50, 30, 3, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(65, 35, 3, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+
+    // Bookmark
+    ctx.fillStyle = '#ef4444';
+    ctx.beginPath();
+    ctx.moveTo(240, 0);
+    ctx.lineTo(260, 0);
+    ctx.lineTo(260, 80);
+    ctx.lineTo(250, 70);
+    ctx.lineTo(240, 80);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.restore();
+
+    // Sparkles
+    ctx.fillStyle = '#fbbf24';
+    ctx.globalAlpha = 0.8;
+    ctx.beginPath();
+    ctx.arc(100, 100, 8, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(420, 120, 6, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(400, 400, 10, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(80, 420, 7, 0, Math.PI * 2);
+    ctx.fill();
+
+    function roundRect(ctx, x, y, width, height, radius) {
+      ctx.beginPath();
+      ctx.moveTo(x + radius, y);
+      ctx.lineTo(x + width - radius, y);
+      ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+      ctx.lineTo(x + width, y + height - radius);
+      ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+      ctx.lineTo(x + radius, y + height);
+      ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+      ctx.lineTo(x, y + radius);
+      ctx.quadraticCurveTo(x, y, x + radius, y);
+      ctx.closePath();
+    }
+
+    function downloadPNG(size = 512) {
+      const tempCanvas = document.createElement('canvas');
+      tempCanvas.width = size;
+      tempCanvas.height = size;
+      const tempCtx = tempCanvas.getContext('2d');
+      tempCtx.drawImage(canvas, 0, 0, size, size);
+
+      tempCanvas.toBlob(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `icon-${size}x${size}.png`;
+
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+    }
+  </script>
+</body>
+</html>
+    <!-- Cache result for subsequent calls -->
+    <!-- Handle async operation error -->
+    <!-- Handle async operation error -->

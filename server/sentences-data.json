@@ -1,0 +1,4185 @@
+[
+  {
+    "category": "Essential Grammar Patterns",
+    "sentences": [
+      {
+        "en": "I have been working here for five years.",
+        "vi": "Tôi đã làm việc ở đây được năm năm."
+      },
+      {
+        "en": "By the time you arrive, I will have finished.",
+        "vi": "Vào lúc bạn đến, tôi sẽ đã hoàn thành xong."
+      },
+      {
+        "en": "If I had known earlier, I would have helped you.",
+        "vi": "Nếu tôi biết sớm hơn, tôi đã giúp bạn rồi."
+      },
+      {
+        "en": "She has been studying English since she was a child.",
+        "vi": "Cô ấy học tiếng Anh từ khi còn nhỏ."
+      },
+      {
+        "en": "I wish I could speak English fluently.",
+        "vi": "Tôi ước mình có thể nói tiếng Anh trôi chảy."
+      },
+      {
+        "en": "Had I known, I wouldn't have done it.",
+        "vi": "Nếu tôi biết, tôi đã không làm điều đó."
+      },
+      {
+        "en": "Not only did he pass, but he also got the highest score.",
+        "vi": "Không chỉ đậu mà anh ấy còn đạt điểm cao nhất."
+      },
+      {
+        "en": "Rarely have I seen such a beautiful sunset.",
+        "vi": "Hiếm khi tôi thấy hoàng hôn đẹp như vậy."
+      },
+      {
+        "en": "No sooner had I left than it started raining.",
+        "vi": "Vừa mới đi được một chút thì trời bắt đầu mưa."
+      },
+      {
+        "en": "The more you practice, the better you become.",
+        "vi": "Càng luyện tập nhiều, bạn càng giỏi hơn."
+      },
+      {
+        "en": "I would rather stay home than go out in this weather.",
+        "vi": "Tôi thà ở nhà còn hơn ra ngoài trong thời tiết này."
+      },
+      {
+        "en": "It's high time we started the meeting.",
+        "vi": "Đã đến lúc chúng ta bắt đầu cuộc họp."
+      },
+      {
+        "en": "Unless you work hard, you won't succeed.",
+        "vi": "Trừ khi bạn làm việc chăm chỉ, bạn sẽ không thành công."
+      },
+      {
+        "en": "Suppose you won the lottery, what would you do?",
+        "vi": "Giả sử bạn trúng số, bạn sẽ làm gì?"
+      },
+      {
+        "en": "What if I told you the truth?",
+        "vi": "Nếu tôi nói sự thật với bạn thì sao?"
+      },
+      {
+        "en": "I'd sooner die than betray my friends.",
+        "vi": "Tôi thà chết còn hơn phản bội bạn bè."
+      },
+      {
+        "en": "Should you need any help, please let me know.",
+        "vi": "Nếu bạn cần giúp đỡ, hãy cho tôi biết."
+      },
+      {
+        "en": "Were I in your position, I would resign.",
+        "vi": "Nếu tôi ở vị trí của bạn, tôi sẽ từ chức."
+      },
+      {
+        "en": "However hard I try, I can't solve this problem.",
+        "vi": "Dù tôi cố gắng thế nào, tôi cũng không giải được bài này."
+      },
+      {
+        "en": "Much as I'd like to help, I'm too busy.",
+        "vi": "Dù tôi rất muốn giúp, nhưng tôi quá bận."
+      }
+    ]
+  },
+  {
+    "category": "Phrasal Verbs - Essential",
+    "sentences": [
+      {
+        "en": "I need to look into this matter immediately.",
+        "vi": "Tôi cần xem xét vấn đề này ngay lập tức."
+      },
+      {
+        "en": "The meeting has been put off until next week.",
+        "vi": "Cuộc họp đã bị hoãn đến tuần sau."
+      },
+      {
+        "en": "Can you look after my dog while I'm away?",
+        "vi": "Bạn có thể trông chó giúp tôi khi tôi đi vắng không?"
+      },
+      {
+        "en": "I came across an interesting article yesterday.",
+        "vi": "Tôi tình cờ đọc được một bài báo thú vị hôm qua."
+      },
+      {
+        "en": "We need to figure out a solution quickly.",
+        "vi": "Chúng ta cần tìm ra giải pháp nhanh chóng."
+      },
+      {
+        "en": "I'll pick you up at 8 o'clock.",
+        "vi": "Tôi sẽ đón bạn lúc 8 giờ."
+      },
+      {
+        "en": "Please fill in this application form.",
+        "vi": "Vui lòng điền vào mẫu đơn này."
+      },
+      {
+        "en": "They turned down my proposal.",
+        "vi": "Họ từ chối đề xuất của tôi."
+      },
+      {
+        "en": "I can't put up with his behavior anymore.",
+        "vi": "Tôi không thể chịu đựng hành vi của anh ta nữa."
+      },
+      {
+        "en": "The plane took off on time.",
+        "vi": "Máy bay cất cánh đúng giờ."
+      },
+      {
+        "en": "Let's carry on with our discussion.",
+        "vi": "Hãy tiếp tục cuộc thảo luận."
+      },
+      {
+        "en": "I'm looking forward to seeing you again.",
+        "vi": "Tôi mong được gặp lại bạn."
+      },
+      {
+        "en": "He takes after his father in many ways.",
+        "vi": "Anh ấy giống cha mình ở nhiều điểm."
+      },
+      {
+        "en": "We ran out of coffee this morning.",
+        "vi": "Sáng nay chúng tôi hết cà phê rồi."
+      },
+      {
+        "en": "I'll get back to you as soon as possible.",
+        "vi": "Tôi sẽ liên lạc lại với bạn sớm nhất có thể."
+      },
+      {
+        "en": "She broke down in tears.",
+        "vi": "Cô ấy òa lên khóc."
+      },
+      {
+        "en": "The car broke down on the highway.",
+        "vi": "Xe bị hỏng trên đường cao tốc."
+      },
+      {
+        "en": "I need to catch up on my work.",
+        "vi": "Tôi cần làm kịp công việc."
+      },
+      {
+        "en": "They called off the wedding.",
+        "vi": "Họ hủy bỏ đám cưới."
+      },
+      {
+        "en": "I grew up in a small town.",
+        "vi": "Tôi lớn lên ở một thị trấn nhỏ."
+      },
+      {
+        "en": "We set up a new company last year.",
+        "vi": "Chúng tôi thành lập công ty mới năm ngoái."
+      },
+      {
+        "en": "I'll drop by your office tomorrow.",
+        "vi": "Tôi sẽ ghé văn phòng bạn vào ngày mai."
+      },
+      {
+        "en": "She showed up late to the meeting.",
+        "vi": "Cô ấy đến muộn cuộc họp."
+      },
+      {
+        "en": "I need to work out more often.",
+        "vi": "Tôi cần tập thể dục thường xuyên hơn."
+      },
+      {
+        "en": "Let's work out a compromise.",
+        "vi": "Hãy tìm ra một thỏa hiệp."
+      },
+      {
+        "en": "I have to hand in my assignment tomorrow.",
+        "vi": "Tôi phải nộp bài tập vào ngày mai."
+      },
+      {
+        "en": "The teacher handed out the test papers.",
+        "vi": "Giáo viên phát đề thi."
+      },
+      {
+        "en": "I'm trying to cut down on sugar.",
+        "vi": "Tôi đang cố giảm đường."
+      },
+      {
+        "en": "We need to speed up the process.",
+        "vi": "Chúng ta cần đẩy nhanh tiến trình."
+      },
+      {
+        "en": "Don't give up on your dreams.",
+        "vi": "Đừng từ bỏ ước mơ của bạn."
+      }
+    ]
+  },
+  {
+    "category": "Business & Professional",
+    "sentences": [
+      {
+        "en": "I'd like to schedule a meeting for next Tuesday.",
+        "vi": "Tôi muốn lên lịch họp vào thứ Ba tuần sau."
+      },
+      {
+        "en": "Could you please forward this email to the team?",
+        "vi": "Bạn có thể chuyển tiếp email này cho nhóm không?"
+      },
+      {
+        "en": "We need to finalize the budget by Friday.",
+        "vi": "Chúng ta cần hoàn thiện ngân sách trước thứ Sáu."
+      },
+      {
+        "en": "I'm calling to follow up on our previous conversation.",
+        "vi": "Tôi gọi để theo dõi cuộc nói chuyện trước của chúng ta."
+      },
+      {
+        "en": "Let's touch base next week.",
+        "vi": "Hãy liên lạc lại vào tuần sau."
+      },
+      {
+        "en": "I'm afraid I have to decline your offer.",
+        "vi": "Tôi e rằng phải từ chối đề nghị của bạn."
+      },
+      {
+        "en": "Could you give me an overview of the project?",
+        "vi": "Bạn có thể cho tôi cái nhìn tổng quan về dự án không?"
+      },
+      {
+        "en": "We're running behind schedule.",
+        "vi": "Chúng ta đang chậm tiến độ."
+      },
+      {
+        "en": "I need to get approval from my manager.",
+        "vi": "Tôi cần được phê duyệt từ quản lý."
+      },
+      {
+        "en": "Let's circle back to this topic later.",
+        "vi": "Hãy quay lại chủ đề này sau."
+      },
+      {
+        "en": "I'll loop you in on this discussion.",
+        "vi": "Tôi sẽ thêm bạn vào cuộc thảo luận này."
+      },
+      {
+        "en": "We need to think outside the box.",
+        "vi": "Chúng ta cần nghĩ sáng tạo hơn."
+      },
+      {
+        "en": "Let's keep each other in the loop.",
+        "vi": "Hãy cập nhật thông tin cho nhau."
+      },
+      {
+        "en": "I'd like to run this idea by you.",
+        "vi": "Tôi muốn tham khảo ý kiến bạn về ý tưởng này."
+      },
+      {
+        "en": "We're on the same page.",
+        "vi": "Chúng ta hiểu nhau."
+      },
+      {
+        "en": "Let me bring you up to speed.",
+        "vi": "Để tôi cập nhật tình hình cho bạn."
+      },
+      {
+        "en": "We need to hit the ground running.",
+        "vi": "Chúng ta cần bắt đầu ngay lập tức."
+      },
+      {
+        "en": "That's not my area of expertise.",
+        "vi": "Đó không phải lĩnh vực chuyên môn của tôi."
+      },
+      {
+        "en": "I'll get the ball rolling on this project.",
+        "vi": "Tôi sẽ khởi động dự án này."
+      },
+      {
+        "en": "We need to streamline our processes.",
+        "vi": "Chúng ta cần tối ưu hóa quy trình."
+      },
+      {
+        "en": "Let's leverage our resources efficiently.",
+        "vi": "Hãy tận dụng nguồn lực hiệu quả."
+      },
+      {
+        "en": "I'd like to propose a new strategy.",
+        "vi": "Tôi muốn đề xuất một chiến lược mới."
+      },
+      {
+        "en": "We need to align our goals.",
+        "vi": "Chúng ta cần điều chỉnh mục tiêu chung."
+      },
+      {
+        "en": "Can you provide more context?",
+        "vi": "Bạn có thể cung cấp thêm ngữ cảnh không?"
+      },
+      {
+        "en": "Let's table this discussion for now.",
+        "vi": "Hãy tạm hoãn cuộc thảo luận này."
+      },
+      {
+        "en": "I'd appreciate your input on this matter.",
+        "vi": "Tôi rất mong nhận được ý kiến của bạn về vấn đề này."
+      },
+      {
+        "en": "We need to be proactive, not reactive.",
+        "vi": "Chúng ta cần chủ động, không phản ứng."
+      },
+      {
+        "en": "Let's drill down into the details.",
+        "vi": "Hãy đi sâu vào chi tiết."
+      },
+      {
+        "en": "I'll send you a recap of our meeting.",
+        "vi": "Tôi sẽ gửi bạn bản tóm tắt cuộc họp."
+      },
+      {
+        "en": "We need to pivot our approach.",
+        "vi": "Chúng ta cần thay đổi cách tiếp cận."
+      }
+    ]
+  },
+  {
+    "category": "Advanced Expressions",
+    "sentences": [
+      {
+        "en": "That goes without saying.",
+        "vi": "Điều đó là hiển nhiên."
+      },
+      {
+        "en": "It's easier said than done.",
+        "vi": "Nói thì dễ hơn làm."
+      },
+      {
+        "en": "Don't beat around the bush.",
+        "vi": "Đừng nói vòng vo."
+      },
+      {
+        "en": "Let's cut to the chase.",
+        "vi": "Hãy đi thẳng vào vấn đề."
+      },
+      {
+        "en": "It's not rocket science.",
+        "vi": "Nó không khó như vậy đâu."
+      },
+      {
+        "en": "That's the last straw.",
+        "vi": "Đó là giọt nước tràn ly."
+      },
+      {
+        "en": "We're in the same boat.",
+        "vi": "Chúng ta đang trong cùng hoàn cảnh."
+      },
+      {
+        "en": "It's a piece of cake.",
+        "vi": "Dễ như ăn bánh."
+      },
+      {
+        "en": "Break a leg!",
+        "vi": "Chúc may mắn!"
+      },
+      {
+        "en": "It costs an arm and a leg.",
+        "vi": "Nó rất đắt."
+      },
+      {
+        "en": "Once in a blue moon.",
+        "vi": "Rất hiếm khi."
+      },
+      {
+        "en": "It's a blessing in disguise.",
+        "vi": "Đó là điều may mắn ngụy trang."
+      },
+      {
+        "en": "Better late than never.",
+        "vi": "Muộn còn hơn không."
+      },
+      {
+        "en": "Actions speak louder than words.",
+        "vi": "Hành động có ý nghĩa hơn lời nói."
+      },
+      {
+        "en": "Every cloud has a silver lining.",
+        "vi": "Sau cơn mưa trời lại sáng."
+      },
+      {
+        "en": "Rome wasn't built in a day.",
+        "vi": "Roma không được xây trong một ngày."
+      },
+      {
+        "en": "When in Rome, do as the Romans do.",
+        "vi": "Nhập gia tùy tục."
+      },
+      {
+        "en": "The ball is in your court.",
+        "vi": "Quyết định thuộc về bạn."
+      },
+      {
+        "en": "Let's call it a day.",
+        "vi": "Hãy kết thúc công việc hôm nay."
+      },
+      {
+        "en": "It's a win-win situation.",
+        "vi": "Đó là tình huống đôi bên cùng có lợi."
+      },
+      {
+        "en": "That's just the tip of the iceberg.",
+        "vi": "Đó chỉ là phần nổi của tảng băng."
+      },
+      {
+        "en": "Don't put all your eggs in one basket.",
+        "vi": "Đừng đặt tất cả trứng vào một rổ."
+      },
+      {
+        "en": "It's a double-edged sword.",
+        "vi": "Đó là con dao hai lưỡi."
+      },
+      {
+        "en": "We'll cross that bridge when we come to it.",
+        "vi": "Chúng ta sẽ lo chuyện đó khi đến lúc."
+      },
+      {
+        "en": "You can't have your cake and eat it too.",
+        "vi": "Bạn không thể có được cả hai."
+      },
+      {
+        "en": "The early bird catches the worm.",
+        "vi": "Người dậy sớm được lợi."
+      },
+      {
+        "en": "Don't count your chickens before they hatch.",
+        "vi": "Đừng đếm gà trước khi nở."
+      },
+      {
+        "en": "A picture is worth a thousand words.",
+        "vi": "Một hình ảnh đáng giá ngàn lời."
+      },
+      {
+        "en": "You can't judge a book by its cover.",
+        "vi": "Không thể đánh giá sách qua bìa."
+      },
+      {
+        "en": "Time flies when you're having fun.",
+        "vi": "Thời gian trôi nhanh khi bạn vui vẻ."
+      }
+    ]
+  },
+  {
+    "category": "Making Requests & Offers",
+    "sentences": [
+      {
+        "en": "Would you mind opening the window?",
+        "vi": "Bạn có phiền mở cửa sổ không?"
+      },
+      {
+        "en": "Could you possibly help me with this?",
+        "vi": "Bạn có thể giúp tôi việc này không?"
+      },
+      {
+        "en": "I was wondering if you could give me a hand.",
+        "vi": "Tôi đang nghĩ liệu bạn có thể giúp tôi không."
+      },
+      {
+        "en": "Would it be possible to reschedule our appointment?",
+        "vi": "Có thể lên lịch lại cuộc hẹn không?"
+      },
+      {
+        "en": "I'd appreciate it if you could send me the report.",
+        "vi": "Tôi sẽ biết ơn nếu bạn gửi báo cáo cho tôi."
+      },
+      {
+        "en": "Would you be so kind as to review this document?",
+        "vi": "Bạn có thể vui lòng xem lại tài liệu này không?"
+      },
+      {
+        "en": "Do you think you could spare a few minutes?",
+        "vi": "Bạn có nghĩ bạn có thể dành vài phút không?"
+      },
+      {
+        "en": "I hate to bother you, but could you help me?",
+        "vi": "Tôi không muốn làm phiền, nhưng bạn có thể giúp tôi không?"
+      },
+      {
+        "en": "Would you care for some coffee?",
+        "vi": "Bạn có muốn uống cà phê không?"
+      },
+      {
+        "en": "May I offer you a drink?",
+        "vi": "Tôi có thể mời bạn đồ uống không?"
+      },
+      {
+        "en": "Can I get you anything?",
+        "vi": "Tôi có thể lấy gì cho bạn không?"
+      },
+      {
+        "en": "Shall I make some tea?",
+        "vi": "Tôi pha trà nhé?"
+      },
+      {
+        "en": "Let me know if there's anything I can do.",
+        "vi": "Cho tôi biết nếu có điều gì tôi có thể làm."
+      },
+      {
+        "en": "Feel free to contact me anytime.",
+        "vi": "Cứ thoải mái liên lạc với tôi bất cứ lúc nào."
+      },
+      {
+        "en": "Don't hesitate to ask if you need help.",
+        "vi": "Đừng ngần ngại hỏi nếu bạn cần giúp đỡ."
+      },
+      {
+        "en": "I'm at your disposal.",
+        "vi": "Tôi sẵn sàng giúp đỡ bạn."
+      },
+      {
+        "en": "Would you like me to show you around?",
+        "vi": "Bạn có muốn tôi dẫn bạn đi tham quan không?"
+      },
+      {
+        "en": "Shall we get started?",
+        "vi": "Chúng ta bắt đầu nhé?"
+      },
+      {
+        "en": "Would you prefer tea or coffee?",
+        "vi": "Bạn muốn trà hay cà phê?"
+      },
+      {
+        "en": "I insist that you stay for dinner.",
+        "vi": "Tôi nhất định mời bạn ở lại ăn tối."
+      }
+    ]
+  },
+  {
+    "category": "Giving Opinions & Suggestions",
+    "sentences": [
+      {
+        "en": "In my opinion, we should reconsider this decision.",
+        "vi": "Theo tôi, chúng ta nên xem xét lại quyết định này."
+      },
+      {
+        "en": "From my perspective, this is the best approach.",
+        "vi": "Từ góc nhìn của tôi, đây là cách tiếp cận tốt nhất."
+      },
+      {
+        "en": "I strongly believe that we need to act now.",
+        "vi": "Tôi tin chắc rằng chúng ta cần hành động ngay."
+      },
+      {
+        "en": "If you ask me, I think we should wait.",
+        "vi": "Nếu bạn hỏi tôi, tôi nghĩ chúng ta nên đợi."
+      },
+      {
+        "en": "I'm inclined to agree with you on this.",
+        "vi": "Tôi có khuynh hướng đồng ý với bạn về điều này."
+      },
+      {
+        "en": "I beg to differ on that point.",
+        "vi": "Tôi xin phép không đồng ý về điểm đó."
+      },
+      {
+        "en": "I see where you're coming from, but...",
+        "vi": "Tôi hiểu ý bạn, nhưng..."
+      },
+      {
+        "en": "That's a fair point, however...",
+        "vi": "Đó là một điểm hợp lý, tuy nhiên..."
+      },
+      {
+        "en": "I couldn't agree more.",
+        "vi": "Tôi hoàn toàn đồng ý."
+      },
+      {
+        "en": "I'm afraid I have to disagree.",
+        "vi": "Tôi e rằng phải không đồng ý."
+      },
+      {
+        "en": "Why don't we try a different approach?",
+        "vi": "Tại sao chúng ta không thử cách khác?"
+      },
+      {
+        "en": "How about we compromise on this?",
+        "vi": "Thế còn chúng ta thỏa hiệp về điều này?"
+      },
+      {
+        "en": "What if we postponed the decision?",
+        "vi": "Nếu chúng ta hoãn quyết định thì sao?"
+      },
+      {
+        "en": "I suggest we take a break and reconvene later.",
+        "vi": "Tôi đề nghị chúng ta nghỉ và họp lại sau."
+      },
+      {
+        "en": "It might be worth considering alternative options.",
+        "vi": "Có lẽ đáng để xem xét các phương án khác."
+      },
+      {
+        "en": "Have you thought about doing it this way?",
+        "vi": "Bạn đã nghĩ về việc làm theo cách này chưa?"
+      },
+      {
+        "en": "I'd recommend taking immediate action.",
+        "vi": "Tôi khuyên nên hành động ngay lập tức."
+      },
+      {
+        "en": "You might want to reconsider your stance.",
+        "vi": "Bạn có thể muốn xem xét lại lập trường của mình."
+      },
+      {
+        "en": "In light of recent events, we should be cautious.",
+        "vi": "Trước những diễn biến gần đây, chúng ta nên thận trọng."
+      },
+      {
+        "en": "All things considered, this seems like the best option.",
+        "vi": "Xét mọi mặt, đây có vẻ là phương án tốt nhất."
+      }
+    ]
+  },
+  {
+    "category": "Expressing Emotions & States",
+    "sentences": [
+      {
+        "en": "I'm over the moon about this news!",
+        "vi": "Tôi vô cùng vui mừng về tin này!"
+      },
+      {
+        "en": "I'm absolutely thrilled to hear that.",
+        "vi": "Tôi cực kỳ phấn khích khi nghe điều đó."
+      },
+      {
+        "en": "I'm deeply concerned about this situation.",
+        "vi": "Tôi rất lo lắng về tình huống này."
+      },
+      {
+        "en": "I'm utterly exhausted from all this work.",
+        "vi": "Tôi kiệt sức vì công việc này."
+      },
+      {
+        "en": "I'm completely overwhelmed by everything.",
+        "vi": "Tôi hoàn toàn choáng ngợp với mọi thứ."
+      },
+      {
+        "en": "I'm torn between two choices.",
+        "vi": "Tôi đang phân vân giữa hai lựa chọn."
+      },
+      {
+        "en": "I'm having second thoughts about this decision.",
+        "vi": "Tôi đang có suy nghĩ lại về quyết định này."
+      },
+      {
+        "en": "I'm on cloud nine right now.",
+        "vi": "Tôi đang vô cùng hạnh phúc."
+      },
+      {
+        "en": "I'm at my wit's end with this problem.",
+        "vi": "Tôi đã hết cách với vấn đề này."
+      },
+      {
+        "en": "I'm sick and tired of these excuses.",
+        "vi": "Tôi chán ngấy những lời bào chữa này."
+      },
+      {
+        "en": "I'm bursting with excitement.",
+        "vi": "Tôi đang rất phấn khích."
+      },
+      {
+        "en": "I'm filled with gratitude for your help.",
+        "vi": "Tôi tràn đầy lòng biết ơn vì sự giúp đỡ của bạn."
+      },
+      {
+        "en": "I'm worried sick about my exam results.",
+        "vi": "Tôi lo lắng chết đi được về kết quả thi."
+      },
+      {
+        "en": "I'm extremely disappointed in the outcome.",
+        "vi": "Tôi cực kỳ thất vọng với kết quả."
+      },
+      {
+        "en": "I'm pleasantly surprised by this development.",
+        "vi": "Tôi ngạc nhiên thú vị với sự phát triển này."
+      },
+      {
+        "en": "I'm cautiously optimistic about the future.",
+        "vi": "Tôi thận trọng lạc quan về tương lai."
+      },
+      {
+        "en": "I'm genuinely impressed by your work.",
+        "vi": "Tôi thật sự ấn tượng với công việc của bạn."
+      },
+      {
+        "en": "I'm desperately in need of a vacation.",
+        "vi": "Tôi rất cần một kỳ nghỉ."
+      },
+      {
+        "en": "I'm absolutely certain about this.",
+        "vi": "Tôi hoàn toàn chắc chắn về điều này."
+      },
+      {
+        "en": "I'm profoundly grateful for this opportunity.",
+        "vi": "Tôi vô cùng biết ơn cơ hội này."
+      }
+    ]
+  },
+  {
+    "category": "Cause & Effect",
+    "sentences": [
+      {
+        "en": "Due to heavy rain, the event was cancelled.",
+        "vi": "Do mưa lớn, sự kiện đã bị hủy."
+      },
+      {
+        "en": "Owing to budget constraints, we had to scale back.",
+        "vi": "Do hạn chế ngân sách, chúng tôi phải thu hẹp."
+      },
+      {
+        "en": "As a result of the merger, many jobs were lost.",
+        "vi": "Kết quả của việc sáp nhập, nhiều việc làm bị mất."
+      },
+      {
+        "en": "Consequently, we need to revise our strategy.",
+        "vi": "Do đó, chúng ta cần sửa đổi chiến lược."
+      },
+      {
+        "en": "Therefore, I recommend proceeding with caution.",
+        "vi": "Vì vậy, tôi khuyên nên tiến hành thận trọng."
+      },
+      {
+        "en": "Hence, the decision was made to postpone.",
+        "vi": "Do đó, quyết định hoãn lại đã được đưa ra."
+      },
+      {
+        "en": "This led to a significant increase in sales.",
+        "vi": "Điều này dẫn đến sự gia tăng đáng kể trong doanh số."
+      },
+      {
+        "en": "The delay resulted in missed opportunities.",
+        "vi": "Sự chậm trễ dẫn đến bỏ lỡ cơ hội."
+      },
+      {
+        "en": "This brought about major changes in policy.",
+        "vi": "Điều này mang lại những thay đổi lớn trong chính sách."
+      },
+      {
+        "en": "The new law gave rise to numerous complaints.",
+        "vi": "Luật mới gây ra nhiều khiếu nại."
+      },
+      {
+        "en": "Thanks to your help, we finished on time.",
+        "vi": "Nhờ sự giúp đỡ của bạn, chúng tôi hoàn thành đúng hạn."
+      },
+      {
+        "en": "Because of the pandemic, remote work became common.",
+        "vi": "Vì đại dịch, làm việc từ xa trở nên phổ biến."
+      },
+      {
+        "en": "Since you're busy, I'll handle it myself.",
+        "vi": "Vì bạn bận, tôi sẽ tự xử lý."
+      },
+      {
+        "en": "Given the circumstances, we have no choice.",
+        "vi": "Trong hoàn cảnh này, chúng ta không có lựa chọn nào khác."
+      },
+      {
+        "en": "Seeing that you disagree, let's discuss further.",
+        "vi": "Thấy rằng bạn không đồng ý, hãy thảo luận thêm."
+      },
+      {
+        "en": "On account of the weather, flights were delayed.",
+        "vi": "Do thời tiết, các chuyến bay bị hoãn."
+      },
+      {
+        "en": "For this reason, I must decline your offer.",
+        "vi": "Vì lý do này, tôi phải từ chối đề nghị của bạn."
+      },
+      {
+        "en": "In view of the risks, we should be careful.",
+        "vi": "Xét thấy rủi ro, chúng ta nên cẩn thận."
+      },
+      {
+        "en": "This accounts for the discrepancy in numbers.",
+        "vi": "Điều này giải thích sự chênh lệch trong số liệu."
+      },
+      {
+        "en": "The shortage stems from supply chain issues.",
+        "vi": "Sự thiếu hụt bắt nguồn từ vấn đề chuỗi cung ứng."
+      }
+    ]
+  },
+  {
+    "category": "Comparison & Contrast",
+    "sentences": [
+      {
+        "en": "This method is far more efficient than the previous one.",
+        "vi": "Phương pháp này hiệu quả hơn nhiều so với phương pháp trước."
+      },
+      {
+        "en": "The new model is considerably cheaper.",
+        "vi": "Mẫu mới rẻ hơn đáng kể."
+      },
+      {
+        "en": "Unlike his brother, he's very outgoing.",
+        "vi": "Không giống anh trai, anh ấy rất hòa đồng."
+      },
+      {
+        "en": "In contrast to last year, sales have improved.",
+        "vi": "Ngược lại với năm ngoái, doanh số đã cải thiện."
+      },
+      {
+        "en": "Similarly, the European market shows growth.",
+        "vi": "Tương tự, thị trường châu Âu cho thấy tăng trưởng."
+      },
+      {
+        "en": "Likewise, we should consider the Asian market.",
+        "vi": "Tương tự, chúng ta nên xem xét thị trường châu Á."
+      },
+      {
+        "en": "By comparison, our competitors are struggling.",
+        "vi": "So sánh thì đối thủ của chúng ta đang gặp khó khăn."
+      },
+      {
+        "en": "On the contrary, this actually benefits us.",
+        "vi": "Ngược lại, điều này thực sự có lợi cho chúng ta."
+      },
+      {
+        "en": "Whereas option A is cheap, option B is durable.",
+        "vi": "Trong khi lựa chọn A rẻ, lựa chọn B bền."
+      },
+      {
+        "en": "While I appreciate your concern, I must proceed.",
+        "vi": "Mặc dù tôi trân trọng mối quan tâm của bạn, tôi phải tiếp tục."
+      },
+      {
+        "en": "The second option is slightly better.",
+        "vi": "Lựa chọn thứ hai tốt hơn một chút."
+      },
+      {
+        "en": "This is by far the best solution.",
+        "vi": "Đây là giải pháp tốt nhất cho đến nay."
+      },
+      {
+        "en": "Nothing compares to the original version.",
+        "vi": "Không gì sánh được với phiên bản gốc."
+      },
+      {
+        "en": "This pales in comparison to what we achieved.",
+        "vi": "Điều này không thể so sánh với những gì chúng ta đạt được."
+      },
+      {
+        "en": "The difference is negligible.",
+        "vi": "Sự khác biệt là không đáng kể."
+      },
+      {
+        "en": "Both options have their merits.",
+        "vi": "Cả hai lựa chọn đều có ưu điểm."
+      },
+      {
+        "en": "Neither solution is perfect.",
+        "vi": "Không giải pháp nào là hoàn hảo."
+      },
+      {
+        "en": "The former is preferable to the latter.",
+        "vi": "Cái trước thì tốt hơn cái sau."
+      },
+      {
+        "en": "This is tantamount to admitting defeat.",
+        "vi": "Điều này tương đương với việc thừa nhận thất bại."
+      },
+      {
+        "en": "These results are comparable to industry standards.",
+        "vi": "Những kết quả này có thể so sánh với tiêu chuẩn ngành."
+      }
+    ]
+  },
+  {
+    "category": "Time Expressions",
+    "sentences": [
+      {
+        "en": "I'll get back to you in due course.",
+        "vi": "Tôi sẽ liên lạc lại với bạn vào lúc thích hợp."
+      },
+      {
+        "en": "We need to address this at the earliest opportunity.",
+        "vi": "Chúng ta cần giải quyết điều này sớm nhất có thể."
+      },
+      {
+        "en": "For the time being, let's focus on priorities.",
+        "vi": "Hiện tại, hãy tập trung vào ưu tiên."
+      },
+      {
+        "en": "Sooner or later, the truth will come out.",
+        "vi": "Sớm muộn gì sự thật cũng sẽ được bại lộ."
+      },
+      {
+        "en": "Every now and then, I visit my hometown.",
+        "vi": "Thỉnh thoảng, tôi về thăm quê."
+      },
+      {
+        "en": "From time to time, we all need a break.",
+        "vi": "Đôi khi, tất cả chúng ta đều cần nghỉ ngơi."
+      },
+      {
+        "en": "In the meantime, please review the documents.",
+        "vi": "Trong lúc đó, vui lòng xem xét tài liệu."
+      },
+      {
+        "en": "By this time next year, I'll have graduated.",
+        "vi": "Vào lúc này năm sau, tôi sẽ đã tốt nghiệp."
+      },
+      {
+        "en": "As of now, we have no further information.",
+        "vi": "Tính đến bây giờ, chúng tôi không có thêm thông tin."
+      },
+      {
+        "en": "Up until recently, this wasn't an issue.",
+        "vi": "Cho đến gần đây, đây không phải là vấn đề."
+      },
+      {
+        "en": "Before long, everything will be back to normal.",
+        "vi": "Không lâu nữa, mọi thứ sẽ trở lại bình thường."
+      },
+      {
+        "en": "At the crack of dawn, we set off.",
+        "vi": "Lúc rạng đông, chúng tôi khởi hành."
+      },
+      {
+        "en": "Around the clock, our team works tirelessly.",
+        "vi": "Suốt ngày đêm, đội của chúng tôi làm việc không mệt mỏi."
+      },
+      {
+        "en": "Year after year, the trend continues.",
+        "vi": "Năm này qua năm khác, xu hướng tiếp tục."
+      },
+      {
+        "en": "Day in, day out, the same routine.",
+        "vi": "Ngày này qua ngày khác, cùng một thói quen."
+      },
+      {
+        "en": "Once in a while, treat yourself.",
+        "vi": "Thỉnh thoảng, hãy chiều chuộng bản thân."
+      },
+      {
+        "en": "In the long run, this will benefit us.",
+        "vi": "Về lâu dài, điều này sẽ có lợi cho chúng ta."
+      },
+      {
+        "en": "In the short term, we may face challenges.",
+        "vi": "Trong ngắn hạn, chúng ta có thể gặp thử thách."
+      },
+      {
+        "en": "At this point in time, we're still investigating.",
+        "vi": "Tại thời điểm này, chúng tôi vẫn đang điều tra."
+      },
+      {
+        "en": "By the end of the month, we'll know more.",
+        "vi": "Vào cuối tháng, chúng ta sẽ biết thêm."
+      }
+    ]
+  },
+  {
+    "category": "Academic & Formal Writing",
+    "sentences": [
+      {
+        "en": "According to recent studies, this approach is effective.",
+        "vi": "Theo các nghiên cứu gần đây, cách tiếp cận này hiệu quả."
+      },
+      {
+        "en": "Research indicates that early intervention is crucial.",
+        "vi": "Nghiên cứu chỉ ra rằng can thiệp sớm là quan trọng."
+      },
+      {
+        "en": "Evidence suggests a strong correlation between the two.",
+        "vi": "Bằng chứng cho thấy mối tương quan mạnh mẽ giữa hai yếu tố."
+      },
+      {
+        "en": "It is widely acknowledged that climate change is real.",
+        "vi": "Được thừa nhận rộng rãi rằng biến đổi khí hậu là có thật."
+      },
+      {
+        "en": "Furthermore, the data supports this hypothesis.",
+        "vi": "Hơn nữa, dữ liệu hỗ trợ giả thuyết này."
+      },
+      {
+        "en": "Moreover, additional factors must be considered.",
+        "vi": "Hơn thế nữa, các yếu tố bổ sung phải được xem xét."
+      },
+      {
+        "en": "Nevertheless, certain limitations exist in this study.",
+        "vi": "Tuy nhiên, nghiên cứu này tồn tại những hạn chế nhất định."
+      },
+      {
+        "en": "Nonetheless, the findings remain significant.",
+        "vi": "Dù vậy, các phát hiện vẫn có ý nghĩa."
+      },
+      {
+        "en": "To illustrate this point, consider the following example.",
+        "vi": "Để minh họa điểm này, hãy xem xét ví dụ sau."
+      },
+      {
+        "en": "In particular, the third chapter addresses this issue.",
+        "vi": "Đặc biệt, chương ba đề cập đến vấn đề này."
+      },
+      {
+        "en": "With regard to the methodology, we employed...",
+        "vi": "Về phương pháp luận, chúng tôi đã sử dụng..."
+      },
+      {
+        "en": "With respect to your question, I believe...",
+        "vi": "Về câu hỏi của bạn, tôi tin rằng..."
+      },
+      {
+        "en": "In terms of efficiency, this method excels.",
+        "vi": "Về mặt hiệu quả, phương pháp này xuất sắc."
+      },
+      {
+        "en": "From a theoretical perspective, this makes sense.",
+        "vi": "Từ góc độ lý thuyết, điều này có ý nghĩa."
+      },
+      {
+        "en": "It is worth noting that these results are preliminary.",
+        "vi": "Đáng chú ý rằng những kết quả này chỉ là sơ bộ."
+      },
+      {
+        "en": "One must take into account various factors.",
+        "vi": "Người ta phải tính đến nhiều yếu tố khác nhau."
+      },
+      {
+        "en": "It stands to reason that more research is needed.",
+        "vi": "Dễ hiểu là cần nhiều nghiên cứu hơn."
+      },
+      {
+        "en": "By the same token, we should examine alternatives.",
+        "vi": "Tương tự, chúng ta nên xem xét các phương án khác."
+      },
+      {
+        "en": "This finding is consistent with previous research.",
+        "vi": "Phát hiện này phù hợp với nghiên cứu trước đó."
+      },
+      {
+        "en": "The implications of this are far-reaching.",
+        "vi": "Những hàm ý của điều này là sâu rộng."
+      }
+    ]
+  },
+  {
+    "category": "Conditional Sentences - Advanced",
+    "sentences": [
+      {
+        "en": "If it weren't for your help, I would have failed.",
+        "vi": "Nếu không có sự giúp đỡ của bạn, tôi đã thất bại rồi."
+      },
+      {
+        "en": "But for the traffic, we would have arrived on time.",
+        "vi": "Nếu không có kẹt xe, chúng ta đã đến đúng giờ."
+      },
+      {
+        "en": "Provided that you finish early, you can leave.",
+        "vi": "Miễn là bạn hoàn thành sớm, bạn có thể đi."
+      },
+      {
+        "en": "As long as you try your best, that's enough.",
+        "vi": "Chỉ cần bạn cố gắng hết sức, là đủ rồi."
+      },
+      {
+        "en": "On condition that you pay in advance, I'll accept.",
+        "vi": "Với điều kiện bạn trả trước, tôi sẽ chấp nhận."
+      },
+      {
+        "en": "Assuming the weather is good, we'll go hiking.",
+        "vi": "Giả sử thời tiết tốt, chúng ta sẽ đi leo núi."
+      },
+      {
+        "en": "Even if you apologize, I won't forgive you.",
+        "vi": "Dù bạn có xin lỗi, tôi cũng không tha thứ."
+      },
+      {
+        "en": "Whether you like it or not, this is happening.",
+        "vi": "Dù bạn thích hay không, điều này sẽ xảy ra."
+      },
+      {
+        "en": "In case you change your mind, let me know.",
+        "vi": "Phòng khi bạn đổi ý, hãy cho tôi biết."
+      },
+      {
+        "en": "Should the need arise, I'll be there.",
+        "vi": "Nếu cần thiết, tôi sẽ có mặt."
+      },
+      {
+        "en": "Were it not for his mistakes, we would have won.",
+        "vi": "Nếu không vì những sai lầm của anh ấy, chúng ta đã thắng rồi."
+      },
+      {
+        "en": "Had you listened to me, this wouldn't have happened.",
+        "vi": "Nếu bạn nghe tôi, điều này đã không xảy ra."
+      },
+      {
+        "en": "If only I had studied harder in school.",
+        "vi": "Giá mà tôi học chăm hơn ở trường."
+      },
+      {
+        "en": "If I were you, I wouldn't take that job.",
+        "vi": "Nếu tôi là bạn, tôi sẽ không nhận công việc đó."
+      },
+      {
+        "en": "What would you do if you won a million dollars?",
+        "vi": "Bạn sẽ làm gì nếu trúng một triệu đô?"
+      },
+      {
+        "en": "If you had asked me, I would have told you.",
+        "vi": "Nếu bạn hỏi tôi, tôi đã nói với bạn rồi."
+      },
+      {
+        "en": "I wish I had known about this earlier.",
+        "vi": "Tôi ước mình biết về điều này sớm hơn."
+      },
+      {
+        "en": "If only things were different.",
+        "vi": "Giá mà mọi thứ khác đi."
+      },
+      {
+        "en": "Supposing you were wrong, what would you do?",
+        "vi": "Giả sử bạn sai, bạn sẽ làm gì?"
+      },
+      {
+        "en": "If need be, we can work overtime.",
+        "vi": "Nếu cần thiết, chúng ta có thể làm thêm giờ."
+      },
+      {
+        "en": "Unless otherwise stated, the rules apply to everyone.",
+        "vi": "Trừ khi nói khác đi, quy tắc áp dụng cho mọi người."
+      },
+      {
+        "en": "If push comes to shove, we'll find another way.",
+        "vi": "Nếu không còn cách nào khác, chúng ta sẽ tìm cách khác."
+      },
+      {
+        "en": "If worst comes to worst, we can always start over.",
+        "vi": "Nếu xấu nhất, chúng ta luôn có thể bắt đầu lại."
+      },
+      {
+        "en": "If all else fails, we'll try plan B.",
+        "vi": "Nếu mọi thứ đều thất bại, chúng ta sẽ thử kế hoạch B."
+      },
+      {
+        "en": "If the shoe fits, wear it.",
+        "vi": "Nếu đúng là như vậy, hãy chấp nhận."
+      },
+      {
+        "en": "If nothing else, at least we tried.",
+        "vi": "Nếu không có gì khác, ít nhất chúng ta đã cố gắng."
+      },
+      {
+        "en": "If memory serves, we met three years ago.",
+        "vi": "Nếu tôi nhớ không nhầm, chúng ta gặp nhau ba năm trước."
+      },
+      {
+        "en": "If I may say so, your idea is brilliant.",
+        "vi": "Nếu được phép nói, ý tưởng của bạn thật tuyệt vời."
+      },
+      {
+        "en": "If truth be told, I wasn't expecting this.",
+        "vi": "Nói thật thì tôi không mong đợi điều này."
+      },
+      {
+        "en": "If my calculations are correct, we should arrive soon.",
+        "vi": "Nếu tính toán của tôi đúng, chúng ta sẽ đến sớm."
+      }
+    ]
+  },
+  {
+    "category": "Reported Speech & Communication",
+    "sentences": [
+      {
+        "en": "She told me that she was leaving the next day.",
+        "vi": "Cô ấy nói với tôi rằng cô ấy sẽ rời đi vào ngày hôm sau."
+      },
+      {
+        "en": "He said he had already finished the project.",
+        "vi": "Anh ấy nói anh ấy đã hoàn thành dự án rồi."
+      },
+      {
+        "en": "They informed us that the meeting had been cancelled.",
+        "vi": "Họ thông báo cho chúng tôi rằng cuộc họp đã bị hủy."
+      },
+      {
+        "en": "She mentioned that she might be late.",
+        "vi": "Cô ấy đề cập rằng cô ấy có thể đến muộn."
+      },
+      {
+        "en": "He claimed that he hadn't received the email.",
+        "vi": "Anh ấy khẳng định rằng anh ấy không nhận được email."
+      },
+      {
+        "en": "She insisted that she was right all along.",
+        "vi": "Cô ấy khăng khăng rằng cô ấy đúng từ đầu."
+      },
+      {
+        "en": "They suggested that we should postpone the trip.",
+        "vi": "Họ đề xuất rằng chúng ta nên hoãn chuyến đi."
+      },
+      {
+        "en": "He admitted that he had made a mistake.",
+        "vi": "Anh ấy thừa nhận rằng anh ấy đã mắc lỗi."
+      },
+      {
+        "en": "She complained that the service was terrible.",
+        "vi": "Cô ấy phàn nàn rằng dịch vụ tệ quá."
+      },
+      {
+        "en": "He promised that he would be there on time.",
+        "vi": "Anh ấy hứa rằng anh ấy sẽ có mặt đúng giờ."
+      },
+      {
+        "en": "She warned me not to trust him.",
+        "vi": "Cô ấy cảnh báo tôi đừng tin anh ta."
+      },
+      {
+        "en": "He advised me to think carefully before deciding.",
+        "vi": "Anh ấy khuyên tôi nên suy nghĩ kỹ trước khi quyết định."
+      },
+      {
+        "en": "They announced that the store would close early.",
+        "vi": "Họ thông báo rằng cửa hàng sẽ đóng cửa sớm."
+      },
+      {
+        "en": "She explained that she had been stuck in traffic.",
+        "vi": "Cô ấy giải thích rằng cô ấy bị kẹt xe."
+      },
+      {
+        "en": "He confirmed that the order had been shipped.",
+        "vi": "Anh ấy xác nhận rằng đơn hàng đã được gửi."
+      },
+      {
+        "en": "She denied having any involvement in the matter.",
+        "vi": "Cô ấy phủ nhận có bất kỳ liên quan nào đến vấn đề."
+      },
+      {
+        "en": "He argued that the policy was unfair.",
+        "vi": "Anh ấy tranh luận rằng chính sách không công bằng."
+      },
+      {
+        "en": "She pointed out that we had forgotten something.",
+        "vi": "Cô ấy chỉ ra rằng chúng ta đã quên điều gì đó."
+      },
+      {
+        "en": "He wondered whether she would come.",
+        "vi": "Anh ấy tự hỏi liệu cô ấy có đến không."
+      },
+      {
+        "en": "She asked if I could help her.",
+        "vi": "Cô ấy hỏi liệu tôi có thể giúp cô ấy không."
+      },
+      {
+        "en": "He inquired about the availability of rooms.",
+        "vi": "Anh ấy hỏi về tình trạng còn phòng."
+      },
+      {
+        "en": "She remarked that the weather was beautiful.",
+        "vi": "Cô ấy nhận xét rằng thời tiết đẹp quá."
+      },
+      {
+        "en": "He asserted that his theory was correct.",
+        "vi": "Anh ấy khẳng định rằng lý thuyết của anh ấy đúng."
+      },
+      {
+        "en": "She emphasized the importance of teamwork.",
+        "vi": "Cô ấy nhấn mạnh tầm quan trọng của làm việc nhóm."
+      },
+      {
+        "en": "He clarified that he meant no offense.",
+        "vi": "Anh ấy làm rõ rằng anh ấy không có ý xúc phạm."
+      },
+      {
+        "en": "She acknowledged that mistakes had been made.",
+        "vi": "Cô ấy thừa nhận rằng đã có những sai lầm."
+      },
+      {
+        "en": "He reassured me that everything would be fine.",
+        "vi": "Anh ấy trấn an tôi rằng mọi thứ sẽ ổn thôi."
+      },
+      {
+        "en": "She begged me not to tell anyone.",
+        "vi": "Cô ấy van xin tôi đừng nói cho ai biết."
+      },
+      {
+        "en": "He urged us to act quickly.",
+        "vi": "Anh ấy thúc giục chúng tôi hành động nhanh."
+      },
+      {
+        "en": "She reminded me that the deadline was approaching.",
+        "vi": "Cô ấy nhắc nhở tôi rằng thời hạn đang đến gần."
+      }
+    ]
+  },
+  {
+    "category": "Passive Voice & Formal Structures",
+    "sentences": [
+      {
+        "en": "The report must be submitted by Friday.",
+        "vi": "Báo cáo phải được nộp trước thứ Sáu."
+      },
+      {
+        "en": "The decision was made after careful consideration.",
+        "vi": "Quyết định được đưa ra sau khi xem xét cẩn thận."
+      },
+      {
+        "en": "It is believed that the economy will improve.",
+        "vi": "Người ta tin rằng nền kinh tế sẽ cải thiện."
+      },
+      {
+        "en": "The building was designed by a famous architect.",
+        "vi": "Tòa nhà được thiết kế bởi một kiến trúc sư nổi tiếng."
+      },
+      {
+        "en": "It has been confirmed that the event will proceed.",
+        "vi": "Đã được xác nhận rằng sự kiện sẽ tiến hành."
+      },
+      {
+        "en": "The package should have been delivered yesterday.",
+        "vi": "Gói hàng lẽ ra đã được giao hôm qua."
+      },
+      {
+        "en": "It is said that he's the best in his field.",
+        "vi": "Người ta nói rằng anh ấy là giỏi nhất trong lĩnh vực của mình."
+      },
+      {
+        "en": "The document needs to be reviewed carefully.",
+        "vi": "Tài liệu cần được xem xét cẩn thận."
+      },
+      {
+        "en": "It was announced that new policies would be implemented.",
+        "vi": "Đã được thông báo rằng các chính sách mới sẽ được thực hiện."
+      },
+      {
+        "en": "The issue is being addressed by the management.",
+        "vi": "Vấn đề đang được giải quyết bởi ban quản lý."
+      },
+      {
+        "en": "It is expected that attendance will be high.",
+        "vi": "Dự kiến rằng sự tham dự sẽ cao."
+      },
+      {
+        "en": "The results will be published next month.",
+        "vi": "Kết quả sẽ được công bố vào tháng sau."
+      },
+      {
+        "en": "It has been suggested that we try a new approach.",
+        "vi": "Đã được đề xuất rằng chúng ta thử một cách tiếp cận mới."
+      },
+      {
+        "en": "The project was completed ahead of schedule.",
+        "vi": "Dự án được hoàn thành trước thời hạn."
+      },
+      {
+        "en": "It is widely known that practice makes perfect.",
+        "vi": "Ai cũng biết rằng luyện tập tạo nên hoàn hảo."
+      },
+      {
+        "en": "The contract was signed by both parties.",
+        "vi": "Hợp đồng được ký bởi cả hai bên."
+      },
+      {
+        "en": "It is assumed that everyone has read the guidelines.",
+        "vi": "Được cho rằng mọi người đã đọc hướng dẫn."
+      },
+      {
+        "en": "The meeting has been rescheduled for tomorrow.",
+        "vi": "Cuộc họp đã được lên lịch lại vào ngày mai."
+      },
+      {
+        "en": "It was discovered that the data had been corrupted.",
+        "vi": "Phát hiện ra rằng dữ liệu đã bị hỏng."
+      },
+      {
+        "en": "The proposal is being considered by the committee.",
+        "vi": "Đề xuất đang được xem xét bởi ủy ban."
+      },
+      {
+        "en": "It is required that all participants register in advance.",
+        "vi": "Yêu cầu tất cả người tham gia đăng ký trước."
+      },
+      {
+        "en": "The equipment was damaged during transport.",
+        "vi": "Thiết bị bị hư hỏng trong quá trình vận chuyển."
+      },
+      {
+        "en": "It is recommended that you arrive early.",
+        "vi": "Khuyến nghị bạn nên đến sớm."
+      },
+      {
+        "en": "The error was caused by a software glitch.",
+        "vi": "Lỗi được gây ra bởi một lỗi phần mềm."
+      },
+      {
+        "en": "It has been proven that this method is effective.",
+        "vi": "Đã được chứng minh rằng phương pháp này hiệu quả."
+      },
+      {
+        "en": "The information was leaked to the press.",
+        "vi": "Thông tin bị rò rỉ cho báo chí."
+      },
+      {
+        "en": "It is understood that confidentiality must be maintained.",
+        "vi": "Được hiểu rằng tính bảo mật phải được duy trì."
+      },
+      {
+        "en": "The award was presented at the ceremony.",
+        "vi": "Giải thưởng được trao tại buổi lễ."
+      },
+      {
+        "en": "It was determined that further action was needed.",
+        "vi": "Được xác định rằng cần hành động thêm."
+      },
+      {
+        "en": "The findings have been documented thoroughly.",
+        "vi": "Các phát hiện đã được ghi chép kỹ lưỡng."
+      }
+    ]
+  },
+  {
+    "category": "Linking Words & Transitions",
+    "sentences": [
+      {
+        "en": "First and foremost, we need to establish clear goals.",
+        "vi": "Trước hết và quan trọng nhất, chúng ta cần thiết lập mục tiêu rõ ràng."
+      },
+      {
+        "en": "To begin with, let's review the current situation.",
+        "vi": "Để bắt đầu, hãy xem xét tình hình hiện tại."
+      },
+      {
+        "en": "In addition to this, we should consider alternatives.",
+        "vi": "Thêm vào đó, chúng ta nên xem xét các phương án khác."
+      },
+      {
+        "en": "Apart from that, everything looks good.",
+        "vi": "Ngoài điều đó ra, mọi thứ có vẻ tốt."
+      },
+      {
+        "en": "On the one hand, it's expensive; on the other hand, it's worth it.",
+        "vi": "Một mặt, nó đắt; mặt khác, nó đáng giá."
+      },
+      {
+        "en": "For one thing, we lack resources; for another, we lack time.",
+        "vi": "Đã thế chúng ta thiếu nguồn lực; lại còn thiếu thời gian."
+      },
+      {
+        "en": "To sum up, the project was a success.",
+        "vi": "Tóm lại, dự án là một thành công."
+      },
+      {
+        "en": "In summary, we achieved all our objectives.",
+        "vi": "Tóm tắt lại, chúng ta đạt được tất cả mục tiêu."
+      },
+      {
+        "en": "In conclusion, I believe this is the right decision.",
+        "vi": "Kết luận, tôi tin đây là quyết định đúng đắn."
+      },
+      {
+        "en": "All in all, it was a productive meeting.",
+        "vi": "Nhìn chung, đó là một cuộc họp hiệu quả."
+      },
+      {
+        "en": "At any rate, we should move forward.",
+        "vi": "Dù sao đi nữa, chúng ta nên tiến lên phía trước."
+      },
+      {
+        "en": "In any case, we need to act quickly.",
+        "vi": "Dù thế nào, chúng ta cần hành động nhanh."
+      },
+      {
+        "en": "As a matter of fact, I was thinking the same thing.",
+        "vi": "Trên thực tế, tôi cũng đang nghĩ vậy."
+      },
+      {
+        "en": "To put it another way, we need more time.",
+        "vi": "Nói cách khác, chúng ta cần nhiều thời gian hơn."
+      },
+      {
+        "en": "In other words, the plan failed.",
+        "vi": "Nói cách khác, kế hoạch thất bại."
+      },
+      {
+        "en": "That is to say, we have no choice.",
+        "vi": "Có nghĩa là, chúng ta không có lựa chọn nào khác."
+      },
+      {
+        "en": "As it were, he's the unofficial leader.",
+        "vi": "Có thể nói, anh ấy là lãnh đạo không chính thức."
+      },
+      {
+        "en": "So to speak, we're starting from scratch.",
+        "vi": "Có thể nói, chúng ta đang bắt đầu từ con số không."
+      },
+      {
+        "en": "For all intents and purposes, the deal is done.",
+        "vi": "Về cơ bản, thỏa thuận đã xong."
+      },
+      {
+        "en": "By and large, the feedback was positive.",
+        "vi": "Nhìn chung, phản hồi là tích cực."
+      },
+      {
+        "en": "As far as I'm concerned, this is unacceptable.",
+        "vi": "Theo tôi, điều này không thể chấp nhận được."
+      },
+      {
+        "en": "As regards the budget, we're within limits.",
+        "vi": "Về ngân sách, chúng ta nằm trong giới hạn."
+      },
+      {
+        "en": "With reference to your email, I have some concerns.",
+        "vi": "Về email của bạn, tôi có một số lo ngại."
+      },
+      {
+        "en": "Speaking of which, have you seen the latest report?",
+        "vi": "Nhân tiện, bạn đã xem báo cáo mới nhất chưa?"
+      },
+      {
+        "en": "As I was saying, timing is everything.",
+        "vi": "Như tôi đã nói, thời điểm là tất cả."
+      },
+      {
+        "en": "As mentioned earlier, we have limited resources.",
+        "vi": "Như đã đề cập trước đó, chúng ta có nguồn lực hạn chế."
+      },
+      {
+        "en": "To get back to the point, let's focus on solutions.",
+        "vi": "Để quay lại vấn đề, hãy tập trung vào giải pháp."
+      },
+      {
+        "en": "Before I forget, don't forget the deadline.",
+        "vi": "Trước khi tôi quên, đừng quên thời hạn."
+      },
+      {
+        "en": "Come to think of it, that's a good idea.",
+        "vi": "Nghĩ lại thì đó là một ý hay."
+      },
+      {
+        "en": "Now that you mention it, I remember seeing that.",
+        "vi": "Bây giờ bạn nói vậy, tôi nhớ ra đã thấy điều đó."
+      }
+    ]
+  },
+  {
+    "category": "Modal Verbs & Expressions",
+    "sentences": [
+      {
+        "en": "You must submit the application before the deadline.",
+        "vi": "Bạn phải nộp đơn trước thời hạn."
+      },
+      {
+        "en": "You should have told me about this sooner.",
+        "vi": "Bạn lẽ ra nên nói với tôi về điều này sớm hơn."
+      },
+      {
+        "en": "You needn't worry about the details.",
+        "vi": "Bạn không cần lo lắng về chi tiết."
+      },
+      {
+        "en": "You ought to apologize for your behavior.",
+        "vi": "Bạn nên xin lỗi về hành vi của mình."
+      },
+      {
+        "en": "You may leave whenever you're ready.",
+        "vi": "Bạn có thể rời đi bất cứ khi nào bạn sẵn sàng."
+      },
+      {
+        "en": "You might want to reconsider that decision.",
+        "vi": "Bạn có thể muốn xem xét lại quyết định đó."
+      },
+      {
+        "en": "You could have done better if you tried.",
+        "vi": "Bạn có thể làm tốt hơn nếu bạn cố gắng."
+      },
+      {
+        "en": "You would rather stay than leave, wouldn't you?",
+        "vi": "Bạn thà ở lại còn hơn đi, phải không?"
+      },
+      {
+        "en": "You can't possibly finish this in one day.",
+        "vi": "Bạn không thể nào hoàn thành điều này trong một ngày."
+      },
+      {
+        "en": "It must have been difficult for you.",
+        "vi": "Chắc hẳn điều đó rất khó khăn với bạn."
+      },
+      {
+        "en": "She can't have forgotten about the meeting.",
+        "vi": "Cô ấy không thể quên cuộc họp được."
+      },
+      {
+        "en": "They might have already left.",
+        "vi": "Họ có thể đã rời đi rồi."
+      },
+      {
+        "en": "He should be arriving any minute now.",
+        "vi": "Anh ấy sẽ đến bất cứ lúc nào bây giờ."
+      },
+      {
+        "en": "We could go to the beach if the weather improves.",
+        "vi": "Chúng ta có thể đi biển nếu thời tiết tốt hơn."
+      },
+      {
+        "en": "You may not enter without permission.",
+        "vi": "Bạn không được vào không có phép."
+      },
+      {
+        "en": "She would often visit us on weekends.",
+        "vi": "Cô ấy thường đến thăm chúng tôi vào cuối tuần."
+      },
+      {
+        "en": "You'd better hurry or you'll be late.",
+        "vi": "Bạn nên nhanh lên không sẽ muộn đấy."
+      },
+      {
+        "en": "You might as well give up now.",
+        "vi": "Tốt hơn là bạn nên từ bỏ ngay bây giờ."
+      },
+      {
+        "en": "It will have been completed by next week.",
+        "vi": "Nó sẽ được hoàn thành vào tuần sau."
+      },
+      {
+        "en": "You shall receive your reward in due time.",
+        "vi": "Bạn sẽ nhận được phần thưởng vào đúng lúc."
+      },
+      {
+        "en": "We dare not challenge his authority.",
+        "vi": "Chúng ta không dám thách thức quyền uy của anh ấy."
+      },
+      {
+        "en": "You need not have bought so much food.",
+        "vi": "Bạn không cần phải mua nhiều thức ăn như vậy."
+      },
+      {
+        "en": "They used to live in Paris.",
+        "vi": "Họ từng sống ở Paris."
+      },
+      {
+        "en": "I would appreciate it if you could help.",
+        "vi": "Tôi sẽ biết ơn nếu bạn có thể giúp đỡ."
+      },
+      {
+        "en": "You mustn't tell anyone about this.",
+        "vi": "Bạn không được nói cho ai về điều này."
+      },
+      {
+        "en": "She can speak five languages fluently.",
+        "vi": "Cô ấy có thể nói năm ngôn ngữ lưu loát."
+      },
+      {
+        "en": "They may have been delayed by traffic.",
+        "vi": "Họ có thể đã bị kẹt xe."
+      },
+      {
+        "en": "You ought not to have said that.",
+        "vi": "Bạn không nên nói như vậy."
+      },
+      {
+        "en": "It could be worse, I suppose.",
+        "vi": "Tôi cho rằng có thể tệ hơn."
+      },
+      {
+        "en": "You must be joking!",
+        "vi": "Bạn chắc đang đùa!"
+      }
+    ]
+  },
+  {
+    "category": "Prepositions & Collocations",
+    "sentences": [
+      {
+        "en": "I'm interested in learning new languages.",
+        "vi": "Tôi quan tâm đến việc học ngôn ngữ mới."
+      },
+      {
+        "en": "She's good at solving complex problems.",
+        "vi": "Cô ấy giỏi giải quyết vấn đề phức tạp."
+      },
+      {
+        "en": "He's responsible for managing the team.",
+        "vi": "Anh ấy chịu trách nhiệm quản lý đội."
+      },
+      {
+        "en": "I'm worried about the upcoming exam.",
+        "vi": "Tôi lo lắng về kỳ thi sắp tới."
+      },
+      {
+        "en": "They're afraid of making mistakes.",
+        "vi": "Họ sợ mắc sai lầm."
+      },
+      {
+        "en": "She's proud of her achievements.",
+        "vi": "Cô ấy tự hào về thành tích của mình."
+      },
+      {
+        "en": "I'm tired of waiting for him.",
+        "vi": "Tôi mệt mỏi vì chờ đợi anh ấy."
+      },
+      {
+        "en": "He's capable of doing much better.",
+        "vi": "Anh ấy có khả năng làm tốt hơn nhiều."
+      },
+      {
+        "en": "She's aware of the risks involved.",
+        "vi": "Cô ấy nhận thức được những rủi ro liên quan."
+      },
+      {
+        "en": "I'm fond of classical music.",
+        "vi": "Tôi thích nhạc cổ điển."
+      },
+      {
+        "en": "He's jealous of his brother's success.",
+        "vi": "Anh ấy ghen tị với sự thành công của anh trai."
+      },
+      {
+        "en": "She's satisfied with the results.",
+        "vi": "Cô ấy hài lòng với kết quả."
+      },
+      {
+        "en": "I'm familiar with this software.",
+        "vi": "Tôi quen thuộc với phần mềm này."
+      },
+      {
+        "en": "He's disappointed in the team's performance.",
+        "vi": "Anh ấy thất vọng về màn trình diễn của đội."
+      },
+      {
+        "en": "She's engaged in important research.",
+        "vi": "Cô ấy tham gia vào nghiên cứu quan trọng."
+      },
+      {
+        "en": "I'm accustomed to waking up early.",
+        "vi": "Tôi quen với việc dậy sớm."
+      },
+      {
+        "en": "He's addicted to social media.",
+        "vi": "Anh ấy nghiện mạng xã hội."
+      },
+      {
+        "en": "She's committed to improving her skills.",
+        "vi": "Cô ấy cam kết cải thiện kỹ năng của mình."
+      },
+      {
+        "en": "I'm grateful for your support.",
+        "vi": "Tôi biết ơn sự hỗ trợ của bạn."
+      },
+      {
+        "en": "He's absorbed in his work.",
+        "vi": "Anh ấy say mê công việc."
+      },
+      {
+        "en": "She's involved in community service.",
+        "vi": "Cô ấy tham gia dịch vụ cộng đồng."
+      },
+      {
+        "en": "I'm sensitive to criticism.",
+        "vi": "Tôi nhạy cảm với lời chỉ trích."
+      },
+      {
+        "en": "He's indifferent to what others think.",
+        "vi": "Anh ấy thờ ơ với những gì người khác nghĩ."
+      },
+      {
+        "en": "She's opposed to the new policy.",
+        "vi": "Cô ấy phản đối chính sách mới."
+      },
+      {
+        "en": "I'm dedicated to my profession.",
+        "vi": "Tôi tận tụy với nghề nghiệp của mình."
+      },
+      {
+        "en": "He's dependent on his parents.",
+        "vi": "Anh ấy phụ thuộc vào bố mẹ."
+      },
+      {
+        "en": "She's immune to his charm.",
+        "vi": "Cô ấy miễn nhiễm với sức quyến rũ của anh ta."
+      },
+      {
+        "en": "I'm susceptible to colds in winter.",
+        "vi": "Tôi dễ bị cảm lạnh vào mùa đông."
+      },
+      {
+        "en": "He's proficient in several programming languages.",
+        "vi": "Anh ấy thành thạo nhiều ngôn ngữ lập trình."
+      },
+      {
+        "en": "She's enthusiastic about the project.",
+        "vi": "Cô ấy nhiệt tình với dự án."
+      }
+    ]
+  },
+  {
+    "category": "Debate & Argumentation",
+    "sentences": [
+      {
+        "en": "I would argue that this is the most important issue.",
+        "vi": "Tôi cho rằng đây là vấn đề quan trọng nhất."
+      },
+      {
+        "en": "It could be argued that both sides have merit.",
+        "vi": "Có thể lập luận rằng cả hai bên đều có lý."
+      },
+      {
+        "en": "One might contend that the evidence is insufficient.",
+        "vi": "Người ta có thể tranh luận rằng bằng chứng không đủ."
+      },
+      {
+        "en": "I take issue with your interpretation of the facts.",
+        "vi": "Tôi không đồng ý với cách giải thích sự kiện của bạn."
+      },
+      {
+        "en": "That's a contentious point that requires further discussion.",
+        "vi": "Đó là một điểm gây tranh cãi cần thảo luận thêm."
+      },
+      {
+        "en": "While I respect your opinion, I must disagree.",
+        "vi": "Mặc dù tôi tôn trọng ý kiến của bạn, tôi phải không đồng ý."
+      },
+      {
+        "en": "Your argument fails to consider all the factors.",
+        "vi": "Lập luận của bạn không xem xét tất cả các yếu tố."
+      },
+      {
+        "en": "This line of reasoning is fundamentally flawed.",
+        "vi": "Chuỗi lý luận này về cơ bản là sai lầm."
+      },
+      {
+        "en": "Let me play devil's advocate for a moment.",
+        "vi": "Để tôi đóng vai người phản biện một chút."
+      },
+      {
+        "en": "That's a strawman argument that misrepresents my position.",
+        "vi": "Đó là một lập luận ngụy biện xuyên tạc lập trường của tôi."
+      },
+      {
+        "en": "I maintain that my original point still stands.",
+        "vi": "Tôi khẳng định rằng quan điểm ban đầu của tôi vẫn đứng vững."
+      },
+      {
+        "en": "The burden of proof lies with the person making the claim.",
+        "vi": "Gánh nặng chứng minh thuộc về người đưa ra tuyên bố."
+      },
+      {
+        "en": "This is a false dichotomy that ignores other options.",
+        "vi": "Đây là một nhị phân giả tạo bỏ qua các lựa chọn khác."
+      },
+      {
+        "en": "I challenge the premise of your entire argument.",
+        "vi": "Tôi thách thức tiền đề của toàn bộ lập luận của bạn."
+      },
+      {
+        "en": "Your conclusion doesn't follow from your premises.",
+        "vi": "Kết luận của bạn không xuất phát từ tiền đề của bạn."
+      },
+      {
+        "en": "That's an appeal to emotion rather than logic.",
+        "vi": "Đó là kêu gọi cảm xúc hơn là lôgic."
+      },
+      {
+        "en": "I concede that point, but it doesn't affect my main argument.",
+        "vi": "Tôi thừa nhận điểm đó, nhưng nó không ảnh hưởng đến lập luận chính của tôi."
+      },
+      {
+        "en": "Let's examine the counterarguments carefully.",
+        "vi": "Hãy xem xét cẩn thận các phản luận."
+      },
+      {
+        "en": "This assertion requires supporting evidence.",
+        "vi": "Khẳng định này cần bằng chứng hỗ trợ."
+      },
+      {
+        "en": "I question the validity of that assumption.",
+        "vi": "Tôi đặt câu hỏi về tính hợp lệ của giả định đó."
+      },
+      {
+        "en": "That's correlation, not causation.",
+        "vi": "Đó là tương quan, không phải nhân quả."
+      },
+      {
+        "en": "Your analogy breaks down when you consider...",
+        "vi": "Sự tương tự của bạn sụp đổ khi bạn xem xét..."
+      },
+      {
+        "en": "I refute the notion that this is inevitable.",
+        "vi": "Tôi bác bỏ quan điểm rằng điều này là không thể tránh khỏi."
+      },
+      {
+        "en": "The evidence overwhelmingly supports my position.",
+        "vi": "Bằng chứng ủng hộ áp đảo lập trường của tôi."
+      },
+      {
+        "en": "This is a red herring that distracts from the real issue.",
+        "vi": "Đây là một thứ đánh lạc hướng khỏi vấn đề thực sự."
+      },
+      {
+        "en": "I stand by my original assessment.",
+        "vi": "Tôi giữ vững đánh giá ban đầu của mình."
+      },
+      {
+        "en": "That's a circular argument that proves nothing.",
+        "vi": "Đó là một lập luận vòng quanh không chứng minh được gì."
+      },
+      {
+        "en": "We must distinguish between facts and opinions.",
+        "vi": "Chúng ta phải phân biệt giữa sự thật và ý kiến."
+      },
+      {
+        "en": "Your point is moot given the current circumstances.",
+        "vi": "Quan điểm của bạn không còn liên quan với hoàn cảnh hiện tại."
+      },
+      {
+        "en": "I rest my case.",
+        "vi": "Tôi kết thúc lập luận của mình."
+      }
+    ]
+  },
+  {
+    "category": "Narrative & Descriptive Language",
+    "sentences": [
+      {
+        "en": "The sun was setting over the horizon, painting the sky orange.",
+        "vi": "Mặt trời đang lặn ở đường chân trời, vẽ bầu trời màu cam."
+      },
+      {
+        "en": "Little did I know that my life was about to change forever.",
+        "vi": "Tôi ít biết rằng cuộc sống của tôi sắp thay đổi mãi mãi."
+      },
+      {
+        "en": "As time went by, things gradually improved.",
+        "vi": "Theo thời gian, mọi thứ dần được cải thiện."
+      },
+      {
+        "en": "Before I knew it, the day had come to an end.",
+        "vi": "Trước khi tôi nhận ra, ngày đã kết thúc."
+      },
+      {
+        "en": "The building stood tall and imposing against the skyline.",
+        "vi": "Tòa nhà đứng cao và hùng vĩ so với đường chân trời."
+      },
+      {
+        "en": "A sense of unease washed over me.",
+        "vi": "Một cảm giác bất an tràn qua tôi."
+      },
+      {
+        "en": "The atmosphere was electric with anticipation.",
+        "vi": "Bầu không khí sôi động với sự mong đợi."
+      },
+      {
+        "en": "Time seemed to stand still in that moment.",
+        "vi": "Thời gian dường như đứng yên trong khoảnh khắc đó."
+      },
+      {
+        "en": "The room was dimly lit by a single candle.",
+        "vi": "Căn phòng được chiếu sáng mờ ảo bởi một ngọn nến duy nhất."
+      },
+      {
+        "en": "Memories came flooding back to me.",
+        "vi": "Ký ức ùa về với tôi."
+      },
+      {
+        "en": "The silence was deafening.",
+        "vi": "Sự im lặng chói tai."
+      },
+      {
+        "en": "A chill ran down my spine.",
+        "vi": "Một cơn lạnh chạy dọc sống lưng tôi."
+      },
+      {
+        "en": "The tension in the air was palpable.",
+        "vi": "Sự căng thẳng trong không khí có thể cảm nhận được."
+      },
+      {
+        "en": "Everything happened in the blink of an eye.",
+        "vi": "Mọi thứ xảy ra trong nháy mắt."
+      },
+      {
+        "en": "The landscape stretched endlessly before us.",
+        "vi": "Phong cảnh trải dài vô tận trước mặt chúng tôi."
+      },
+      {
+        "en": "My heart sank as I realized the truth.",
+        "vi": "Tim tôi chìm xuống khi tôi nhận ra sự thật."
+      },
+      {
+        "en": "The crowd erupted in applause.",
+        "vi": "Đám đông bùng nổ trong tràng pháo tay."
+      },
+      {
+        "en": "A feeling of nostalgia swept over me.",
+        "vi": "Một cảm giác hoài niệm ập đến với tôi."
+      },
+      {
+        "en": "The city came alive at night.",
+        "vi": "Thành phố sống động vào ban đêm."
+      },
+      {
+        "en": "Darkness enveloped the entire area.",
+        "vi": "Bóng tối bao trùm toàn bộ khu vực."
+      },
+      {
+        "en": "The old house had an eerie, abandoned feel to it.",
+        "vi": "Ngôi nhà cũ có cảm giác rùng rợn, bị bỏ hoang."
+      },
+      {
+        "en": "Time dragged on endlessly.",
+        "vi": "Thời gian kéo dài vô tận."
+      },
+      {
+        "en": "The storm raged throughout the night.",
+        "vi": "Cơn bão hoành hành suốt đêm."
+      },
+      {
+        "en": "A wave of relief washed over me.",
+        "vi": "Một làn sóng nhẹ nhõm tràn qua tôi."
+      },
+      {
+        "en": "The years had taken their toll on him.",
+        "vi": "Những năm tháng đã để lại dấu ấn trên anh ta."
+      },
+      {
+        "en": "Hope flickered like a dying flame.",
+        "vi": "Hy vọng le lói như ngọn lửa sắp tắt."
+      },
+      {
+        "en": "The weight of responsibility bore down on her.",
+        "vi": "Gánh nặng trách nhiệm đè nặng lên cô ấy."
+      },
+      {
+        "en": "Reality hit me like a ton of bricks.",
+        "vi": "Thực tế đập vào tôi như một tấn gạch."
+      },
+      {
+        "en": "The future lay uncertain before us.",
+        "vi": "Tương lai nằm bất định trước mặt chúng tôi."
+      },
+      {
+        "en": "Words failed to capture the beauty of the scene.",
+        "vi": "Lời nói không thể diễn tả vẻ đẹp của cảnh tượng."
+      }
+    ]
+  },
+  {
+    "category": "Problem-Solving Language",
+    "sentences": [
+      {
+        "en": "Let's identify the root cause of the problem.",
+        "vi": "Hãy xác định nguyên nhân gốc rễ của vấn đề."
+      },
+      {
+        "en": "We need to think creatively to find a solution.",
+        "vi": "Chúng ta cần suy nghĩ sáng tạo để tìm giải pháp."
+      },
+      {
+        "en": "Have we considered all possible alternatives?",
+        "vi": "Chúng ta đã xem xét tất cả các phương án có thể chưa?"
+      },
+      {
+        "en": "Let's break this down into manageable steps.",
+        "vi": "Hãy chia điều này thành các bước có thể quản lý."
+      },
+      {
+        "en": "What are the potential risks and benefits?",
+        "vi": "Những rủi ro và lợi ích tiềm năng là gì?"
+      },
+      {
+        "en": "We should prioritize the most critical issues first.",
+        "vi": "Chúng ta nên ưu tiên các vấn đề quan trọng nhất trước."
+      },
+      {
+        "en": "Let's analyze the situation from different angles.",
+        "vi": "Hãy phân tích tình huống từ nhiều góc độ khác nhau."
+      },
+      {
+        "en": "What resources do we have at our disposal?",
+        "vi": "Chúng ta có những nguồn lực gì sẵn có?"
+      },
+      {
+        "en": "We need to establish clear objectives before proceeding.",
+        "vi": "Chúng ta cần thiết lập mục tiêu rõ ràng trước khi tiến hành."
+      },
+      {
+        "en": "Let's weigh the pros and cons of each option.",
+        "vi": "Hãy cân nhắc ưu nhược điểm của mỗi lựa chọn."
+      },
+      {
+        "en": "What obstacles are standing in our way?",
+        "vi": "Những trở ngại nào đang cản đường chúng ta?"
+      },
+      {
+        "en": "We should develop a contingency plan.",
+        "vi": "Chúng ta nên phát triển một kế hoạch dự phòng."
+      },
+      {
+        "en": "Let's test this hypothesis before committing.",
+        "vi": "Hãy kiểm tra giả thuyết này trước khi cam kết."
+      },
+      {
+        "en": "How can we minimize the potential downsides?",
+        "vi": "Làm thế nào chúng ta có thể giảm thiểu những mặt tiêu cực tiềm tàng?"
+      },
+      {
+        "en": "We need to gather more data before making a decision.",
+        "vi": "Chúng ta cần thu thập thêm dữ liệu trước khi đưa ra quyết định."
+      },
+      {
+        "en": "Let's look for patterns in the available information.",
+        "vi": "Hãy tìm kiếm các mẫu trong thông tin có sẵn."
+      },
+      {
+        "en": "What assumptions are we making here?",
+        "vi": "Chúng ta đang đưa ra những giả định nào ở đây?"
+      },
+      {
+        "en": "We should consult with experts in this field.",
+        "vi": "Chúng ta nên tham khảo ý kiến chuyên gia trong lĩnh vực này."
+      },
+      {
+        "en": "Let's validate our approach through testing.",
+        "vi": "Hãy xác thực cách tiếp cận của chúng ta thông qua kiểm tra."
+      },
+      {
+        "en": "How does this align with our long-term goals?",
+        "vi": "Điều này phù hợp với mục tiêu dài hạn của chúng ta như thế nào?"
+      },
+      {
+        "en": "We need to eliminate unnecessary complexity.",
+        "vi": "Chúng ta cần loại bỏ sự phức tạp không cần thiết."
+      },
+      {
+        "en": "Let's benchmark against industry best practices.",
+        "vi": "Hãy đo điểm chuẩn so với thực hành tốt nhất trong ngành."
+      },
+      {
+        "en": "What metrics will we use to measure success?",
+        "vi": "Chúng ta sẽ sử dụng chỉ số nào để đo lường thành công?"
+      },
+      {
+        "en": "We should prototype and iterate quickly.",
+        "vi": "Chúng ta nên tạo nguyên mẫu và lặp lại nhanh chóng."
+      },
+      {
+        "en": "Let's identify potential bottlenecks in the process.",
+        "vi": "Hãy xác định các điểm nghẽn tiềm tàng trong quy trình."
+      },
+      {
+        "en": "How can we leverage existing resources more effectively?",
+        "vi": "Làm thế nào chúng ta có thể tận dụng nguồn lực hiện có hiệu quả hơn?"
+      },
+      {
+        "en": "We need to balance short-term gains with long-term sustainability.",
+        "vi": "Chúng ta cần cân bằng lợi ích ngắn hạn với sự bền vững dài hạn."
+      },
+      {
+        "en": "Let's establish clear criteria for evaluating options.",
+        "vi": "Hãy thiết lập tiêu chí rõ ràng để đánh giá các lựa chọn."
+      },
+      {
+        "en": "What lessons can we learn from past failures?",
+        "vi": "Chúng ta có thể học được gì từ những thất bại trong quá khứ?"
+      },
+      {
+        "en": "We should remain flexible and adapt as needed.",
+        "vi": "Chúng ta nên giữ linh hoạt và điều chỉnh khi cần thiết."
+      }
+    ]
+  },
+  {
+    "category": "Scientific & Technical English",
+    "sentences": [
+      {
+        "en": "The data indicates a statistically significant correlation.",
+        "vi": "Dữ liệu cho thấy mối tương quan có ý nghĩa thống kê."
+      },
+      {
+        "en": "The experiment was conducted under controlled conditions.",
+        "vi": "Thí nghiệm được tiến hành trong điều kiện được kiểm soát."
+      },
+      {
+        "en": "The hypothesis was tested using empirical methods.",
+        "vi": "Giả thuyết được kiểm tra bằng các phương pháp thực nghiệm."
+      },
+      {
+        "en": "The results were reproducible across multiple trials.",
+        "vi": "Kết quả có thể tái tạo qua nhiều thử nghiệm."
+      },
+      {
+        "en": "This phenomenon can be explained by quantum mechanics.",
+        "vi": "Hiện tượng này có thể được giải thích bằng cơ học lượng tử."
+      },
+      {
+        "en": "The system exhibits non-linear behavior.",
+        "vi": "Hệ thống thể hiện hành vi phi tuyến."
+      },
+      {
+        "en": "We observed a significant deviation from the expected values.",
+        "vi": "Chúng tôi quan sát thấy một độ lệch đáng kể so với giá trị dự kiến."
+      },
+      {
+        "en": "The algorithm optimizes performance through iterative refinement.",
+        "vi": "Thuật toán tối ưu hóa hiệu suất thông qua cải tiến lặp đi lặp lại."
+      },
+      {
+        "en": "The variables are inversely proportional to each other.",
+        "vi": "Các biến tỷ lệ nghịch với nhau."
+      },
+      {
+        "en": "The procedure follows established protocols.",
+        "vi": "Quy trình tuân theo các giao thức đã được thiết lập."
+      },
+      {
+        "en": "The sample size was determined using power analysis.",
+        "vi": "Kích thước mẫu được xác định bằng phân tích công suất."
+      },
+      {
+        "en": "The methodology employed in this study is robust.",
+        "vi": "Phương pháp luận được sử dụng trong nghiên cứu này vững chắc."
+      },
+      {
+        "en": "These findings contribute to our understanding of the mechanism.",
+        "vi": "Những phát hiện này đóng góp vào sự hiểu biết của chúng ta về cơ chế."
+      },
+      {
+        "en": "The model accurately predicts real-world outcomes.",
+        "vi": "Mô hình dự đoán chính xác các kết quả trong thế giới thực."
+      },
+      {
+        "en": "The parameters were calibrated to maximize accuracy.",
+        "vi": "Các tham số được hiệu chỉnh để tối đa hóa độ chính xác."
+      },
+      {
+        "en": "The baseline measurements were taken before intervention.",
+        "vi": "Các phép đo cơ sở được thực hiện trước khi can thiệp."
+      },
+      {
+        "en": "The margin of error is within acceptable limits.",
+        "vi": "Biên độ sai số nằm trong giới hạn chấp nhận được."
+      },
+      {
+        "en": "The reaction proceeds via a multi-step process.",
+        "vi": "Phản ứng tiến hành qua một quá trình nhiều bước."
+      },
+      {
+        "en": "The interface between the two systems is seamless.",
+        "vi": "Giao diện giữa hai hệ thống là liền mạch."
+      },
+      {
+        "en": "The compound exhibits unique properties.",
+        "vi": "Hợp chất thể hiện các tính chất độc đáo."
+      },
+      {
+        "en": "The analysis revealed previously unknown patterns.",
+        "vi": "Phân tích tiết lộ các mẫu chưa được biết đến trước đây."
+      },
+      {
+        "en": "The framework provides a systematic approach.",
+        "vi": "Khung cung cấp một cách tiếp cận có hệ thống."
+      },
+      {
+        "en": "The spectrum shows distinct absorption peaks.",
+        "vi": "Quang phổ cho thấy các đỉnh hấp thụ rõ rệt."
+      },
+      {
+        "en": "The configuration ensures optimal performance.",
+        "vi": "Cấu hình đảm bảo hiệu suất tối ưu."
+      },
+      {
+        "en": "The simulation accurately models the real system.",
+        "vi": "Mô phỏng mô hình hóa chính xác hệ thống thực."
+      },
+      {
+        "en": "The threshold value determines system behavior.",
+        "vi": "Giá trị ngưỡng xác định hành vi hệ thống."
+      },
+      {
+        "en": "The architecture is designed for scalability.",
+        "vi": "Kiến trúc được thiết kế cho khả năng mở rộng."
+      },
+      {
+        "en": "The protocol ensures data integrity.",
+        "vi": "Giao thức đảm bảo tính toàn vẹn dữ liệu."
+      },
+      {
+        "en": "The synthesis yielded a pure product.",
+        "vi": "Tổng hợp cho ra một sản phẩm tinh khiết."
+      },
+      {
+        "en": "The mechanism of action remains to be elucidated.",
+        "vi": "Cơ chế hoạt động vẫn cần được làm sáng tỏ."
+      }
+    ]
+  },
+  {
+    "category": "News & Media Language",
+    "sentences": [
+      {
+        "en": "Officials confirmed that the situation is under control.",
+        "vi": "Các quan chức xác nhận rằng tình hình đang được kiểm soát."
+      },
+      {
+        "en": "Sources close to the matter revealed that negotiations are ongoing.",
+        "vi": "Các nguồn tin gần với vấn đề tiết lộ rằng các cuộc đàm phán đang diễn ra."
+      },
+      {
+        "en": "The incident sparked widespread controversy.",
+        "vi": "Vụ việc gây ra tranh cãi rộng rãi."
+      },
+      {
+        "en": "Experts weighed in on the debate.",
+        "vi": "Các chuyên gia tham gia vào cuộc tranh luận."
+      },
+      {
+        "en": "The announcement sent shockwaves through the industry.",
+        "vi": "Thông báo gửi làn sóng sốc qua ngành."
+      },
+      {
+        "en": "The poll indicates shifting public opinion.",
+        "vi": "Cuộc thăm dò cho thấy dư luận đang thay đổi."
+      },
+      {
+        "en": "The policy has come under fire from critics.",
+        "vi": "Chính sách đã bị chỉ trích từ những người phê bình."
+      },
+      {
+        "en": "The investigation is still ongoing.",
+        "vi": "Cuộc điều tra vẫn đang tiếp diễn."
+      },
+      {
+        "en": "The market responded positively to the news.",
+        "vi": "Thị trường phản ứng tích cực với tin tức."
+      },
+      {
+        "en": "The deal marks a significant milestone.",
+        "vi": "Thỏa thuận đánh dấu một cột mốc quan trọng."
+      },
+      {
+        "en": "The crisis has reached a tipping point.",
+        "vi": "Cuộc khủng hoảng đã đạt đến điểm bùng phát."
+      },
+      {
+        "en": "Tensions are running high in the region.",
+        "vi": "Căng thẳng đang tăng cao trong khu vực."
+      },
+      {
+        "en": "The move has been met with mixed reactions.",
+        "vi": "Động thái đã gặp phải các phản ứng trái chiều."
+      },
+      {
+        "en": "Authorities are urging caution as the situation unfolds.",
+        "vi": "Chính quyền đang kêu gọi thận trọng khi tình hình diễn ra."
+      },
+      {
+        "en": "The scandal has rocked the political establishment.",
+        "vi": "Vụ bê bối đã làm rung chuyển giới chính trị."
+      },
+      {
+        "en": "Stakeholders have been called to the table for discussions.",
+        "vi": "Các bên liên quan đã được mời đến bàn thảo luận."
+      },
+      {
+        "en": "The figures paint a grim picture of the economy.",
+        "vi": "Các con số vẽ nên một bức tranh ảm đạm về nền kinh tế."
+      },
+      {
+        "en": "The campaign gained momentum as election day approached.",
+        "vi": "Chiến dịch đạt đà khi ngày bầu cử đến gần."
+      },
+      {
+        "en": "The ruling set a precedent for future cases.",
+        "vi": "Phán quyết tạo tiền lệ cho các vụ án tương lai."
+      },
+      {
+        "en": "The proposal has drawn both praise and criticism.",
+        "vi": "Đề xuất đã thu hút cả khen ngợi và chỉ trích."
+      },
+      {
+        "en": "Reports suggest that talks have broken down.",
+        "vi": "Các báo cáo cho thấy rằng các cuộc đàm phán đã đổ vỡ."
+      },
+      {
+        "en": "The measures aim to curb rising inflation.",
+        "vi": "Các biện pháp nhằm mục đích kiềm chế lạm phát tăng."
+      },
+      {
+        "en": "The forecast predicts continued growth in the sector.",
+        "vi": "Dự báo dự đoán tăng trưởng tiếp tục trong lĩnh vực."
+      },
+      {
+        "en": "The leak has prompted calls for an inquiry.",
+        "vi": "Vụ rò rỉ đã thúc đẩy các lời kêu gọi điều tra."
+      },
+      {
+        "en": "The trend shows no signs of slowing down.",
+        "vi": "Xu hướng không có dấu hiệu chậm lại."
+      },
+      {
+        "en": "The conflict has displaced thousands of civilians.",
+        "vi": "Xung đột đã khiến hàng nghìn dân thường phải di dời."
+      },
+      {
+        "en": "The summit ended with a joint declaration.",
+        "vi": "Hội nghị kết thúc với một tuyên bố chung."
+      },
+      {
+        "en": "The breakthrough could revolutionize the field.",
+        "vi": "Đột phá có thể cách mạng hóa lĩnh vực."
+      },
+      {
+        "en": "The dispute has escalated into a full-blown crisis.",
+        "vi": "Tranh chấp đã leo thang thành một cuộc khủng hoảng toàn diện."
+      },
+      {
+        "en": "The statistics reveal a troubling pattern.",
+        "vi": "Thống kê tiết lộ một mô hình đáng lo ngại."
+      }
+    ]
+  },
+  {
+    "category": "Cultural Expressions & Idioms",
+    "sentences": [
+      {
+        "en": "There's more than meets the eye to this situation.",
+        "vi": "Có nhiều điều hơn những gì mắt thấy trong tình huống này."
+      },
+      {
+        "en": "We need to get to the bottom of this.",
+        "vi": "Chúng ta cần đi đến tận cùng vấn đề này."
+      },
+      {
+        "en": "Let's not jump to conclusions.",
+        "vi": "Đừng vội kết luận."
+      },
+      {
+        "en": "The proof is in the pudding.",
+        "vi": "Bằng chứng ở trong hành động."
+      },
+      {
+        "en": "That ship has sailed, I'm afraid.",
+        "vi": "Tôi e rằng cơ hội đã qua rồi."
+      },
+      {
+        "en": "We're barking up the wrong tree.",
+        "vi": "Chúng ta đang đi sai hướng."
+      },
+      {
+        "en": "It's a blessing in disguise.",
+        "vi": "Đó là điều may mắn cải trang."
+      },
+      {
+        "en": "Don't throw the baby out with the bathwater.",
+        "vi": "Đừng vứt cả người tốt lẫn người xấu."
+      },
+      {
+        "en": "The writing is on the wall.",
+        "vi": "Điều xấu sắp xảy ra rõ ràng."
+      },
+      {
+        "en": "It's not my cup of tea.",
+        "vi": "Đó không phải sở thích của tôi."
+      },
+      {
+        "en": "That's music to my ears.",
+        "vi": "Đó là điều tôi muốn nghe."
+      },
+      {
+        "en": "We're on thin ice here.",
+        "vi": "Chúng ta đang ở tình huống nguy hiểm."
+      },
+      {
+        "en": "Let's face the music.",
+        "vi": "Hãy đối mặt với hậu quả."
+      },
+      {
+        "en": "He's burning the midnight oil.",
+        "vi": "Anh ấy đang thức khuya làm việc."
+      },
+      {
+        "en": "That's just scratching the surface.",
+        "vi": "Đó chỉ mới là phần nổi."
+      },
+      {
+        "en": "We're fighting a losing battle.",
+        "vi": "Chúng ta đang chiến đấu trong trận thua."
+      },
+      {
+        "en": "The tables have turned.",
+        "vi": "Tình thế đã đảo ngược."
+      },
+      {
+        "en": "It's a tough pill to swallow.",
+        "vi": "Đó là điều khó chấp nhận."
+      },
+      {
+        "en": "We need to bite the bullet.",
+        "vi": "Chúng ta cần phải chịu đựng."
+      },
+      {
+        "en": "Let's cut to the chase.",
+        "vi": "Hãy đi thẳng vào vấn đề."
+      },
+      {
+        "en": "That's water under the bridge.",
+        "vi": "Đó là chuyện quá khứ rồi."
+      },
+      {
+        "en": "We're in the same boat.",
+        "vi": "Chúng ta đang cùng cảnh ngộ."
+      },
+      {
+        "en": "It's like comparing apples and oranges.",
+        "vi": "Đó như so sánh táo và cam."
+      },
+      {
+        "en": "Don't cry over spilled milk.",
+        "vi": "Đừng than vãn về chuyện đã rồi."
+      },
+      {
+        "en": "That's the elephant in the room.",
+        "vi": "Đó là vấn đề rõ ràng nhưng mọi người tránh nói."
+      },
+      {
+        "en": "He's sitting on the fence.",
+        "vi": "Anh ấy đang trung lập không chọn phe."
+      },
+      {
+        "en": "Let's get the show on the road.",
+        "vi": "Hãy bắt đầu thôi."
+      },
+      {
+        "en": "That's a can of worms.",
+        "vi": "Đó là vấn đề phức tạp."
+      },
+      {
+        "en": "We're going around in circles.",
+        "vi": "Chúng ta đang lòng vòng không đi đến đâu."
+      },
+      {
+        "en": "It's back to square one.",
+        "vi": "Phải bắt đầu lại từ đầu."
+      }
+    ]
+  },
+  {
+    "category": "Social Interactions & Networking",
+    "sentences": [
+      {
+        "en": "It's been ages since we last met!",
+        "vi": "Đã lâu lắm rồi kể từ lần gặp cuối!"
+      },
+      {
+        "en": "I'd love to catch up over coffee sometime.",
+        "vi": "Tôi muốn tán gẫu qua cà phê một lúc nào đó."
+      },
+      {
+        "en": "Your name rings a bell.",
+        "vi": "Tên bạn nghe quen quen."
+      },
+      {
+        "en": "What brings you to this part of town?",
+        "vi": "Điều gì đưa bạn đến khu vực này?"
+      },
+      {
+        "en": "How are things on your end?",
+        "vi": "Mọi thứ bên bạn thế nào?"
+      },
+      {
+        "en": "Let's keep in touch.",
+        "vi": "Hãy giữ liên lạc nhé."
+      },
+      {
+        "en": "I couldn't help but overhear your conversation.",
+        "vi": "Tôi không thể không nghe được cuộc trò chuyện của bạn."
+      },
+      {
+        "en": "Mind if I join you?",
+        "vi": "Bạn có phiền nếu tôi tham gia không?"
+      },
+      {
+        "en": "It was nice running into you.",
+        "vi": "Thật vui khi tình cờ gặp bạn."
+      },
+      {
+        "en": "Give my regards to your family.",
+        "vi": "Gửi lời thăm hỏi đến gia đình bạn."
+      },
+      {
+        "en": "How have you been keeping?",
+        "vi": "Bạn sống thế nào?"
+      },
+      {
+        "en": "Long time no see!",
+        "vi": "Lâu rồi không gặp!"
+      },
+      {
+        "en": "What have you been up to lately?",
+        "vi": "Gần đây bạn làm gì?"
+      },
+      {
+        "en": "We should do this more often.",
+        "vi": "Chúng ta nên làm điều này thường xuyên hơn."
+      },
+      {
+        "en": "Are you free for lunch next week?",
+        "vi": "Bạn có rảnh ăn trưa tuần sau không?"
+      },
+      {
+        "en": "I'll have my people call your people.",
+        "vi": "Tôi sẽ để người của tôi liên lạc với người của bạn."
+      },
+      {
+        "en": "Let me introduce you to some people.",
+        "vi": "Để tôi giới thiệu bạn với một số người."
+      },
+      {
+        "en": "How do you two know each other?",
+        "vi": "Hai người biết nhau như thế nào?"
+      },
+      {
+        "en": "We go way back.",
+        "vi": "Chúng tôi quen nhau từ lâu rồi."
+      },
+      {
+        "en": "I've heard so much about you!",
+        "vi": "Tôi đã nghe nói rất nhiều về bạn!"
+      },
+      {
+        "en": "Thanks for having me over.",
+        "vi": "Cảm ơn đã mời tôi đến."
+      },
+      {
+        "en": "Make yourself at home.",
+        "vi": "Cứ tự nhiên như ở nhà."
+      },
+      {
+        "en": "I don't want to impose.",
+        "vi": "Tôi không muốn phiền."
+      },
+      {
+        "en": "It's always a pleasure seeing you.",
+        "vi": "Luôn vui khi gặp bạn."
+      },
+      {
+        "en": "We should exchange business cards.",
+        "vi": "Chúng ta nên trao đổi danh thiếp."
+      },
+      {
+        "en": "Feel free to reach out anytime.",
+        "vi": "Cứ thoải mái liên lạc bất cứ lúc nào."
+      },
+      {
+        "en": "I'm in your neck of the woods.",
+        "vi": "Tôi đang ở gần khu vực của bạn."
+      },
+      {
+        "en": "Let's stay in the loop.",
+        "vi": "Hãy cập nhật tin tức cho nhau."
+      },
+      {
+        "en": "I'll pencil you in for Thursday.",
+        "vi": "Tôi sẽ ghi tạm bạn vào thứ Năm."
+      },
+      {
+        "en": "Don't be a stranger!",
+        "vi": "Đừng xa cách nhé!"
+      }
+    ]
+  },
+  {
+    "category": "Travel & Directions",
+    "sentences": [
+      {
+        "en": "Could you point me in the right direction?",
+        "vi": "Bạn có thể chỉ cho tôi hướng đúng không?"
+      },
+      {
+        "en": "I'm afraid I'm a bit lost.",
+        "vi": "Tôi e rằng tôi hơi bị lạc."
+      },
+      {
+        "en": "How far is it from here?",
+        "vi": "Từ đây đến đó bao xa?"
+      },
+      {
+        "en": "Is it within walking distance?",
+        "vi": "Có thể đi bộ đến được không?"
+      },
+      {
+        "en": "You can't miss it.",
+        "vi": "Bạn không thể bỏ lỡ nó đâu."
+      },
+      {
+        "en": "Head straight down this road.",
+        "vi": "Đi thẳng xuống con đường này."
+      },
+      {
+        "en": "Take the second left after the traffic lights.",
+        "vi": "Rẽ trái thứ hai sau đèn giao thông."
+      },
+      {
+        "en": "It's just around the corner.",
+        "vi": "Nó ngay gần đây thôi."
+      },
+      {
+        "en": "You'll find it on your right-hand side.",
+        "vi": "Bạn sẽ thấy nó ở bên tay phải."
+      },
+      {
+        "en": "Keep going until you reach the intersection.",
+        "vi": "Tiếp tục đi cho đến khi bạn đến ngã tư."
+      },
+      {
+        "en": "I'm here on vacation.",
+        "vi": "Tôi đến đây nghỉ mát."
+      },
+      {
+        "en": "What would you recommend seeing?",
+        "vi": "Bạn khuyên nên xem gì?"
+      },
+      {
+        "en": "Is this seat taken?",
+        "vi": "Chỗ này có ai ngồi không?"
+      },
+      {
+        "en": "I have nothing to declare.",
+        "vi": "Tôi không có gì để khai báo."
+      },
+      {
+        "en": "Where is the baggage claim?",
+        "vi": "Khu nhận hành lý ở đâu?"
+      },
+      {
+        "en": "I'd like to make a reservation for two.",
+        "vi": "Tôi muốn đặt chỗ cho hai người."
+      },
+      {
+        "en": "Is breakfast included?",
+        "vi": "Bữa sáng có bao gồm không?"
+      },
+      {
+        "en": "What time is checkout?",
+        "vi": "Thời gian trả phòng là mấy giờ?"
+      },
+      {
+        "en": "Could I have a room with a view?",
+        "vi": "Tôi có thể có phòng có view không?"
+      },
+      {
+        "en": "The flight has been delayed.",
+        "vi": "Chuyến bay đã bị hoãn."
+      },
+      {
+        "en": "I need to exchange some currency.",
+        "vi": "Tôi cần đổi một ít tiền tệ."
+      },
+      {
+        "en": "Where can I catch a taxi?",
+        "vi": "Tôi có thể bắt taxi ở đâu?"
+      },
+      {
+        "en": "How long does the journey take?",
+        "vi": "Hành trình mất bao lâu?"
+      },
+      {
+        "en": "I'm just browsing, thank you.",
+        "vi": "Tôi chỉ xem thôi, cảm ơn."
+      },
+      {
+        "en": "Do you have this in a different size?",
+        "vi": "Bạn có cái này với size khác không?"
+      },
+      {
+        "en": "Can I try this on?",
+        "vi": "Tôi có thể thử cái này không?"
+      },
+      {
+        "en": "I'll take it.",
+        "vi": "Tôi lấy nó."
+      },
+      {
+        "en": "Do you accept credit cards?",
+        "vi": "Bạn có nhận thẻ tín dụng không?"
+      },
+      {
+        "en": "Could you wrap this up for me?",
+        "vi": "Bạn có thể gói cái này cho tôi không?"
+      },
+      {
+        "en": "What's the local specialty?",
+        "vi": "Đặc sản địa phương là gì?"
+      }
+    ]
+  },
+  {
+    "category": "Technology & Digital Life",
+    "sentences": [
+      {
+        "en": "I need to upgrade my operating system to the latest version.",
+        "vi": "Tôi cần nâng cấp hệ điều hành lên phiên bản mới nhất."
+      },
+      {
+        "en": "The application crashed unexpectedly and I lost all my data.",
+        "vi": "Ứng dụng bị treo bất ngờ và tôi mất hết dữ liệu."
+      },
+      {
+        "en": "Can you help me troubleshoot this network connectivity issue?",
+        "vi": "Bạn có thể giúp tôi khắc phục sự cố kết nối mạng này không?"
+      },
+      {
+        "en": "I backed up all my files to cloud storage for safety.",
+        "vi": "Tôi đã sao lưu tất cả file lên lưu trữ đám mây để an toàn."
+      },
+      {
+        "en": "The software update includes several security patches.",
+        "vi": "Bản cập nhật phần mềm bao gồm nhiều bản vá bảo mật."
+      },
+      {
+        "en": "I recommend using two-factor authentication for better security.",
+        "vi": "Tôi khuyên dùng xác thực hai yếu tố để bảo mật tốt hơn."
+      },
+      {
+        "en": "The battery drains too quickly on my smartphone.",
+        "vi": "Pin điện thoại của tôi hết quá nhanh."
+      },
+      {
+        "en": "I subscribed to a premium plan to remove the advertisements.",
+        "vi": "Tôi đã đăng ký gói cao cấp để xóa quảng cáo."
+      },
+      {
+        "en": "The website is not responsive on mobile devices.",
+        "vi": "Trang web không tương thích với thiết bị di động."
+      },
+      {
+        "en": "I need to reset my password because I forgot it.",
+        "vi": "Tôi cần đặt lại mật khẩu vì đã quên mất rồi."
+      },
+      {
+        "en": "The internet connection is really slow today.",
+        "vi": "Kết nối internet hôm nay chậm lắm."
+      },
+      {
+        "en": "I downloaded a new app that helps me learn languages.",
+        "vi": "Tôi đã tải một ứng dụng mới giúp học ngôn ngữ."
+      },
+      {
+        "en": "The video quality automatically adjusts based on your bandwidth.",
+        "vi": "Chất lượng video tự động điều chỉnh theo băng thông của bạn."
+      },
+      {
+        "en": "I enabled dark mode to reduce eye strain at night.",
+        "vi": "Tôi bật chế độ tối để giảm mỏi mắt vào ban đêm."
+      },
+      {
+        "en": "The system automatically saves your progress every few minutes.",
+        "vi": "Hệ thống tự động lưu tiến trình của bạn mỗi vài phút."
+      },
+      {
+        "en": "I cleared my browser cache to fix the loading problem.",
+        "vi": "Tôi đã xóa bộ nhớ đệm trình duyệt để sửa lỗi tải trang."
+      },
+      {
+        "en": "The developers released a bug fix update yesterday.",
+        "vi": "Các nhà phát triển đã phát hành bản cập nhật sửa lỗi hôm qua."
+      },
+      {
+        "en": "I use a VPN to protect my privacy when browsing online.",
+        "vi": "Tôi dùng VPN để bảo vệ quyền riêng tư khi duyệt web."
+      },
+      {
+        "en": "The notification settings can be customized in preferences.",
+        "vi": "Cài đặt thông báo có thể tùy chỉnh trong phần ưu tiên."
+      },
+      {
+        "en": "I synced my contacts across all my devices.",
+        "vi": "Tôi đã đồng bộ danh bạ trên tất cả thiết bị."
+      },
+      {
+        "en": "The algorithm recommends content based on your viewing history.",
+        "vi": "Thuật toán đề xuất nội dung dựa trên lịch sử xem của bạn."
+      },
+      {
+        "en": "I uninstalled the program because it was taking up too much space.",
+        "vi": "Tôi đã gỡ cài đặt chương trình vì nó chiếm quá nhiều dung lượng."
+      },
+      {
+        "en": "The server is down for scheduled maintenance.",
+        "vi": "Máy chủ đang bảo trì theo lịch trình."
+      },
+      {
+        "en": "I disabled automatic updates to control when installations happen.",
+        "vi": "Tôi tắt cập nhật tự động để kiểm soát khi nào cài đặt."
+      },
+      {
+        "en": "The interface is very user-friendly and intuitive.",
+        "vi": "Giao diện rất thân thiện và trực quan."
+      },
+      {
+        "en": "I encrypted my sensitive files with a strong password.",
+        "vi": "Tôi đã mã hóa các file nhạy cảm bằng mật khẩu mạnh."
+      },
+      {
+        "en": "The platform supports integration with third-party services.",
+        "vi": "Nền tảng hỗ trợ tích hợp với dịch vụ bên thứ ba."
+      },
+      {
+        "en": "I compressed the files to reduce the download size.",
+        "vi": "Tôi đã nén các file để giảm kích thước tải xuống."
+      },
+      {
+        "en": "The artificial intelligence can recognize objects in photos.",
+        "vi": "Trí tuệ nhân tạo có thể nhận diện đồ vật trong ảnh."
+      },
+      {
+        "en": "I customized my profile settings to enhance my experience.",
+        "vi": "Tôi đã tùy chỉnh cài đặt hồ sơ để cải thiện trải nghiệm."
+      }
+    ]
+  },
+  {
+    "category": "Health & Wellness",
+    "sentences": [
+      {
+        "en": "I try to maintain a balanced diet with plenty of vegetables.",
+        "vi": "Tôi cố duy trì chế độ ăn cân bằng với nhiều rau củ."
+      },
+      {
+        "en": "Regular exercise helps improve both physical and mental health.",
+        "vi": "Tập thể dục đều đặn giúp cải thiện cả sức khỏe thể chất và tinh thần."
+      },
+      {
+        "en": "I scheduled an appointment with my doctor for a check-up.",
+        "vi": "Tôi đã đặt lịch hẹn với bác sĩ để khám sức khỏe."
+      },
+      {
+        "en": "Getting enough sleep is essential for overall well-being.",
+        "vi": "Ngủ đủ giấc là điều thiết yếu cho sức khỏe tổng thể."
+      },
+      {
+        "en": "I feel much better after reducing my caffeine intake.",
+        "vi": "Tôi cảm thấy tốt hơn nhiều sau khi giảm lượng caffeine."
+      },
+      {
+        "en": "Stress management techniques can significantly improve quality of life.",
+        "vi": "Kỹ thuật quản lý căng thẳng có thể cải thiện đáng kể chất lượng cuộc sống."
+      },
+      {
+        "en": "I take vitamin supplements to boost my immune system.",
+        "vi": "Tôi uống vitamin bổ sung để tăng cường hệ miễn dịch."
+      },
+      {
+        "en": "Meditation helps me stay calm and focused throughout the day.",
+        "vi": "Thiền định giúp tôi bình tĩnh và tập trung suốt cả ngày."
+      },
+      {
+        "en": "I avoid processed foods and try to eat more organic produce.",
+        "vi": "Tôi tránh thực phẩm chế biến và cố ăn nhiều thực phẩm hữu cơ hơn."
+      },
+      {
+        "en": "Staying hydrated is crucial, especially during hot weather.",
+        "vi": "Giữ đủ nước rất quan trọng, đặc biệt trong thời tiết nóng."
+      },
+      {
+        "en": "I practice yoga three times a week to improve flexibility.",
+        "vi": "Tôi tập yoga ba lần một tuần để cải thiện sự dẻo dai."
+      },
+      {
+        "en": "The doctor prescribed medication to treat my condition.",
+        "vi": "Bác sĩ kê đơn thuốc để điều trị bệnh của tôi."
+      },
+      {
+        "en": "I quit smoking to reduce my risk of lung disease.",
+        "vi": "Tôi đã bỏ thuốc lá để giảm nguy cơ bệnh phổi."
+      },
+      {
+        "en": "Mental health is just as important as physical health.",
+        "vi": "Sức khỏe tinh thần cũng quan trọng như sức khỏe thể chất."
+      },
+      {
+        "en": "I wear sunscreen daily to protect my skin from UV damage.",
+        "vi": "Tôi thoa kem chống nắng hàng ngày để bảo vệ da khỏi tia UV."
+      },
+      {
+        "en": "Deep breathing exercises can help reduce anxiety levels.",
+        "vi": "Bài tập hít thở sâu có thể giúp giảm mức độ lo âu."
+      },
+      {
+        "en": "I monitor my blood pressure regularly as advised by my doctor.",
+        "vi": "Tôi theo dõi huyết áp thường xuyên theo lời khuyên của bác sĩ."
+      },
+      {
+        "en": "A positive mindset can accelerate the healing process.",
+        "vi": "Tư duy tích cực có thể thúc đẩy quá trình chữa lành."
+      },
+      {
+        "en": "I limit my screen time before bed to improve sleep quality.",
+        "vi": "Tôi hạn chế thời gian dùng màn hình trước khi ngủ để cải thiện giấc ngủ."
+      },
+      {
+        "en": "Proper posture is important to prevent back pain.",
+        "vi": "Tư thế đúng rất quan trọng để ngăn ngừa đau lưng."
+      },
+      {
+        "en": "I joined a gym to stay motivated with my fitness goals.",
+        "vi": "Tôi đã tham gia phòng gym để duy trì động lực với mục tiêu thể dục."
+      },
+      {
+        "en": "Eating breakfast daily gives me energy for the morning.",
+        "vi": "Ăn sáng hàng ngày cho tôi năng lượng cho buổi sáng."
+      },
+      {
+        "en": "I avoid late-night snacks to maintain a healthy weight.",
+        "vi": "Tôi tránh ăn vặt khuya để duy trì cân nặng khỏe mạnh."
+      },
+      {
+        "en": "Regular dental check-ups help prevent serious problems.",
+        "vi": "Khám răng định kỳ giúp ngăn ngừa các vấn đề nghiêm trọng."
+      },
+      {
+        "en": "I stretch every morning to increase my mobility.",
+        "vi": "Tôi giãn cơ mỗi sáng để tăng khả năng vận động."
+      },
+      {
+        "en": "The therapist recommended cognitive behavioral therapy for my anxiety.",
+        "vi": "Nhà trị liệu đề xuất liệu pháp nhận thức hành vi cho chứng lo âu của tôi."
+      },
+      {
+        "en": "I keep a journal to track my mental health progress.",
+        "vi": "Tôi viết nhật ký để theo dõi tiến triển sức khỏe tinh thần."
+      },
+      {
+        "en": "Walking outdoors in nature reduces my stress significantly.",
+        "vi": "Đi bộ ngoài trời trong thiên nhiên giảm căng thẳng đáng kể."
+      },
+      {
+        "en": "I set realistic fitness goals to avoid burnout.",
+        "vi": "Tôi đặt mục tiêu thể dục thực tế để tránh kiệt sức."
+      },
+      {
+        "en": "Listening to music helps me relax after a long day.",
+        "vi": "Nghe nhạc giúp tôi thư giãn sau một ngày dài."
+      }
+    ]
+  },
+  {
+    "category": "Education & Learning",
+    "sentences": [
+      {
+        "en": "I enrolled in an online course to improve my skills.",
+        "vi": "Tôi đã đăng ký khóa học trực tuyến để nâng cao kỹ năng."
+      },
+      {
+        "en": "The professor explained the concept in a very clear manner.",
+        "vi": "Giáo sư giải thích khái niệm một cách rất rõ ràng."
+      },
+      {
+        "en": "I need to submit my assignment by Friday deadline.",
+        "vi": "Tôi cần nộp bài tập trước thời hạn thứ Sáu."
+      },
+      {
+        "en": "Active learning strategies help students retain information better.",
+        "vi": "Chiến lược học tập tích cực giúp sinh viên ghi nhớ thông tin tốt hơn."
+      },
+      {
+        "en": "I passed the exam with flying colors thanks to my preparation.",
+        "vi": "Tôi đã đậu kỳ thi với điểm cao nhờ sự chuẩn bị."
+      },
+      {
+        "en": "The library provides excellent resources for research projects.",
+        "vi": "Thư viện cung cấp nguồn tài liệu xuất sắc cho dự án nghiên cứu."
+      },
+      {
+        "en": "I struggle with mathematics but excel in language subjects.",
+        "vi": "Tôi gặp khó khăn với toán nhưng giỏi các môn ngôn ngữ."
+      },
+      {
+        "en": "Group discussions enhance critical thinking skills.",
+        "vi": "Thảo luận nhóm nâng cao kỹ năng tư duy phản biện."
+      },
+      {
+        "en": "I revised all my notes before the final examination.",
+        "vi": "Tôi đã ôn lại tất cả ghi chú trước kỳ thi cuối kỳ."
+      },
+      {
+        "en": "The curriculum covers both theoretical and practical aspects.",
+        "vi": "Chương trình học bao gồm cả khía cạnh lý thuyết và thực hành."
+      },
+      {
+        "en": "I attend lectures regularly to stay on track with the material.",
+        "vi": "Tôi tham dự bài giảng đều đặn để theo kịp tài liệu."
+      },
+      {
+        "en": "Self-directed learning requires discipline and motivation.",
+        "vi": "Học tập tự định hướng đòi hỏi kỷ luật và động lực."
+      },
+      {
+        "en": "I collaborated with classmates on the group project.",
+        "vi": "Tôi đã hợp tác với bạn cùng lớp trong dự án nhóm."
+      },
+      {
+        "en": "The teacher provided constructive feedback on my essay.",
+        "vi": "Giáo viên đã đưa ra phản hồi xây dựng về bài luận của tôi."
+      },
+      {
+        "en": "I set specific learning objectives for each study session.",
+        "vi": "Tôi đặt mục tiêu học tập cụ thể cho mỗi buổi học."
+      },
+      {
+        "en": "Taking notes during class helps me remember key points.",
+        "vi": "Ghi chú trong lớp giúp tôi nhớ các điểm chính."
+      },
+      {
+        "en": "I received a scholarship based on my academic performance.",
+        "vi": "Tôi nhận được học bổng dựa trên kết quả học tập."
+      },
+      {
+        "en": "The seminar focused on innovative teaching methodologies.",
+        "vi": "Hội thảo tập trung vào phương pháp giảng dạy sáng tạo."
+      },
+      {
+        "en": "I need to improve my time management during exams.",
+        "vi": "Tôi cần cải thiện quản lý thời gian trong kỳ thi."
+      },
+      {
+        "en": "Reading extensively broadens your vocabulary and knowledge.",
+        "vi": "Đọc nhiều mở rộng vốn từ vựng và kiến thức của bạn."
+      },
+      {
+        "en": "The tutor helped me understand difficult concepts quickly.",
+        "vi": "Gia sư đã giúp tôi hiểu các khái niệm khó một cách nhanh chóng."
+      },
+      {
+        "en": "I prefer visual learning materials over text-based ones.",
+        "vi": "Tôi thích tài liệu học trực quan hơn là dạng văn bản."
+      },
+      {
+        "en": "The university offers various extracurricular activities for students.",
+        "vi": "Trường đại học cung cấp nhiều hoạt động ngoại khóa cho sinh viên."
+      },
+      {
+        "en": "I analyze my mistakes to avoid repeating them.",
+        "vi": "Tôi phân tích các lỗi sai để tránh lặp lại."
+      },
+      {
+        "en": "Practical experience complements theoretical knowledge perfectly.",
+        "vi": "Kinh nghiệm thực tế bổ sung hoàn hảo cho kiến thức lý thuyết."
+      },
+      {
+        "en": "I dedicate at least two hours daily to focused studying.",
+        "vi": "Tôi dành ít nhất hai giờ mỗi ngày để học tập tập trung."
+      },
+      {
+        "en": "The course material is challenging but rewarding.",
+        "vi": "Tài liệu khóa học khó nhưng bổ ích."
+      },
+      {
+        "en": "I participate actively in class to deepen my understanding.",
+        "vi": "Tôi tham gia tích cực trong lớp để hiểu sâu hơn."
+      },
+      {
+        "en": "The examination results exceeded my expectations.",
+        "vi": "Kết quả kỳ thi vượt quá mong đợi của tôi."
+      },
+      {
+        "en": "I apply what I learn immediately to reinforce retention.",
+        "vi": "Tôi áp dụng ngay những gì học được để củng cố ghi nhớ."
+      }
+    ]
+  },
+  {
+    "category": "Work & Career Development",
+    "sentences": [
+      {
+        "en": "I applied for a promotion and hope to hear back soon.",
+        "vi": "Tôi đã nộp đơn xin thăng chức và hy vọng sớm nhận phản hồi."
+      },
+      {
+        "en": "Networking is crucial for career advancement opportunities.",
+        "vi": "Xây dựng mạng lưới quan hệ rất quan trọng cho cơ hội thăng tiến nghề nghiệp."
+      },
+      {
+        "en": "I updated my resume to highlight my recent achievements.",
+        "vi": "Tôi đã cập nhật sơ yếu lý lịch để làm nổi bật thành tựu gần đây."
+      },
+      {
+        "en": "The company offers comprehensive training programs for employees.",
+        "vi": "Công ty cung cấp chương trình đào tạo toàn diện cho nhân viên."
+      },
+      {
+        "en": "I negotiated a better salary package during the interview.",
+        "vi": "Tôi đã thương lượng gói lương tốt hơn trong buổi phỏng vấn."
+      },
+      {
+        "en": "Work-life balance is increasingly important in modern careers.",
+        "vi": "Cân bằng công việc và cuộc sống ngày càng quan trọng trong sự nghiệp hiện đại."
+      },
+      {
+        "en": "I received positive feedback from my supervisor on my performance.",
+        "vi": "Tôi nhận được phản hồi tích cực từ giám sát viên về hiệu suất làm việc."
+      },
+      {
+        "en": "Continuous professional development keeps skills relevant and updated.",
+        "vi": "Phát triển chuyên môn liên tục giữ kỹ năng luôn phù hợp và cập nhật."
+      },
+      {
+        "en": "I delegated tasks effectively to meet the project deadline.",
+        "vi": "Tôi phân công công việc hiệu quả để đáp ứng thời hạn dự án."
+      },
+      {
+        "en": "The interview panel was impressed by my problem-solving skills.",
+        "vi": "Hội đồng phỏng vấn ấn tượng với kỹ năng giải quyết vấn đề của tôi."
+      },
+      {
+        "en": "I mentor junior colleagues to help them develop professionally.",
+        "vi": "Tôi cố vấn cho đồng nghiệp mới để giúp họ phát triển chuyên môn."
+      },
+      {
+        "en": "Building a personal brand enhances career opportunities significantly.",
+        "vi": "Xây dựng thương hiệu cá nhân nâng cao đáng kể cơ hội nghề nghiệp."
+      },
+      {
+        "en": "I attended a conference to learn about industry trends.",
+        "vi": "Tôi đã tham dự hội nghị để tìm hiểu xu hướng ngành."
+      },
+      {
+        "en": "Adaptability is essential in today's rapidly changing workplace.",
+        "vi": "Khả năng thích ứng rất cần thiết trong môi trường làm việc thay đổi nhanh ngày nay."
+      },
+      {
+        "en": "I collaborate with cross-functional teams on various projects.",
+        "vi": "Tôi hợp tác với các nhóm đa chức năng trong nhiều dự án."
+      },
+      {
+        "en": "The company culture aligns well with my professional values.",
+        "vi": "Văn hóa công ty phù hợp tốt với giá trị nghề nghiệp của tôi."
+      },
+      {
+        "en": "I prioritize tasks based on urgency and importance.",
+        "vi": "Tôi ưu tiên công việc dựa trên mức độ khẩn cấp và quan trọng."
+      },
+      {
+        "en": "Receiving constructive criticism helps me grow professionally.",
+        "vi": "Nhận phê bình xây dựng giúp tôi phát triển chuyên môn."
+      },
+      {
+        "en": "I pursue certifications to enhance my qualifications.",
+        "vi": "Tôi theo đuổi các chứng chỉ để nâng cao trình độ chuyên môn."
+      },
+      {
+        "en": "The performance review highlighted areas for improvement.",
+        "vi": "Đánh giá hiệu suất làm rõ các lĩnh vực cần cải thiện."
+      },
+      {
+        "en": "I take initiative on projects to demonstrate leadership potential.",
+        "vi": "Tôi chủ động trong các dự án để thể hiện tiềm năng lãnh đạo."
+      },
+      {
+        "en": "Remote work requires strong self-discipline and organization.",
+        "vi": "Làm việc từ xa đòi hỏi tự giác và tổ chức tốt."
+      },
+      {
+        "en": "I maintain professional relationships even after changing jobs.",
+        "vi": "Tôi duy trì quan hệ nghề nghiệp ngay cả sau khi đổi việc."
+      },
+      {
+        "en": "The job description clearly outlined responsibilities and expectations.",
+        "vi": "Mô tả công việc nêu rõ trách nhiệm và kỳ vọng."
+      },
+      {
+        "en": "I seek feedback regularly to identify growth opportunities.",
+        "vi": "Tôi tìm kiếm phản hồi thường xuyên để xác định cơ hội phát triển."
+      },
+      {
+        "en": "Career transitions can be challenging but ultimately rewarding.",
+        "vi": "Chuyển đổi nghề nghiệp có thể khó khăn nhưng cuối cùng rất đáng giá."
+      },
+      {
+        "en": "I invest time in learning new technologies relevant to my field.",
+        "vi": "Tôi đầu tư thời gian học công nghệ mới liên quan đến lĩnh vực của mình."
+      },
+      {
+        "en": "The company provides flexible working arrangements for employees.",
+        "vi": "Công ty cung cấp chế độ làm việc linh hoạt cho nhân viên."
+      },
+      {
+        "en": "I document my achievements to support promotion discussions.",
+        "vi": "Tôi ghi chép thành tích để hỗ trợ thảo luận về thăng chức."
+      },
+      {
+        "en": "Professional ethics guide my decisions in challenging situations.",
+        "vi": "Đạo đức nghề nghiệp định hướng quyết định của tôi trong tình huống khó khăn."
+      }
+    ]
+  },
+  {
+    "category": "Finance & Money Management",
+    "sentences": [
+      {
+        "en": "I set aside 20% of my income for savings every month.",
+        "vi": "Tôi để dành 20% thu nhập cho tiết kiệm mỗi tháng."
+      },
+      {
+        "en": "The stock market has been volatile lately due to economic uncertainty.",
+        "vi": "Thị trường chứng khoán gần đây biến động do bất ổn kinh tế."
+      },
+      {
+        "en": "I diversified my investment portfolio to minimize risk.",
+        "vi": "Tôi đa dạng hóa danh mục đầu tư để giảm thiểu rủi ro."
+      },
+      {
+        "en": "Creating a budget helps me track my spending habits effectively.",
+        "vi": "Lập ngân sách giúp tôi theo dõi thói quen chi tiêu hiệu quả."
+      },
+      {
+        "en": "I paid off my credit card debt to avoid high interest charges.",
+        "vi": "Tôi đã trả hết nợ thẻ tín dụng để tránh lãi suất cao."
+      },
+      {
+        "en": "Compound interest can significantly grow your wealth over time.",
+        "vi": "Lãi kép có thể tăng trưởng đáng kể tài sản của bạn theo thời gian."
+      },
+      {
+        "en": "I opened a retirement account to secure my financial future.",
+        "vi": "Tôi đã mở tài khoản hưu trí để đảm bảo tương lai tài chính."
+      },
+      {
+        "en": "The bank approved my mortgage application for the house purchase.",
+        "vi": "Ngân hàng đã chấp thuận đơn xin vay thế chấp mua nhà của tôi."
+      },
+      {
+        "en": "I review my bank statements monthly to catch any errors.",
+        "vi": "Tôi xem lại sao kê ngân hàng hàng tháng để phát hiện sai sót."
+      },
+      {
+        "en": "Impulse buying can seriously damage your financial health.",
+        "vi": "Mua sắm bốc đồng có thể gây hại nghiêm trọng cho sức khỏe tài chính."
+      },
+      {
+        "en": "I negotiate prices whenever possible to get better deals.",
+        "vi": "Tôi thương lượng giá bất cứ khi nào có thể để được giá tốt hơn."
+      },
+      {
+        "en": "An emergency fund should cover at least six months of expenses.",
+        "vi": "Quỹ khẩn cấp nên đủ chi phí ít nhất sáu tháng."
+      },
+      {
+        "en": "I compare interest rates before choosing a savings account.",
+        "vi": "Tôi so sánh lãi suất trước khi chọn tài khoản tiết kiệm."
+      },
+      {
+        "en": "The financial advisor recommended rebalancing my portfolio quarterly.",
+        "vi": "Cố vấn tài chính khuyên cân bằng lại danh mục đầu tư hàng quý."
+      },
+      {
+        "en": "I use cashback rewards to maximize my credit card benefits.",
+        "vi": "Tôi dùng hoàn tiền để tối đa hóa lợi ích thẻ tín dụng."
+      },
+      {
+        "en": "Inflation erodes purchasing power if your savings don't grow.",
+        "vi": "Lạm phát làm giảm sức mua nếu tiết kiệm của bạn không tăng trưởng."
+      },
+      {
+        "en": "I track my net worth annually to measure financial progress.",
+        "vi": "Tôi theo dõi tài sản ròng hàng năm để đo lường tiến bộ tài chính."
+      },
+      {
+        "en": "The company offers matching contributions to retirement plans.",
+        "vi": "Công ty đóng góp tương ứng vào kế hoạch hưu trí."
+      },
+      {
+        "en": "I reduced unnecessary subscriptions to cut monthly expenses.",
+        "vi": "Tôi đã giảm các gói đăng ký không cần thiết để cắt giảm chi phí hàng tháng."
+      },
+      {
+        "en": "Understanding tax deductions can save you significant money.",
+        "vi": "Hiểu các khoản khấu trừ thuế có thể tiết kiệm được nhiều tiền."
+      },
+      {
+        "en": "I invested in index funds for long-term stable growth.",
+        "vi": "Tôi đầu tư vào quỹ chỉ số để tăng trưởng ổn định dài hạn."
+      },
+      {
+        "en": "The exchange rate fluctuates daily affecting international purchases.",
+        "vi": "Tỷ giá hối đoái dao động hàng ngày ảnh hưởng đến mua sắm quốc tế."
+      },
+      {
+        "en": "I contribute the maximum amount to my tax-advantaged accounts.",
+        "vi": "Tôi đóng góp số tiền tối đa vào các tài khoản ưu đãi thuế."
+      },
+      {
+        "en": "Building good credit takes time but opens many opportunities.",
+        "vi": "Xây dựng tín dụng tốt mất thời gian nhưng mở ra nhiều cơ hội."
+      },
+      {
+        "en": "I avoid lifestyle inflation as my income increases.",
+        "vi": "Tôi tránh lạm phát lối sống khi thu nhập tăng."
+      },
+      {
+        "en": "The loan terms include fixed monthly payments over five years.",
+        "vi": "Điều khoản vay bao gồm trả góp cố định hàng tháng trong năm năm."
+      },
+      {
+        "en": "I automate my savings to ensure consistency every month.",
+        "vi": "Tôi tự động hóa tiết kiệm để đảm bảo đều đặn mỗi tháng."
+      },
+      {
+        "en": "Insurance provides financial protection against unexpected events.",
+        "vi": "Bảo hiểm cung cấp bảo vệ tài chính trước sự kiện bất ngờ."
+      },
+      {
+        "en": "I research thoroughly before making any major investment decision.",
+        "vi": "Tôi nghiên cứu kỹ trước khi đưa ra bất kỳ quyết định đầu tư lớn nào."
+      },
+      {
+        "en": "Financial literacy is essential for making informed money choices.",
+        "vi": "Kiến thức tài chính là cần thiết để đưa ra lựa chọn tiền bạc sáng suốt."
+      }
+    ]
+  },
+  {
+    "category": "Environmental & Sustainability",
+    "sentences": [
+      {
+        "en": "I bring reusable bags to reduce plastic waste when shopping.",
+        "vi": "Tôi mang túi tái sử dụng để giảm rác thải nhựa khi mua sắm."
+      },
+      {
+        "en": "Climate change poses serious threats to future generations.",
+        "vi": "Biến đổi khí hậu đặt ra mối đe dọa nghiêm trọng cho thế hệ tương lai."
+      },
+      {
+        "en": "I sort my garbage for recycling and composting regularly.",
+        "vi": "Tôi phân loại rác để tái chế và ủ phân hữu cơ thường xuyên."
+      },
+      {
+        "en": "Renewable energy sources are becoming more affordable and efficient.",
+        "vi": "Nguồn năng lượng tái tạo ngày càng phải chăng và hiệu quả hơn."
+      },
+      {
+        "en": "I switched to LED bulbs to reduce electricity consumption.",
+        "vi": "Tôi đã chuyển sang bóng LED để giảm tiêu thụ điện."
+      },
+      {
+        "en": "Reducing meat consumption can significantly lower your carbon footprint.",
+        "vi": "Giảm tiêu thụ thịt có thể giảm đáng kể dấu chân carbon của bạn."
+      },
+      {
+        "en": "I support companies that prioritize sustainable practices.",
+        "vi": "Tôi ủng hộ các công ty ưu tiên thực hành bền vững."
+      },
+      {
+        "en": "Water conservation is crucial in areas facing drought conditions.",
+        "vi": "Bảo tồn nước rất quan trọng ở các khu vực đối mặt hạn hán."
+      },
+      {
+        "en": "I choose public transportation to minimize my environmental impact.",
+        "vi": "Tôi chọn phương tiện công cộng để giảm thiểu tác động môi trường."
+      },
+      {
+        "en": "Deforestation destroys habitats and accelerates climate change.",
+        "vi": "Phá rừng phá hủy môi trường sống và đẩy nhanh biến đổi khí hậu."
+      },
+      {
+        "en": "I installed solar panels to generate clean energy for my home.",
+        "vi": "Tôi đã lắp đặt tấm pin mặt trời để tạo năng lượng sạch cho nhà."
+      },
+      {
+        "en": "Single-use plastics are one of the biggest pollution problems.",
+        "vi": "Nhựa dùng một lần là một trong những vấn đề ô nhiễm lớn nhất."
+      },
+      {
+        "en": "I buy locally produced food to reduce transportation emissions.",
+        "vi": "Tôi mua thực phẩm sản xuất tại địa phương để giảm khí thải vận chuyển."
+      },
+      {
+        "en": "Biodiversity loss threatens the stability of entire ecosystems.",
+        "vi": "Mất đa dạng sinh học đe dọa sự ổn định của toàn bộ hệ sinh thái."
+      },
+      {
+        "en": "I repair items instead of throwing them away unnecessarily.",
+        "vi": "Tôi sửa chữa đồ vật thay vì vứt bỏ không cần thiết."
+      },
+      {
+        "en": "Ocean pollution affects marine life and human health alike.",
+        "vi": "Ô nhiễm đại dương ảnh hưởng đến sinh vật biển và sức khỏe con người."
+      },
+      {
+        "en": "I participate in community clean-up events regularly.",
+        "vi": "Tôi tham gia các sự kiện dọn dẹp cộng đồng thường xuyên."
+      },
+      {
+        "en": "Sustainable fashion focuses on ethical production and longevity.",
+        "vi": "Thời trang bền vững tập trung vào sản xuất có đạo đức và tuổi thọ."
+      },
+      {
+        "en": "I turn off electronics when not in use to save energy.",
+        "vi": "Tôi tắt thiết bị điện tử khi không dùng để tiết kiệm năng lượng."
+      },
+      {
+        "en": "Green buildings use design features to reduce environmental impact.",
+        "vi": "Công trình xanh sử dụng thiết kế để giảm tác động môi trường."
+      },
+      {
+        "en": "I educate others about the importance of environmental protection.",
+        "vi": "Tôi giáo dục người khác về tầm quan trọng của bảo vệ môi trường."
+      },
+      {
+        "en": "Composting organic waste enriches soil and reduces landfill usage.",
+        "vi": "Ủ phân hữu cơ làm giàu đất và giảm sử dụng bãi rác."
+      },
+      {
+        "en": "I avoid fast fashion and choose quality over quantity.",
+        "vi": "Tôi tránh thời trang nhanh và chọn chất lượng hơn số lượng."
+      },
+      {
+        "en": "Carbon offsetting helps neutralize unavoidable emissions.",
+        "vi": "Bù trừ carbon giúp trung hòa lượng khí thải không thể tránh."
+      },
+      {
+        "en": "I advocate for stronger environmental policies in my community.",
+        "vi": "Tôi vận động cho các chính sách môi trường mạnh mẽ hơn trong cộng đồng."
+      },
+      {
+        "en": "Protecting endangered species requires immediate global action.",
+        "vi": "Bảo vệ loài nguy cấp đòi hỏi hành động toàn cầu ngay lập tức."
+      },
+      {
+        "en": "I reduce water usage by taking shorter showers daily.",
+        "vi": "Tôi giảm sử dụng nước bằng cách tắm ngắn hơn hàng ngày."
+      },
+      {
+        "en": "Sustainable agriculture practices preserve soil health for future crops.",
+        "vi": "Thực hành nông nghiệp bền vững bảo tồn sức khỏe đất cho vụ mùa tương lai."
+      },
+      {
+        "en": "I plant trees to contribute to reforestation efforts.",
+        "vi": "Tôi trồng cây để đóng góp vào nỗ lực tái trồng rừng."
+      },
+      {
+        "en": "Environmental education should be integrated into all school curricula.",
+        "vi": "Giáo dục môi trường nên được tích hợp vào tất cả chương trình học."
+      }
+    ]
+  },
+  {
+    "category": "Relationships & Communication",
+    "sentences": [
+      {
+        "en": "Active listening is fundamental to building strong relationships.",
+        "vi": "Lắng nghe tích cực là nền tảng để xây dựng mối quan hệ bền chặt."
+      },
+      {
+        "en": "I apologized sincerely when I realized my mistake hurt someone.",
+        "vi": "Tôi đã xin lỗi chân thành khi nhận ra lỗi lầm của mình làm tổn thương ai đó."
+      },
+      {
+        "en": "Setting boundaries is healthy and necessary in all relationships.",
+        "vi": "Đặt ranh giới là lành mạnh và cần thiết trong mọi mối quan hệ."
+      },
+      {
+        "en": "I express gratitude regularly to strengthen my personal connections.",
+        "vi": "Tôi bày tỏ lòng biết ơn thường xuyên để củng cố các mối quan hệ cá nhân."
+      },
+      {
+        "en": "Conflict resolution requires patience and willingness to compromise.",
+        "vi": "Giải quyết xung đột đòi hỏi kiên nhẫn và sẵn sàng thỏa hiệp."
+      },
+      {
+        "en": "I respect different opinions even when I disagree with them.",
+        "vi": "Tôi tôn trọng ý kiến khác nhau ngay cả khi không đồng ý."
+      },
+      {
+        "en": "Nonverbal communication often conveys more than words alone.",
+        "vi": "Giao tiếp phi ngôn ngữ thường truyền đạt nhiều hơn chỉ lời nói."
+      },
+      {
+        "en": "I make time for friends despite my busy schedule.",
+        "vi": "Tôi dành thời gian cho bạn bè dù lịch trình bận rộn."
+      },
+      {
+        "en": "Empathy helps me understand others' perspectives and feelings.",
+        "vi": "Đồng cảm giúp tôi hiểu quan điểm và cảm xúc của người khác."
+      },
+      {
+        "en": "I communicate my needs clearly to avoid misunderstandings.",
+        "vi": "Tôi truyền đạt nhu cầu của mình rõ ràng để tránh hiểu lầm."
+      },
+      {
+        "en": "Trust takes years to build but seconds to destroy.",
+        "vi": "Lòng tin mất nhiều năm để xây dựng nhưng chỉ vài giây để phá hủy."
+      },
+      {
+        "en": "I give my full attention when someone is sharing their problems.",
+        "vi": "Tôi dành toàn bộ sự chú ý khi ai đó chia sẻ vấn đề của họ."
+      },
+      {
+        "en": "Healthy relationships involve mutual respect and support.",
+        "vi": "Mối quan hệ lành mạnh bao gồm tôn trọng và hỗ trợ lẫn nhau."
+      },
+      {
+        "en": "I avoid gossiping as it damages relationships and trust.",
+        "vi": "Tôi tránh nói xấu sau lưng vì nó làm tổn hại quan hệ và lòng tin."
+      },
+      {
+        "en": "Compromise doesn't mean sacrificing your core values completely.",
+        "vi": "Thỏa hiệp không có nghĩa là hy sinh hoàn toàn giá trị cốt lõi của bạn."
+      },
+      {
+        "en": "I celebrate my loved ones' achievements genuinely and enthusiastically.",
+        "vi": "Tôi ăn mừng thành tựu của người thân một cách chân thành và nhiệt tình."
+      },
+      {
+        "en": "Difficult conversations are necessary for relationship growth.",
+        "vi": "Những cuộc trò chuyện khó khăn là cần thiết cho sự phát triển của mối quan hệ."
+      },
+      {
+        "en": "I forgive others to free myself from holding grudges.",
+        "vi": "Tôi tha thứ cho người khác để giải phóng bản thân khỏi việc giữ hận thù."
+      },
+      {
+        "en": "Quality time together strengthens emotional bonds significantly.",
+        "vi": "Thời gian chất lượng bên nhau củng cố đáng kể mối liên kết cảm xúc."
+      },
+      {
+        "en": "I acknowledge my partner's feelings even when I don't fully understand.",
+        "vi": "Tôi thừa nhận cảm xúc của đối tác ngay cả khi không hiểu hoàn toàn."
+      },
+      {
+        "en": "Effective communication prevents small issues from becoming major problems.",
+        "vi": "Giao tiếp hiệu quả ngăn các vấn đề nhỏ trở thành vấn đề lớn."
+      },
+      {
+        "en": "I support my friends' goals without judgment or jealousy.",
+        "vi": "Tôi hỗ trợ mục tiêu của bạn bè không phán xét hay ghen tị."
+      },
+      {
+        "en": "Respecting privacy is important even in close relationships.",
+        "vi": "Tôn trọng riêng tư quan trọng ngay cả trong mối quan hệ thân thiết."
+      },
+      {
+        "en": "I admit when I'm wrong rather than being defensive.",
+        "vi": "Tôi thừa nhận khi sai thay vì tự vệ."
+      },
+      {
+        "en": "Shared experiences create lasting memories and deeper connections.",
+        "vi": "Trải nghiệm chung tạo ra kỷ niệm lâu dài và kết nối sâu sắc hơn."
+      },
+      {
+        "en": "I check in regularly with people I care about.",
+        "vi": "Tôi liên lạc thường xuyên với những người tôi quan tâm."
+      },
+      {
+        "en": "Constructive feedback should focus on behavior, not personal attacks.",
+        "vi": "Phản hồi xây dựng nên tập trung vào hành vi, không phải tấn công cá nhân."
+      },
+      {
+        "en": "I invest energy in relationships that are mutually beneficial.",
+        "vi": "Tôi đầu tư năng lượng vào các mối quan hệ có lợi cho cả hai bên."
+      },
+      {
+        "en": "Cultural differences can enrich relationships when approached with openness.",
+        "vi": "Sự khác biệt văn hóa có thể làm phong phú mối quan hệ khi tiếp cận cởi mở."
+      },
+      {
+        "en": "I show appreciation through both words and actions consistently.",
+        "vi": "Tôi thể hiện sự đánh giá cao qua cả lời nói và hành động một cách nhất quán."
+      }
+    ]
+  },
+  {
+    "category": "Food & Cooking",
+    "sentences": [
+      {
+        "en": "I enjoy experimenting with different cuisines from around the world.",
+        "vi": "Tôi thích thử nghiệm các món ăn khác nhau từ khắp nơi trên thế giới."
+      },
+      {
+        "en": "Fresh ingredients make a significant difference in flavor and nutrition.",
+        "vi": "Nguyên liệu tươi tạo ra sự khác biệt đáng kể về hương vị và dinh dưỡng."
+      },
+      {
+        "en": "I learned to cook traditional recipes from my grandmother.",
+        "vi": "Tôi học nấu các công thức truyền thống từ bà ngoại."
+      },
+      {
+        "en": "Meal prepping saves time and ensures healthier eating habits.",
+        "vi": "Chuẩn bị bữa ăn trước tiết kiệm thời gian và đảm bảo thói quen ăn uống lành mạnh hơn."
+      },
+      {
+        "en": "The restaurant specializes in authentic Italian cuisine.",
+        "vi": "Nhà hàng chuyên về ẩm thực Ý chính thống."
+      },
+      {
+        "en": "I substitute healthier alternatives without sacrificing taste.",
+        "vi": "Tôi thay thế các lựa chọn lành mạnh hơn mà không hy sinh hương vị."
+      },
+      {
+        "en": "Proper seasoning can transform a simple dish into something extraordinary.",
+        "vi": "Nêm nếm đúng cách có thể biến một món đơn giản thành đặc biệt."
+      },
+      {
+        "en": "I avoid food waste by using leftovers creatively.",
+        "vi": "Tôi tránh lãng phí thực phẩm bằng cách sử dụng thức ăn thừa một cách sáng tạo."
+      },
+      {
+        "en": "The recipe calls for marinating the meat overnight for tenderness.",
+        "vi": "Công thức yêu cầu ướp thịt qua đêm để mềm."
+      },
+      {
+        "en": "I read food labels carefully to make informed choices.",
+        "vi": "Tôi đọc nhãn thực phẩm cẩn thận để đưa ra lựa chọn sáng suốt."
+      },
+      {
+        "en": "Baking requires precision and attention to measurements.",
+        "vi": "Làm bánh đòi hỏi sự chính xác và chú ý đến khẩu phần."
+      },
+      {
+        "en": "I enjoy hosting dinner parties for friends and family.",
+        "vi": "Tôi thích tổ chức tiệc tối cho bạn bè và gia đình."
+      },
+      {
+        "en": "The chef demonstrated advanced knife skills during the class.",
+        "vi": "Đầu bếp trình diễn kỹ năng dùng dao nâng cao trong lớp học."
+      },
+      {
+        "en": "I prefer cooking at home to eating out for better control.",
+        "vi": "Tôi thích nấu ăn ở nhà hơn là ăn ngoài để kiểm soát tốt hơn."
+      },
+      {
+        "en": "Farm-to-table restaurants emphasize local and seasonal produce.",
+        "vi": "Nhà hàng trang trại đến bàn ăn nhấn mạnh sản phẩm địa phương và theo mùa."
+      },
+      {
+        "en": "I adjust recipes based on dietary restrictions and preferences.",
+        "vi": "Tôi điều chỉnh công thức dựa trên hạn chế và sở thích ăn uống."
+      },
+      {
+        "en": "The aroma of freshly baked bread fills the entire house.",
+        "vi": "Mùi thơm của bánh mì mới nướng tràn ngập cả ngôi nhà."
+      },
+      {
+        "en": "I follow cooking shows to learn new techniques and inspiration.",
+        "vi": "Tôi theo dõi chương trình nấu ăn để học kỹ thuật mới và lấy cảm hứng."
+      },
+      {
+        "en": "Presentation matters as we eat with our eyes first.",
+        "vi": "Trình bày quan trọng vì chúng ta ăn bằng mắt trước."
+      },
+      {
+        "en": "I grow herbs in my kitchen garden for convenient access.",
+        "vi": "Tôi trồng rau thơm trong vườn bếp để tiện sử dụng."
+      },
+      {
+        "en": "The balance of sweet, salty, sour, and spicy creates complex flavors.",
+        "vi": "Sự cân bằng giữa ngọt, mặn, chua và cay tạo ra hương vị phức tạp."
+      },
+      {
+        "en": "I keep my kitchen organized for efficient cooking workflow.",
+        "vi": "Tôi giữ bếp ngăn nắp để quy trình nấu ăn hiệu quả."
+      },
+      {
+        "en": "The cooking method significantly affects the final texture and taste.",
+        "vi": "Phương pháp nấu ảnh hưởng đáng kể đến kết cấu và hương vị cuối cùng."
+      },
+      {
+        "en": "I pair wines carefully with dishes to enhance the dining experience.",
+        "vi": "Tôi kết hợp rượu cẩn thận với món ăn để nâng cao trải nghiệm ăn uống."
+      },
+      {
+        "en": "Street food offers authentic flavors and cultural insights.",
+        "vi": "Đồ ăn đường phố mang lại hương vị chính thống và cái nhìn văn hóa."
+      },
+      {
+        "en": "I invest in quality cookware that lasts for years.",
+        "vi": "Tôi đầu tư vào đồ nấu chất lượng sử dụng được nhiều năm."
+      },
+      {
+        "en": "The slow cooker makes preparing hearty meals effortless.",
+        "vi": "Nồi nấu chậm làm cho việc chuẩn bị bữa ăn thịnh soạn trở nên dễ dàng."
+      },
+      {
+        "en": "I document my recipes to recreate successful dishes later.",
+        "vi": "Tôi ghi lại công thức để tái tạo các món ăn thành công sau này."
+      },
+      {
+        "en": "Food photography has become an art form on social media.",
+        "vi": "Chụp ảnh thực phẩm đã trở thành một hình thức nghệ thuật trên mạng xã hội."
+      },
+      {
+        "en": "I appreciate the cultural significance behind traditional dishes.",
+        "vi": "Tôi trân trọng ý nghĩa văn hóa đằng sau các món ăn truyền thống."
+      }
+    ]
+  },
+  {
+    "category": "Hobbies & Leisure Activities",
+    "sentences": [
+      {
+        "en": "I picked up photography as a hobby during the lockdown.",
+        "vi": "Tôi bắt đầu chụp ảnh như một sở thích trong thời gian phong tỏa."
+      },
+      {
+        "en": "Playing musical instruments requires consistent practice and dedication.",
+        "vi": "Chơi nhạc cụ đòi hỏi luyện tập nhất quán và cống hiến."
+      },
+      {
+        "en": "I find gardening therapeutic and rewarding over time.",
+        "vi": "Tôi thấy làm vườn có tác dụng trị liệu và bổ ích theo thời gian."
+      },
+      {
+        "en": "Reading fiction allows me to escape into different worlds.",
+        "vi": "Đọc tiểu thuyết cho phép tôi trốn vào các thế giới khác nhau."
+      },
+      {
+        "en": "I joined a book club to discuss literature with fellow readers.",
+        "vi": "Tôi tham gia câu lạc bộ sách để thảo luận văn học với những độc giả cùng sở thích."
+      },
+      {
+        "en": "Hiking in nature helps me disconnect from technology and recharge.",
+        "vi": "Đi bộ đường dài trong thiên nhiên giúp tôi ngắt kết nối với công nghệ và nạp lại năng lượng."
+      },
+      {
+        "en": "I collect vintage records and enjoy the analog sound quality.",
+        "vi": "Tôi sưu tầm đĩa than cổ điển và thích chất lượng âm thanh analog."
+      },
+      {
+        "en": "Board games bring friends together for fun social interactions.",
+        "vi": "Trò chơi board game đưa bạn bè lại gần nhau cho những tương tác xã hội vui vẻ."
+      },
+      {
+        "en": "I practice calligraphy to improve my handwriting and focus.",
+        "vi": "Tôi luyện thư pháp để cải thiện chữ viết tay và sự tập trung."
+      },
+      {
+        "en": "Painting allows me to express emotions I can't put into words.",
+        "vi": "Vẽ tranh cho phép tôi thể hiện cảm xúc không thể diễn tả bằng lời."
+      },
+      {
+        "en": "I attend concerts regularly to experience live music performances.",
+        "vi": "Tôi tham dự hòa nhạc thường xuyên để trải nghiệm biểu diễn nhạc sống."
+      },
+      {
+        "en": "Crafting handmade gifts feels more personal than buying items.",
+        "vi": "Làm quà tự tay cảm giác cá nhân hơn mua đồ."
+      },
+      {
+        "en": "I watch documentaries to learn about diverse topics and cultures.",
+        "vi": "Tôi xem phim tài liệu để tìm hiểu về các chủ đề và văn hóa đa dạng."
+      },
+      {
+        "en": "Playing chess sharpens strategic thinking and problem-solving skills.",
+        "vi": "Chơi cờ vua mài giũa tư duy chiến lược và kỹ năng giải quyết vấn đề."
+      },
+      {
+        "en": "I volunteer at animal shelters during my free time.",
+        "vi": "Tôi làm tình nguyện tại trại cứu hộ động vật trong thời gian rảnh."
+      },
+      {
+        "en": "Cycling long distances challenges me physically and mentally.",
+        "vi": "Đạp xe đường dài thử thách tôi cả về thể chất lẫn tinh thần."
+      },
+      {
+        "en": "I experiment with DIY projects to personalize my living space.",
+        "vi": "Tôi thử nghiệm các dự án tự làm để cá nhân hóa không gian sống."
+      },
+      {
+        "en": "Learning new languages opens doors to different cultures and perspectives.",
+        "vi": "Học ngôn ngữ mới mở ra cánh cửa đến các nền văn hóa và quan điểm khác nhau."
+      },
+      {
+        "en": "I take online courses to continuously develop new skills.",
+        "vi": "Tôi tham gia các khóa học trực tuyến để liên tục phát triển kỹ năng mới."
+      },
+      {
+        "en": "Dancing provides excellent exercise while being incredibly fun.",
+        "vi": "Khiêu vũ mang lại bài tập tuyệt vời trong khi cực kỳ vui vẻ."
+      },
+      {
+        "en": "I write in my journal daily to reflect on experiences.",
+        "vi": "Tôi viết nhật ký mỗi ngày để suy ngẫm về những trải nghiệm."
+      },
+      {
+        "en": "Astronomy fascinates me with the vastness of the universe.",
+        "vi": "Thiên văn học mê hoặc tôi với sự bao la của vũ trụ."
+      },
+      {
+        "en": "I participate in community theater productions occasionally.",
+        "vi": "Tôi tham gia các tác phẩm sân khấu cộng đồng thỉnh thoảng."
+      },
+      {
+        "en": "Puzzle solving gives me a sense of accomplishment and relaxation.",
+        "vi": "Giải đố mang lại cảm giác thành tựu và thư giãn."
+      },
+      {
+        "en": "I restore old furniture as a creative and practical hobby.",
+        "vi": "Tôi phục hồi đồ nội thất cũ như một sở thích sáng tạo và thực tế."
+      },
+      {
+        "en": "Rock climbing builds strength, confidence, and problem-solving abilities.",
+        "vi": "Leo núi xây dựng sức mạnh, tự tin và khả năng giải quyết vấn đề."
+      },
+      {
+        "en": "I brew my own coffee to appreciate the craft and flavor profiles.",
+        "vi": "Tôi pha cà phê riêng để trân trọng nghề thủ công và hương vị."
+      },
+      {
+        "en": "Origami teaches patience and precision through paper folding.",
+        "vi": "Origami dạy kiên nhẫn và chính xác thông qua gấp giấy."
+      },
+      {
+        "en": "I follow sports enthusiastically and support my local team.",
+        "vi": "Tôi theo dõi thể thao nhiệt tình và ủng hộ đội địa phương."
+      },
+      {
+        "en": "Exploring new hobbies keeps life interesting and fulfilling.",
+        "vi": "Khám phá sở thích mới giữ cho cuộc sống thú vị và trọn vẹn."
+      }
+    ]
+  },
+  {
+    "category": "Home & Living",
+    "sentences": [
+      {
+        "en": "I declutter my home regularly to maintain a peaceful environment.",
+        "vi": "Tôi dọn dẹp nhà cửa thường xuyên để duy trì môi trường yên bình."
+      },
+      {
+        "en": "The landlord agreed to fix the leaking faucet this week.",
+        "vi": "Chủ nhà đồng ý sửa vòi nước bị rò rỉ tuần này."
+      },
+      {
+        "en": "I decorated my apartment to reflect my personal style and taste.",
+        "vi": "Tôi trang trí căn hộ để phản ánh phong cách và thị hiếu cá nhân."
+      },
+      {
+        "en": "Energy-efficient appliances reduce both bills and environmental impact.",
+        "vi": "Thiết bị tiết kiệm năng lượng giảm cả hóa đơn và tác động môi trường."
+      },
+      {
+        "en": "I negotiated the rent before signing the lease agreement.",
+        "vi": "Tôi đã thương lượng tiền thuê trước khi ký hợp đồng."
+      },
+      {
+        "en": "Proper insulation keeps the house warm in winter and cool in summer.",
+        "vi": "Cách nhiệt đúng cách giữ nhà ấm vào mùa đông và mát vào mùa hè."
+      },
+      {
+        "en": "I organize my closet seasonally to maximize storage space.",
+        "vi": "Tôi sắp xếp tủ quần áo theo mùa để tối đa hóa không gian lưu trữ."
+      },
+      {
+        "en": "The neighborhood is quiet and has excellent public facilities.",
+        "vi": "Khu phố yên tĩnh và có cơ sở vật chất công cộng tuyệt vời."
+      },
+      {
+        "en": "I painted the walls a neutral color to brighten the rooms.",
+        "vi": "Tôi sơn tường màu trung tính để làm sáng các phòng."
+      },
+      {
+        "en": "Home security systems provide peace of mind when away.",
+        "vi": "Hệ thống an ninh nhà cung cấp sự yên tâm khi đi vắng."
+      },
+      {
+        "en": "I maintain a cleaning schedule to prevent tasks from piling up.",
+        "vi": "Tôi duy trì lịch trình dọn dẹp để tránh công việc chồng chất."
+      },
+      {
+        "en": "The mortgage payment includes property taxes and insurance.",
+        "vi": "Khoản thanh toán thế chấp bao gồm thuế tài sản và bảo hiểm."
+      },
+      {
+        "en": "I furnished my living room with comfortable and functional pieces.",
+        "vi": "Tôi bài trí phòng khách với các món đồ thoải mái và tiện dụng."
+      },
+      {
+        "en": "Natural light improves mood and reduces electricity usage.",
+        "vi": "Ánh sáng tự nhiên cải thiện tâm trạng và giảm sử dụng điện."
+      },
+      {
+        "en": "I installed smart home devices to control lighting and temperature.",
+        "vi": "Tôi lắp đặt thiết bị nhà thông minh để điều khiển ánh sáng và nhiệt độ."
+      },
+      {
+        "en": "The kitchen renovation increased the property value significantly.",
+        "vi": "Cải tạo bếp đã tăng giá trị tài sản đáng kể."
+      },
+      {
+        "en": "I use indoor plants to purify air and add visual appeal.",
+        "vi": "Tôi dùng cây trong nhà để lọc không khí và tăng tính thẩm mỹ."
+      },
+      {
+        "en": "Storage solutions help maximize space in small apartments.",
+        "vi": "Giải pháp lưu trữ giúp tối đa hóa không gian trong căn hộ nhỏ."
+      },
+      {
+        "en": "I check smoke detectors monthly to ensure they work properly.",
+        "vi": "Tôi kiểm tra thiết bị báo khói hàng tháng để đảm bảo hoạt động tốt."
+      },
+      {
+        "en": "The open floor plan creates a spacious and airy feeling.",
+        "vi": "Bố cục mở tạo cảm giác rộng rãi và thoáng đãng."
+      },
+      {
+        "en": "I comparison shop before making major furniture purchases.",
+        "vi": "Tôi so sánh giá trước khi mua đồ nội thất lớn."
+      },
+      {
+        "en": "Regular maintenance prevents costly repairs down the line.",
+        "vi": "Bảo trì thường xuyên ngăn ngừa sửa chữa tốn kém sau này."
+      },
+      {
+        "en": "I soundproofed my home office for better focus and privacy.",
+        "vi": "Tôi cách âm văn phòng tại nhà để tập trung và riêng tư tốt hơn."
+      },
+      {
+        "en": "The balcony provides a nice outdoor space for relaxation.",
+        "vi": "Ban công cung cấp không gian ngoài trời đẹp để thư giãn."
+      },
+      {
+        "en": "I donate items I no longer need instead of throwing them away.",
+        "vi": "Tôi quyên góp những thứ không còn cần thay vì vứt bỏ."
+      },
+      {
+        "en": "The commute time to work influenced my housing decision.",
+        "vi": "Thời gian đi làm ảnh hưởng đến quyết định nhà ở của tôi."
+      },
+      {
+        "en": "I create cozy reading nooks in different corners of the house.",
+        "vi": "Tôi tạo góc đọc sách ấm cúng ở các góc khác nhau của nhà."
+      },
+      {
+        "en": "Home automation makes daily routines more convenient and efficient.",
+        "vi": "Tự động hóa nhà làm cho thói quen hàng ngày tiện lợi và hiệu quả hơn."
+      },
+      {
+        "en": "I respect quiet hours to maintain good relationships with neighbors.",
+        "vi": "Tôi tôn trọng giờ yên tĩnh để duy trì mối quan hệ tốt với hàng xóm."
+      },
+      {
+        "en": "The perfect home balances comfort, functionality, and aesthetics.",
+        "vi": "Ngôi nhà hoàn hảo cân bằng sự thoải mái, tiện dụng và thẩm mỹ."
+      }
+    ]
+  },
+  {
+    "category": "Personal Growth & Motivation",
+    "sentences": [
+      {
+        "en": "I set achievable goals and track my progress regularly.",
+        "vi": "Tôi đặt mục tiêu có thể đạt được và theo dõi tiến trình thường xuyên."
+      },
+      {
+        "en": "Stepping outside my comfort zone leads to personal growth.",
+        "vi": "Bước ra khỏi vùng an toàn dẫn đến sự phát triển cá nhân."
+      },
+      {
+        "en": "I learn from failures instead of dwelling on disappointment.",
+        "vi": "Tôi học từ thất bại thay vì chìm đắm trong thất vọng."
+      },
+      {
+        "en": "Positive affirmations help reprogram negative thought patterns.",
+        "vi": "Khẳng định tích cực giúp lập trình lại các mẫu suy nghĩ tiêu cực."
+      },
+      {
+        "en": "I surround myself with people who inspire and challenge me.",
+        "vi": "Tôi bao quanh mình với những người truyền cảm hứng và thách thức tôi."
+      },
+      {
+        "en": "Consistent small actions create significant long-term results.",
+        "vi": "Hành động nhỏ nhất quán tạo ra kết quả dài hạn đáng kể."
+      },
+      {
+        "en": "I practice gratitude daily to maintain a positive mindset.",
+        "vi": "Tôi thực hành lòng biết ơn hàng ngày để duy trì tư duy tích cực."
+      },
+      {
+        "en": "Self-reflection helps me understand my motivations and behaviors.",
+        "vi": "Tự phản tỉnh giúp tôi hiểu động lực và hành vi của mình."
+      },
+      {
+        "en": "I celebrate small victories along the journey to bigger goals.",
+        "vi": "Tôi ăn mừng những chiến thắng nhỏ trên hành trình đến mục tiêu lớn hơn."
+      },
+      {
+        "en": "Reading biographies of successful people provides valuable insights.",
+        "vi": "Đọc tiểu sử người thành công cung cấp những hiểu biết có giá trị."
+      },
+      {
+        "en": "I acknowledge my weaknesses and work actively to improve them.",
+        "vi": "Tôi thừa nhận điểm yếu và tích cực cải thiện chúng."
+      },
+      {
+        "en": "Visualization techniques help me manifest my aspirations into reality.",
+        "vi": "Kỹ thuật hình dung giúp tôi hiện thực hóa khát vọng thành thực tế."
+      },
+      {
+        "en": "I invest in experiences rather than material possessions.",
+        "vi": "Tôi đầu tư vào trải nghiệm hơn là tài sản vật chất."
+      },
+      {
+        "en": "Patience is essential when working toward long-term objectives.",
+        "vi": "Kiên nhẫn là điều cần thiết khi hướng đến mục tiêu dài hạn."
+      },
+      {
+        "en": "I seek constructive criticism to identify blind spots in my development.",
+        "vi": "Tôi tìm kiếm phê bình xây dựng để xác định điểm mù trong sự phát triển."
+      },
+      {
+        "en": "Morning routines set a productive tone for the entire day.",
+        "vi": "Thói quen buổi sáng đặt tông màu hiệu quả cho cả ngày."
+      },
+      {
+        "en": "I challenge limiting beliefs that hold me back from success.",
+        "vi": "Tôi thách thức những niềm tin hạn chế giữ tôi lại khỏi thành công."
+      },
+      {
+        "en": "Discipline matters more than motivation for consistent progress.",
+        "vi": "Kỷ luật quan trọng hơn động lực để tiến bộ nhất quán."
+      },
+      {
+        "en": "I take responsibility for my actions and their consequences.",
+        "vi": "Tôi chịu trách nhiệm về hành động và hậu quả của chúng."
+      },
+      {
+        "en": "Learning new skills keeps my mind sharp and adaptable.",
+        "vi": "Học kỹ năng mới giữ tâm trí tôi tinh anh và dễ thích nghi."
+      },
+      {
+        "en": "I compare myself only to who I was yesterday, not others.",
+        "vi": "Tôi chỉ so sánh mình với con người tôi của ngày hôm qua, không phải người khác."
+      },
+      {
+        "en": "Saying no to distractions protects my time and energy.",
+        "vi": "Nói không với sao nhãng bảo vệ thời gian và năng lượng của tôi."
+      },
+      {
+        "en": "I embrace change as an opportunity for growth and learning.",
+        "vi": "Tôi đón nhận thay đổi như một cơ hội để phát triển và học hỏi."
+      },
+      {
+        "en": "Consistent habits compound into remarkable transformations over time.",
+        "vi": "Thói quen nhất quán tích lũy thành những chuyển đổi đáng chú ý theo thời gian."
+      },
+      {
+        "en": "I listen to podcasts and audiobooks during commutes for learning.",
+        "vi": "Tôi nghe podcast và sách nói trong lúc di chuyển để học hỏi."
+      },
+      {
+        "en": "Self-care is not selfish but necessary for sustained performance.",
+        "vi": "Tự chăm sóc bản thân không phải ích kỷ mà cần thiết cho hiệu suất bền vững."
+      },
+      {
+        "en": "I document my journey to see how far I've come.",
+        "vi": "Tôi ghi chép hành trình để thấy mình đã đi được bao xa."
+      },
+      {
+        "en": "Fear of failure often prevents us from reaching our potential.",
+        "vi": "Nỗi sợ thất bại thường ngăn chúng ta đạt được tiềm năng."
+      },
+      {
+        "en": "I balance ambition with contentment to avoid burnout and dissatisfaction.",
+        "vi": "Tôi cân bằng tham vọng với sự hài lòng để tránh kiệt sức và bất mãn."
+      },
+      {
+        "en": "Personal growth is a lifelong journey, not a destination.",
+        "vi": "Phát triển cá nhân là hành trình suốt đời, không phải đích đến."
+      }
+    ]
+  }
+]    // Updated
+    // Updated
+    // Updated
+    // Updated

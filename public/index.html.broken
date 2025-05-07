@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VocabMaster - Smart Vocabulary Learning</title>
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+    .scrollbar-thin::-webkit-scrollbar { width: 6px; }
+    .scrollbar-thin::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 0.3s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    // API Base URL
+    const API_BASE = window.location.origin + '/api';
+
+    const LEVEL_NAMES = {
+      0: "Từ mới",
+      1: "Lần 1",
+      2: "Lần 2",
+      3: "Lần 3",
+      4: "Lần 4",
+      5: "Lần 5",
+      6: "Lần 6"
+    };
+
+    const LEVEL_COLORS = {
+      0: "bg-red-500",
+      1: "bg-orange-500",
+      2: "bg-yellow-500",
+      3: "bg-lime-500",
+      4: "bg-green-500",
+      5: "bg-teal-500",
+      6: "bg-blue-500"
+    };
+
+    const LEVEL_BG = {
+      0: "bg-red-50 border-red-200",
+      1: "bg-orange-50 border-orange-200",
+      2: "bg-yellow-50 border-yellow-200",
+      3: "bg-lime-50 border-lime-200",
+      4: "bg-green-50 border-green-200",
+      5: "bg-teal-50 border-teal-200",
+      6: "bg-blue-50 border-blue-200"
+    };
+
+    const today = () => new Date().toISOString().split('T')[0];
+
+    const daysBetween = (date1, date2) => {
+      const d1 = new Date(date1);
+      const d2 = new Date(date2);
+      return Math.floor((d2 - d1) / (1000 * 60 * 60 * 24));
+    };
+
+    function App() {
+      const [words, setWords] = useState([]);
+      const [showForm, setShowForm] = useState(false);
+      const [editingWord, setEditingWord] = useState(null);
+      const [activeTab, setActiveTab] = useState('words'); // 'words' or 'sentences'
+      const [sentences, setSentences] = useState([]);
+      const [selectedSentence, setSelectedSentence] = useState(null);
+      const [speakingId, setSpeakingId] = useState(null);
+      const [selectedWord, setSelectedWord] = useState(null);
+      const [searchTerm, setSearchTerm] = useState("");
+      const [showStats, setShowStats] = useState(false);
+      const [showSettings, setShowSettings] = useState(false);
+      const [reminderSettings, setReminderSettings] = useState({
+        reminderEnabled: true,
+        reminderTime: '09:00',
+        motivationalImage: 'goggins',
+        showVietnamese: true
+      });
+      const [loading, setLoading] = useState(false);
+      const [autoFilling, setAutoFilling] = useState(false);
+      const [translating, setTranslating] = useState({ meaningEN: false, example: false });
+      const [translations, setTranslations] = useState({ meaningEN: '', example: '' });
+      const [wordDetails, setWordDetails] = useState(null);
+      const [loadingDetails, setLoadingDetails] = useState(false);
+      const [expandedMeaning, setExpandedMeaning] = useState(null);
+      const [expandedLevel, setExpandedLevel] = useState(null);
+      const [levelPages, setLevelPages] = useState({ 0: 1, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1 });
+      const ITEMS_PER_PAGE = 12;
+      const [formData, setFormData] = useState({
+        word: "", ipaUK: "", ipaUS: "", meaningEN: "", meaningVI: "", example: ""
+      });
+
+      // Fetch detailed word information
+      const fetchWordDetails = async (word) => {
+        if (!word) return;
+
+        try {
+          setLoadingDetails(true);
+          const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word.trim()}`);
+
+          if (response.ok) {
+            const data = await response.json();
+            setWordDetails(data[0]);
+          }
+        } catch (err) {
+          console.log('Failed to fetch word details:', err);
+        } finally {
+          setLoadingDetails(false);
+        }
+      };
+
+      // Translate text to Vietnamese
+      const translateText = async (text, field) => {
+        if (!text || text.trim().length === 0) return;
+
+        try {
+          setTranslating(prev => ({ ...prev, [field]: true }));
+          const response = await fetch(
+            `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q=${encodeURIComponent(text)}`
+          );
+          if (response.ok) {
+            const data = await response.json();
+            if (data && data[0] && data[0][0]) {
+              setTranslations(prev => ({ ...prev, [field]: data[0][0][0] }));
+            }
+          }
+        } catch (err) {
+          console.log('Translation failed:', err);
+        } finally {
+          setTranslating(prev => ({ ...prev, [field]: false }));
+        }
+      };
+
+      // Add word to learn list from synonyms/antonyms
+      const addWordToLearn = (word) => {
+        setFormData({ word: word, ipaUK: "", ipaUS: "", meaningEN: "", meaningVI: "", example: "" });
+        setShowForm(true);
+        setSelectedWord(null);
+      };
+
+      // Auto-fill word information from dictionary API
+      const autoFillWordInfo = async (word) => {
+        if (!word || word.length < 2) return;
+
+        try {
+          setAutoFilling(true);
+
+          // Try Free Dictionary API
+          const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word.trim()}`);
+
+          if (response.ok) {
+            const data = await response.json();
+            const entry = data[0];
+
+            // Extract phonetics
+            let ipaUK = "";
+            let ipaUS = "";
+
+            if (entry.phonetics && entry.phonetics.length > 0) {
+              entry.phonetics.forEach(p => {
+                if (p.text) {
+                  if (p.audio && p.audio.includes('-uk')) {
+                    ipaUK = p.text;
+                  } else if (p.audio && p.audio.includes('-us')) {
+                    ipaUS = p.text;
+                  } else if (!ipaUK) {
+                    ipaUK = p.text;
+                  }
+                }
+              });
+
+              // If still no US pronunciation, use UK or first available
+              if (!ipaUS && ipaUK) ipaUS = ipaUK;
+            }
+
+            // Extract meanings
+            let meaningEN = "";
+            let example = "";
+
+            if (entry.meanings && entry.meanings.length > 0) {
+              const firstMeaning = entry.meanings[0];
+              if (firstMeaning.definitions && firstMeaning.definitions.length > 0) {
+                const def = firstMeaning.definitions[0];
+                meaningEN = `(${firstMeaning.partOfSpeech}) ${def.definition}`;
+                example = def.example || "";
+              }
+            }
+
+            // Try to get Vietnamese translation using Google Translate API (free alternative)
+            let meaningVI = "";
+            try {
+              const translateResponse = await fetch(
+                `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q=${encodeURIComponent(word)}`
+              );
+              if (translateResponse.ok) {
+                const translateData = await translateResponse.json();
+                if (translateData && translateData[0] && translateData[0][0]) {
+                  meaningVI = translateData[0][0][0];
+                }
+              }
+            } catch (err) {
+              console.log('Translation failed, user can enter manually');
+            }
+
+            // Update form with fetched data (only if fields are empty)
+            setFormData(prev => ({
+              ...prev,
+              ipaUK: prev.ipaUK || ipaUK,
+              ipaUS: prev.ipaUS || ipaUS,
+              meaningEN: prev.meaningEN || meaningEN,
+              meaningVI: prev.meaningVI || meaningVI,
+              example: prev.example || example
+            }));
+          }
+        } catch (error) {
+          console.log('Auto-fill failed:', error);
+          // Silently fail - user can enter manually
+        } finally {
+          setAutoFilling(false);
+        }
+      };
+
+      // Debounce auto-fill to avoid too many API calls
+      useEffect(() => {
+        if (!editingWord && formData.word && formData.word.trim().length >= 3) {
+          const timer = setTimeout(() => {
+            autoFillWordInfo(formData.word);
+          }, 800); // Wait 800ms after user stops typing
+
+          return () => clearTimeout(timer);
+        }
+      }, [formData.word, editingWord]);
+
+      // Fetch words from API
+      const fetchWords = async () => {
+        try {
+          setLoading(true);
+          const response = await fetch(`${API_BASE}/words`);
+          const data = await response.json();
+          setWords(data);
+        } catch (error) {
+          console.error('Error fetching words:', error);
+          alert('Không thể tải dữ liệu từ server!');
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      // Fetch sentences from API
+      const fetchSentences = async () => {
+        try {
+          setLoading(true);
+          const response = await fetch(`${API_BASE}/sentences`);
+          const data = await response.json();
+          setSentences(data);
+        } catch (error) {
+          console.error('Error fetching sentences:', error);
+          alert('Không thể tải câu từ server!');
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      // Mark sentence as learned
+      const markSentenceAsLearned = async (id) => {
+        try {
+          setLoading(true);
+          await fetch(`${API_BASE}/sentences/${id}/learned`, { method: 'POST' });
+          await fetchSentences();
+        } catch (error) {
+          console.error('Error:', error);
+          alert('Không thể cập nhật!');
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      // Reset sentence
+      const resetSentence = async (id) => {
+        try {
+          setLoading(true);
+          await fetch(`${API_BASE}/sentences/${id}/reset`, { method: 'POST' });
+          await fetchSentences();
+        } catch (error) {
+          console.error('Error:', error);
+          alert('Không thể reset!');
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      // Import default sentences
+      const importDefaultSentences = async () => {
+        if (!confirm('Import 250 câu tiếng Anh thông dụng vào app?')) return;
+
+        try {
+          setLoading(true);
+          const response = await fetch(`${API_BASE}/sentences/import-default`, { method: 'POST' });
+          const result = await response.json();
+          alert(`✅ Đã import ${result.imported} câu mới, bỏ qua ${result.skipped} câu trùng!`);
+          await fetchSentences();
+        } catch (error) {
+          console.error('Error:', error);
+          alert('Import thất bại!');
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      useEffect(() => {
+        fetchWords();
+        fetchSentences();
+      }, []);
+
+      const speak = (text, accent) => {
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = accent === 'UK' ? 'en-GB' : 'en-US';
+          utterance.rate = 0.8;
+          setSpeakingId(`${text}-${accent}`);
+          utterance.onend = () => setSpeakingId(null);
+          window.speechSynthesis.speak(utterance);
+        }
+      };
+
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+          setLoading(true);
+          if (editingWord) {
+            const response = await fetch(`${API_BASE}/words/${editingWord.id}`, {
+              method: 'PUT',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(formData)
+            });
+
+            if (!response.ok) throw new Error('Failed to update word');
+          } else {
+            const response = await fetch(`${API_BASE}/words`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(formData)
+            });
+
+            if (!response.ok) throw new Error('Failed to create word');
+          }
+
+          await fetchWords();
+          setFormData({ word: "", ipaUK: "", ipaUS: "", meaningEN: "", meaningVI: "", example: "" });
+          setShowForm(false);
+          setEditingWord(null);
+        } catch (error) {
+          console.error('Error saving word:', error);
+          alert('Không thể lưu từ!');
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      const handleEdit = (word) => {
+        setFormData({
+          word: word.word,
+          ipaUK: word.ipaUK || "",
+          ipaUS: word.ipaUS || "",
+          meaningEN: word.meaningEN || "",
+          meaningVI: word.meaningVI || "",
+          example: word.example || ""
+        });
+        setEditingWord(word);
+        setShowForm(true);
+      };
+
+      const handleDelete = async (id) => {
+        if (!confirm('Xóa từ này?')) return;
+
+        try {
+          setLoading(true);
+          const response = await fetch(`${API_BASE}/words/${id}`, {
+            method: 'DELETE'
+          });
+
+          if (!response.ok) throw new Error('Failed to delete word');
+
+          await fetchWords();
+          setSelectedWord(null);
+        } catch (error) {
+          console.error('Error deleting word:', error);
+          alert('Không thể xóa từ!');
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      const markAsLearned = async (wordId) => {
+        try {
+          setLoading(true);
+          const response = await fetch(`${API_BASE}/words/${wordId}/learn`, {
+            method: 'POST'
+          });
+
+          if (!response.ok) throw new Error('Failed to mark as learned');
+
+          await fetchWords();
+        } catch (error) {
+          console.error('Error marking word as learned:', error);
+          alert('Không thể cập nhật!');
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      const resetWord = async (wordId) => {
+        try {
+          setLoading(true);
+          const response = await fetch(`${API_BASE}/words/${wordId}/reset`, {
+            method: 'POST'
+          });
+
+          if (!response.ok) throw new Error('Failed to reset word');
+
+          await fetchWords();
+        } catch (error) {
+          console.error('Error resetting word:', error);
+          alert('Không thể reset!');
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      // Group words by level
+      const wordsByLevel = words.reduce((acc, word) => {
+        if (!acc[word.level]) acc[word.level] = [];
+        acc[word.level].push(word);
+        return acc;
+      }, {});
+
+      // Filter by search
+      const filterWords = (wordList) => {
+        if (!searchTerm) return wordList || [];
+        return (wordList || []).filter(w =>
+          w.word.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          w.meaningVI?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          w.meaningEN?.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+      };
+
+      // Stats
+      const stats = {
+        total: words.length,
+        byLevel: Object.fromEntries([0,1,2,3,4,5,6].map(l => [l, (wordsByLevel[l] || []).length])),
+        dueToday: words.filter(w => w.nextReviewDate === today()).length,
+        learned: words.filter(w => w.level > 0).length,
+        mastered: words.filter(w => w.level === 6).length
+      };
+
+      // Export/Import
+      const exportData = async () => {
+        try {
+          const response = await fetch(`${API_BASE}/export`);
+          const data = await response.json();
+          const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = `vocabulary_backup_${today()}.json`;
+          a.click();
+
+          // Also trigger server-side backup
+          try {
+            await fetch(`${API_BASE}/backup`, { method: 'POST' });
+            console.log('✅ Auto-backup also created on server');
+          } catch (err) {
+            console.log('Auto-backup failed:', err);
+          }
+        } catch (error) {
+          console.error('Error exporting:', error);
+          alert('Không thể export!');
+        }
+      };
+
+      const importData = async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = async (event) => {
+          try {
+            const imported = JSON.parse(event.target.result);
+            if (!Array.isArray(imported)) {
+              alert('File không hợp lệ!');
+              return;
+            }
+
+            if (!confirm(`Import ${imported.length} từ?`)) return;
+
+            setLoading(true);
+            const response = await fetch(`${API_BASE}/import`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(imported)
+            });
+
+            const result = await response.json();
+            alert(`Đã import ${result.imported} từ mới, bỏ qua ${result.skipped} từ trùng!`);
+            await fetchWords();
+          } catch (err) {
+            console.error('Error importing:', err);
+            alert('Import thất bại!');
+          } finally {
+            setLoading(false);
+          }
+        };
+        reader.readAsText(file);
+      };
+
+      const exportCSV = () => {
+        const headers = ["Word", "IPA UK", "IPA US", "Meaning EN", "Meaning VI", "Example", "Level", "Date Added", "Next Review"];
+        const rows = words.map(w => [w.word, w.ipaUK, w.ipaUS, w.meaningEN, w.meaningVI, w.example, LEVEL_NAMES[w.level], w.dateAdded, w.nextReviewDate || '-']);
+        const csv = [headers, ...rows].map(r => r.map(c => `"${(c || '').toString().replace(/"/g, '""')}"`).join(',')).join('\n');
+        const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `vocabulary_${today()}.csv`;
+        a.click();
+      };
+
+      const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+        if (totalPages <= 1) return null;
+
+        return (
+          <div className="flex items-center justify-center gap-2 py-3">
+            <button
+              onClick={() => onPageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="px-3 py-1 rounded bg-gray-200 text-gray-700 hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed transition"
+            >
+              ←
+            </button>
+            <div className="flex gap-1">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                <button
+                  key={page}
+                  onClick={() => onPageChange(page)}
+                  className={`px-3 py-1 rounded transition ${
+                    page === currentPage
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  }`}
+                >
+                  {page}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => onPageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="px-3 py-1 rounded bg-gray-200 text-gray-700 hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed transition"
+            >
+              →
+            </button>
+          </div>
+        );
+      };
+
+      const WordCard = ({ word, compact = false }) => {
+        const daysUntilReview = word.nextReviewDate ? daysBetween(today(), word.nextReviewDate) : null;
+
+        return (
+          <div
+            onClick={() => setSelectedWord(word)}
+            className={`bg-white rounded-lg shadow p-3 cursor-pointer hover:shadow-md transition border-l-4 ${LEVEL_COLORS[word.level].replace('bg-', 'border-')}`}
+          >
+            <div className="flex items-start justify-between gap-2 mb-1">
+              <span className="font-bold text-gray-800">{word.word}</span>
+              <div className="flex gap-1">
+                <button onClick={(e) => { e.stopPropagation(); speak(word.word, 'UK'); }}
+                  className={`p-1 rounded text-xs ${speakingId === `${word.word}-UK` ? 'bg-blue-600 text-white' : 'bg-blue-50 text-blue-600 hover:bg-blue-100'}`}>
+                  🔊UK
+                </button>
+                <button onClick={(e) => { e.stopPropagation(); speak(word.word, 'US'); }}
+                  className={`p-1 rounded text-xs ${speakingId === `${word.word}-US` ? 'bg-red-600 text-white' : 'bg-red-50 text-red-600 hover:bg-red-100'}`}>
+                  🔊US
+                </button>
+                {word.meaningVI && (
+                  <div className="relative group">
+                    <button onClick={(e) => { e.stopPropagation(); }}
+                      className="p-1 rounded text-xs bg-yellow-50 text-yellow-600 hover:bg-yellow-100">
+                      🇻🇳
+                    </button>
+                    <div className="absolute right-0 top-full mt-1 w-48 bg-gray-900 text-white text-xs rounded-lg shadow-lg p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10 pointer-events-none">
+                      {word.meaningVI}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {!compact && (
+              <>
+                <p className="text-sm text-gray-600 mb-1">{word.meaningVI || word.meaningEN}</p>
+                {word.level > 0 && daysUntilReview !== null && (
+                  <div className="text-xs text-gray-400">
+                    {daysUntilReview > 0 ? `⏰ Ôn sau ${daysUntilReview} ngày` : daysUntilReview === 0 ? '⚠️ Cần ôn hôm nay!' : '⚠️ Quá hạn ôn!'}
+                  </div>
+                )}
+              </>
+            )}
+
+            <div className="flex items-center justify-between mt-2 pt-2 border-t">
+              <button
+                onClick={(e) => { e.stopPropagation(); markAsLearned(word.id); }}
+                className="px-2 py-1 bg-green-500 text-white rounded text-xs hover:bg-green-600 transition"
+                disabled={loading}
+              >
+                ✓ Đã học
+              </button>
+              {word.level > 0 && (
+                <button
+                  onClick={(e) => { e.stopPropagation(); resetWord(word.id); }}
+                  className="px-2 py-1 bg-gray-200 text-gray-600 rounded text-xs hover:bg-gray-300 transition"
+                  disabled={loading}
+                >
+                  ↺ Reset
+                </button>
+              )}
+            </div>
+          </div>
+        );
+      };
+
+      return (
+        <div className="min-h-screen bg-gray-100">
+          {/* Loading Overlay */}
+          {loading && (
+            <div className="fixed inset-0 bg-black/20 flex items-center justify-center z-50">
+              <div className="bg-white rounded-lg p-4 shadow-xl">
+                <div className="animate-spin h-8 w-8 border-4 border-blue-500 border-t-transparent rounded-full mx-auto"></div>
+                <p className="mt-2 text-sm text-gray-600">Đang xử lý...</p>
+              </div>
+            </div>
+          )}
+
+          {/* Header */}
+          <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 shadow-lg sticky top-0 z-10">
+            <div className="max-w-7xl mx-auto px-4 py-3">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <img src="/icon.svg" alt="VocabMaster" className="w-10 h-10" />
+                  <div>
+                    <h1 className="text-xl font-bold bg-gradient-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent">VocabMaster</h1>
+                    <p className="text-xs text-gray-300">Smart Vocabulary Learning</p>
+                  </div>
+                </div>
+                <div className="flex gap-2 flex-wrap">
+                  <button onClick={() => { setShowForm(!showForm); setEditingWord(null); setFormData({ word: "", ipaUK: "", ipaUS: "", meaningEN: "", meaningVI: "", example: "" }); }}
+                    className="px-3 py-1.5 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 text-sm font-medium border border-white/30">
+                    {showForm ? '✕ Đóng' : '+ Thêm từ'}
+                  </button>
+                  <button onClick={() => setShowStats(!showStats)}
+                    className="px-3 py-1.5 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 text-sm font-medium border border-white/30">
+                    📊 {showStats ? 'Ẩn' : 'Thống kê'}
+                  </button>
+                  <button onClick={exportData}
+                    className="px-3 py-1.5 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 text-sm font-medium border border-white/30">
+                    💾 Backup
+                  </button>
+                  <label className="px-3 py-1.5 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 text-sm font-medium border border-white/30 cursor-pointer">
+                    📥 Import
+                    <input type="file" accept=".json" onChange={importData} className="hidden" />
+                  </label>
+                  <button onClick={exportCSV}
+                    className="px-3 py-1.5 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 text-sm font-medium border border-white/30">
+                    📄 CSV
+                  </button>
+                  <button onClick={async () => {
+                      try {
+                        await fetch(`${API_BASE}/reminder/test`, { method: 'POST' });
+                        alert('✅ Thông báo đã được gửi! Kiểm tra góc phải trên màn hình.');
+                      } catch (err) {
+                        alert('❌ Không thể gửi thông báo');
+                      }
+                    }}
+                    className="px-3 py-1.5 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 text-sm font-medium border border-white/30"
+                    title="Xem thử thông báo nhắc học">
+                    🔔 Thử
+                  </button>
+                  <button onClick={importDefaultSentences}
+                    className="px-3 py-1.5 bg-green-600/90 backdrop-blur-sm text-white rounded-lg hover:bg-green-700 text-sm font-medium border border-green-500"
+                    title="Import 250 câu tiếng Anh thông dụng">
+                    💬 Import Câu
+                  </button>
+                </div>
+              </div>
+
+              {/* Tabs */}
+              <div className="mt-3 flex gap-2 border-b border-white/20">
+                <button
+                  onClick={() => setActiveTab('words')}
+                  className={`px-4 py-2 font-medium transition-all ${
+                    activeTab === 'words'
+                      ? 'text-yellow-400 border-b-2 border-yellow-400'
+                      : 'text-gray-400 hover:text-white'
+                  }`}
+                >
+                  📚 Từ vựng ({words.length})
+                </button>
+                <button
+                  onClick={() => setActiveTab('sentences')}
+                  className={`px-4 py-2 font-medium transition-all ${
+                    activeTab === 'sentences'
+                      ? 'text-yellow-400 border-b-2 border-yellow-400'
+                      : 'text-gray-400 hover:text-white'
+                  }`}
+                >
+                  💬 Câu ({sentences.length})
+                </button>
+              </div>
+
+              {/* Search */}
+              <div className="mt-3">
+                <input
+                  type="text"
+                  placeholder={activeTab === 'words' ? '🔍 Tìm kiếm từ...' : '🔍 Tìm kiếm câu...'}
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                />
+              </div>
+
+              {/* Stats */}
+              {showStats && (
+                <div className="mt-3 grid grid-cols-2 md:grid-cols-5 gap-2">
+                  <div className="bg-gray-50 rounded-lg p-2 text-center">
+                    <div className="text-xl font-bold">{stats.total}</div>
+                    <div className="text-xs text-gray-500">Tổng từ</div>
+                  </div>
+                  <div className="bg-red-50 rounded-lg p-2 text-center">
+                    <div className="text-xl font-bold text-red-600">{stats.byLevel[0]}</div>
+                    <div className="text-xs text-gray-500">Cần học</div>
+                  </div>
+                  <div className="bg-yellow-50 rounded-lg p-2 text-center">
+                    <div className="text-xl font-bold text-yellow-600">{stats.dueToday}</div>
+                    <div className="text-xs text-gray-500">Ôn hôm nay</div>
+                  </div>
+                  <div className="bg-green-50 rounded-lg p-2 text-center">
+                    <div className="text-xl font-bold text-green-600">{stats.learned}</div>
+                    <div className="text-xs text-gray-500">Đã học</div>
+                  </div>
+                  <div className="bg-blue-50 rounded-lg p-2 text-center">
+                    <div className="text-xl font-bold text-blue-600">{stats.mastered}</div>
+                    <div className="text-xs text-gray-500">Thành thạo</div>
+                  </div>
+                </div>
+              )}
+
+              {/* Add Form */}
+              {showForm && (
+                <form onSubmit={handleSubmit} className="mt-3 bg-white rounded-lg shadow-sm border p-6">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                    {editingWord ? '✏️ Chỉnh sửa từ vựng' : '➕ Thêm từ mới'}
+                  </h3>
+
+                  {autoFilling && (
+                    <div className="mb-4 flex items-center gap-2 text-sm text-blue-600 bg-blue-50 p-3 rounded-lg">
+                      <div className="animate-spin h-4 w-4 border-2 border-blue-600 border-t-transparent rounded-full"></div>
+                      <span>Đang tự động điền thông tin từ từ điển...</span>
+                    </div>
+                  )}
+
+                  <div className="space-y-4">
+                    {/* Word Input */}
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Từ vựng <span className="text-red-500">*</span>
+                      </label>
+                      <div className="flex gap-2">
+                        <div className="relative flex-1">
+                          <input
+                            type="text"
+                            placeholder="Nhập từ tiếng Anh..."
+                            required
+                            value={formData.word}
+                            onChange={e => setFormData({ ...formData, word: e.target.value })}
+                            className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-base"
+                          />
+                          {!editingWord && formData.word && (
+                            <div className="absolute right-3 top-3 text-lg">
+                              {autoFilling ? '⏳' : '✨'}
+                            </div>
+                          )}
+                        </div>
+                        {!editingWord && formData.word && formData.word.trim().length >= 2 && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              // Clear all fields except word
+                              setFormData(prev => ({
+                                word: prev.word,
+                                ipaUK: "",
+                                ipaUS: "",
+                                meaningEN: "",
+                                meaningVI: "",
+                                example: ""
+                              }));
+                              // Trigger auto-fill immediately
+                              autoFillWordInfo(formData.word);
+                            }}
+                            disabled={autoFilling}
+                            className="px-4 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center gap-2"
+                            title="Tải lại thông tin từ từ điển"
+                          >
+                            🔄
+                          </button>
+                        )}
+                      </div>
+                      {!editingWord && formData.word && formData.word.trim().length >= 2 && (
+                        <p className="text-xs text-gray-500 mt-1">
+                          💡 Nhấn nút 🔄 để tải lại thông tin từ từ điển
+                        </p>
+                      )}
+                    </div>
+
+                    {/* Phonetics Row */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                          Phát âm UK 🇬🇧
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="/həˈləʊ/"
+                          value={formData.ipaUK}
+                          onChange={e => setFormData({ ...formData, ipaUK: e.target.value })}
+                          className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none font-mono text-base"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                          Phát âm US 🇺🇸
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="/həˈloʊ/"
+                          value={formData.ipaUS}
+                          onChange={e => setFormData({ ...formData, ipaUS: e.target.value })}
+                          className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none font-mono text-base"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Meanings */}
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Nghĩa tiếng Anh
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="English meaning..."
+                        value={formData.meaningEN}
+                        onChange={e => setFormData({ ...formData, meaningEN: e.target.value })}
+                        className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-base"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Nghĩa tiếng Việt <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Nghĩa tiếng Việt..."
+                        required
+                        value={formData.meaningVI}
+                        onChange={e => setFormData({ ...formData, meaningVI: e.target.value })}
+                        className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-base"
+                      />
+                    </div>
+
+                    {/* Example */}
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Câu ví dụ
+                      </label>
+                      <textarea
+                        placeholder="Example sentence..."
+                        value={formData.example}
+                        onChange={e => setFormData({ ...formData, example: e.target.value })}
+                        rows="2"
+                        className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-base resize-none"
+                      />
+                    </div>
+
+                    {/* Submit Button */}
+                    <div className="flex gap-3 pt-2">
+                      <button
+                        type="submit"
+                        className="flex-1 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                        disabled={loading || autoFilling}
+                      >
+                        {editingWord ? '💾 Cập nhật từ vựng' : '➕ Thêm vào danh sách'}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setShowForm(false);
+                          setEditingWord(null);
+                          setFormData({ word: "", ipaUK: "", ipaUS: "", meaningEN: "", meaningVI: "", example: "" });
+                        }}
+                        className="px-6 py-3 bg-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-300 transition-colors"
+                      >
+                        Hủy
+                      </button>
+                    </div>
+
+                    {/* Info Text */}
+                    {!editingWord && (
+                      <div className="text-sm text-gray-500 bg-blue-50 p-3 rounded-lg">
+                        💡 <strong>Mẹo:</strong> Chỉ cần nhập từ tiếng Anh, các trường khác sẽ tự động điền từ từ điển. Bạn có thể chỉnh sửa bất kỳ trường nào trước khi lưu.
+                      </div>
+                    )}
+                  </div>
+                </form>
+              )}
+            </div>
+          </div>
+
+          {/* Main Content - Kanban Board */}
+          <div className="max-w-7xl mx-auto p-4">
+            {/* Level Info */}
+            <div className="mb-4 bg-white rounded-lg p-3 shadow-sm">
+              <div className="text-sm text-gray-600 flex flex-wrap gap-4">
+                <span><strong>Quy tắc ôn tập:</strong></span>
+                <span>Lần 1 → 2 ngày</span>
+                <span>Lần 2 → 4 ngày</span>
+                <span>Lần 3 → 1 tuần</span>
+                <span>Lần 4 → 2 tuần</span>
+                <span>Lần 5 → 3 tuần</span>
+                <span>Lần 6 → 1 tháng (lặp lại)</span>
+              </div>
+            </div>
+
+            {/* Words Tab Content */}
+            {activeTab === 'words' && (
+            <div className="space-y-4">
+              {/* Level 0 - Always full width */}
+              <div className="w-full">
+                {(() => {
+                  const levelWords = filterWords(wordsByLevel[0]);
+                  const currentPage = levelPages[0];
+                  const totalPages = Math.ceil(levelWords.length / ITEMS_PER_PAGE);
+                  const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
+                  const endIdx = startIdx + ITEMS_PER_PAGE;
+                  const paginatedWords = levelWords.slice(startIdx, endIdx);
+
+                  return (
+                    <div className={`rounded-xl border-2 ${LEVEL_BG[0]} transition-all duration-300`}>
+                      <div className={`${LEVEL_COLORS[0]} text-white px-4 py-3 rounded-t-lg flex justify-between items-center`}>
+                        <span className="font-semibold text-lg">{LEVEL_NAMES[0]}</span>
+                        <span className="bg-white/30 px-3 py-1 rounded-full text-sm font-medium">{levelWords.length}</span>
+                      </div>
+                      <div className="p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+                        {paginatedWords.map(word => (
+                          <WordCard key={word.id} word={word} compact={true} />
+                        ))}
+                        {levelWords.length === 0 && (
+                          <div className="col-span-full text-center text-gray-400 text-sm py-8">
+                            Không có từ mới
+                          </div>
+                        )}
+                      </div>
+                      {levelWords.length > 0 && (
+                        <Pagination
+                          currentPage={currentPage}
+                          totalPages={totalPages}
+                          onPageChange={(page) => setLevelPages(prev => ({ ...prev, 0: page }))}
+                        />
+                      )}
+                    </div>
+                  );
+                })()}
+              </div>
+
+              {/* Expanded level - Shows below level 0 if any level is clicked */}
+              {expandedLevel !== null && expandedLevel !== 0 && (
+                <div className="w-full animate-fadeIn">
+                  {(() => {
+                    const levelWords = filterWords(wordsByLevel[expandedLevel]);
+                    const currentPage = levelPages[expandedLevel];
+                    const totalPages = Math.ceil(levelWords.length / ITEMS_PER_PAGE);
+                    const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
+                    const endIdx = startIdx + ITEMS_PER_PAGE;
+                    const paginatedWords = levelWords.slice(startIdx, endIdx);
+
+                    return (
+                      <div className={`rounded-xl border-2 ${LEVEL_BG[expandedLevel]} transition-all duration-300`}>
+                        <div className={`${LEVEL_COLORS[expandedLevel]} text-white px-4 py-3 rounded-t-lg flex justify-between items-center`}>
+                          <span className="font-semibold text-lg">{LEVEL_NAMES[expandedLevel]}</span>
+                          <div className="flex items-center gap-3">
+                            <span className="bg-white/30 px-3 py-1 rounded-full text-sm font-medium">{levelWords.length}</span>
+                            <button
+                              onClick={() => setExpandedLevel(null)}
+                              className="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg text-sm transition-colors"
+                            >
+                              ✕ Đóng
+                            </button>
+                          </div>
+                        </div>
+                        <div className="p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+                          {paginatedWords.map(word => (
+                            <WordCard key={word.id} word={word} compact={true} />
+                          ))}
+                          {levelWords.length === 0 && (
+                            <div className="col-span-full text-center text-gray-400 text-sm py-8">
+                              Trống
+                            </div>
+                          )}
+                        </div>
+                        {levelWords.length > 0 && (
+                          <Pagination
+                            currentPage={currentPage}
+                            totalPages={totalPages}
+                            onPageChange={(page) => setLevelPages(prev => ({ ...prev, [expandedLevel]: page }))}
+                          />
+                        )}
+                      </div>
+                    );
+                  })()}
+                </div>
+              )}
+
+              {/* Other levels 1-6 in grid (collapsed view) */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+                {[1, 2, 3, 4, 5, 6].map(level => {
+                  const levelWords = filterWords(wordsByLevel[level]);
+                  const isExpanded = expandedLevel === level;
+
+                  return (
+                    <div
+                      key={level}
+                      className={`rounded-xl border-2 ${LEVEL_BG[level]} cursor-pointer hover:shadow-lg transition-all duration-300 ${isExpanded ? 'ring-4 ring-blue-400' : ''}`}
+                      onClick={() => setExpandedLevel(expandedLevel === level ? null : level)}
+                    >
+                      <div className={`${LEVEL_COLORS[level]} text-white px-3 py-2 rounded-t-lg flex justify-between items-center`}>
+                        <span className="font-semibold text-sm">{LEVEL_NAMES[level]}</span>
+                        <span className="bg-white/30 px-2 py-0.5 rounded-full text-xs font-medium">{levelWords.length}</span>
+                      </div>
+                      <div className="p-2 space-y-2 max-h-48 overflow-y-auto scrollbar-thin">
+                        {levelWords.slice(0, 3).map(word => (
+                          <div key={word.id} className="bg-white/50 rounded p-2 text-xs font-medium text-gray-700 truncate">
+                            {word.word}
+                          </div>
+                        ))}
+                        {levelWords.length === 0 && (
+                          <div className="text-center text-gray-400 text-xs py-2">
+                            Trống
+                          </div>
+                        )}
+                        {levelWords.length > 3 && (
+                          <div className="text-center text-gray-500 text-xs py-1">
+                            +{levelWords.length - 3} từ
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+            {/* Sentences Tab Content */}
+            {activeTab === 'sentences' && (
+              <div className="space-y-4">
+                {/* Sentences Display */}
+                {(() => {
+                  const sentencesByLevel = {};
+                  for (let i = 0; i <= 6; i++) sentencesByLevel[i] = [];
+                  sentences.forEach(s => sentencesByLevel[s.level].push(s));
+
+                  const filteredSentences = sentences.filter(s =>
+                    s.en.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    s.vi.toLowerCase().includes(searchTerm.toLowerCase())
+                  );
+
+                  const filteredByLevel = {};
+                  for (let i = 0; i <= 6; i++) filteredByLevel[i] = [];
+                  filteredSentences.forEach(s => filteredByLevel[s.level].push(s));
+
+                  return (
+                    <>
+                      {sentences.length === 0 ? (
+                        <div className="text-center py-12 bg-gray-50 rounded-xl">
+                          <p className="text-gray-500 mb-4">Chưa có câu nào. Hãy import 250 câu thông dụng!</p>
+                          <button
+                            onClick={importDefaultSentences}
+                            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 font-medium"
+                          >
+                            💬 Import 250 Câu Tiếng Anh Thông Dụng
+                          </button>
+                        </div>
+                      ) : (
+                        <>
+                          {/* Level 0 - New Sentences */}
+                          <div className="w-full">
+                            <div className="rounded-xl border-2 bg-red-50 border-red-200">
+                              <div className="bg-red-600 text-white px-4 py-3 rounded-t-lg flex justify-between items-center">
+                                <span className="font-semibold text-lg">Câu mới</span>
+                                <span className="bg-white/30 px-3 py-1 rounded-full text-sm font-medium">{filteredByLevel[0].length}</span>
+                              </div>
+                              <div className="p-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+                                {filteredByLevel[0].map(sentence => (
+                                  <div key={sentence.id} className="bg-white rounded-lg shadow p-3 hover:shadow-md transition">
+                                    <div className="flex items-start justify-between gap-2 mb-2">
+                                      <div className="flex-1">
+                                        <p className="font-medium text-gray-800">{sentence.en}</p>
+                                        <p className="text-sm text-gray-600 mt-1">{sentence.vi}</p>
+                                        {sentence.category && (
+                                          <span className="inline-block mt-2 px-2 py-0.5 bg-blue-100 text-blue-700 rounded text-xs">
+                                            {sentence.category}
+                                          </span>
+                                        )}
+                                      </div>
+                                      <button
+                                        onClick={() => speak(sentence.en, 'US')}
+                                        className="p-1 rounded bg-blue-50 text-blue-600 hover:bg-blue-100 flex-shrink-0"
+                                      >
+                                        🔊
+                                      </button>
+                                    </div>
+                                    <div className="flex gap-2 mt-2 pt-2 border-t">
+                                      <button
+                                        onClick={() => markSentenceAsLearned(sentence.id)}
+                                        className="px-3 py-1 bg-green-500 text-white rounded text-xs hover:bg-green-600 transition flex-1"
+                                        disabled={loading}
+                                      >
+                                        ✓ Đã học
+                                      </button>
+                                    </div>
+                                  </div>
+                                ))}
+                                {filteredByLevel[0].length === 0 && (
+                                  <div className="col-span-full text-center text-gray-400 py-8">
+                                    Không có câu mới
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Other Levels in Grid */}
+                          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+                            {[1, 2, 3, 4, 5, 6].map(level => {
+                              const levelSentences = filteredByLevel[level];
+                              const LEVEL_COLORS_SENTENCES = {
+                                1: 'bg-yellow-600',
+                                2: 'bg-lime-600',
+                                3: 'bg-green-600',
+                                4: 'bg-teal-600',
+                                5: 'bg-blue-600',
+                                6: 'bg-purple-600'
+                              };
+                              const LEVEL_BG_SENTENCES = {
+                                1: 'bg-yellow-50 border-yellow-200',
+                                2: 'bg-lime-50 border-lime-200',
+                                3: 'bg-green-50 border-green-200',
+                                4: 'bg-teal-50 border-teal-200',
+                                5: 'bg-blue-50 border-blue-200',
+                                6: 'bg-purple-50 border-purple-200'
+                              };
+
+                              return (
+                                <div
+                                  key={level}
+                                  className={`rounded-xl border-2 ${LEVEL_BG_SENTENCES[level]}`}
+                                >
+                                  <div className={`${LEVEL_COLORS_SENTENCES[level]} text-white px-3 py-2 rounded-t-lg flex justify-between items-center`}>
+                                    <span className="font-semibold text-sm">{LEVEL_NAMES[level]}</span>
+                                    <span className="bg-white/30 px-2 py-0.5 rounded-full text-xs font-medium">{levelSentences.length}</span>
+                                  </div>
+                                  <div className="p-2 space-y-2 max-h-48 overflow-y-auto">
+                                    {levelSentences.slice(0, 3).map(sentence => (
+                                      <div key={sentence.id} className="bg-white/50 rounded p-2 text-xs">
+                                        <p className="font-medium text-gray-800 line-clamp-1">{sentence.en}</p>
+                                        <p className="text-gray-600 line-clamp-1 mt-0.5">{sentence.vi}</p>
+                                      </div>
+                                    ))}
+                                    {levelSentences.length === 0 && (
+                                      <div className="text-center text-gray-400 text-xs py-2">
+                                        Trống
+                                      </div>
+                                    )}
+                                    {levelSentences.length > 3 && (
+                                      <div className="text-center text-gray-500 text-xs py-1">
+                                        +{levelSentences.length - 3} câu
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </>
+                      )}
+                    </>
+                  );
+                })()}
+              </div>
+            )}
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

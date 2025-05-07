@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📚 Spaced Repetition Vocabulary</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+    .scrollbar-thin::-webkit-scrollbar { width: 6px; }
+    .scrollbar-thin::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    // Intervals in days for each level
+    const INTERVALS = {
+      0: 0,    // New - no interval
+      1: 3,    // Lần 1 - 3 ngày
+      2: 7,    // Lần 2 - 1 tuần
+      3: 14,   // Lần 3 - 2 tuần
+      4: 30,   // Lần 4 - 1 tháng
+      5: 60,   // Lần 5 - 2 tháng
+      6: 90,   // Lần 6 - 3 tháng (và định kỳ)
+    };
+
+    const LEVEL_NAMES = {
+      0: "Từ mới",
+      1: "Lần 1",
+      2: "Lần 2", 
+      3: "Lần 3",
+      4: "Lần 4",
+      5: "Lần 5",
+      6: "Lần 6"
+    };
+
+    const LEVEL_COLORS = {
+      0: "bg-red-500",
+      1: "bg-orange-500",
+      2: "bg-yellow-500",
+      3: "bg-lime-500",
+      4: "bg-green-500",
+      5: "bg-teal-500",
+      6: "bg-blue-500"
+    };
+
+    const LEVEL_BG = {
+      0: "bg-red-50 border-red-200",
+      1: "bg-orange-50 border-orange-200",
+      2: "bg-yellow-50 border-yellow-200",
+      3: "bg-lime-50 border-lime-200",
+      4: "bg-green-50 border-green-200",
+      5: "bg-teal-50 border-teal-200",
+      6: "bg-blue-50 border-blue-200"
+    };
+
+    const addDays = (date, days) => {
+      const result = new Date(date);
+      result.setDate(result.getDate() + days);
+      return result.toISOString().split('T')[0];
+    };
+
+    const today = () => new Date().toISOString().split('T')[0];
+
+    const daysBetween = (date1, date2) => {
+      const d1 = new Date(date1);
+      const d2 = new Date(date2);
+      return Math.floor((d2 - d1) / (1000 * 60 * 60 * 24));
+    };
+
+    function App() {
+      const [words, setWords] = useState([]);
+      const [showForm, setShowForm] = useState(false);
+      const [editingWord, setEditingWord] = useState(null);
+      const [speakingId, setSpeakingId] = useState(null);
+      const [selectedWord, setSelectedWord] = useState(null);
+      const [searchTerm, setSearchTerm] = useState("");
+      const [showStats, setShowStats] = useState(false);
+      const [formData, setFormData] = useState({
+        word: "", ipaUK: "", ipaUS: "", meaningEN: "", meaningVI: "", example: ""
+      });
+
+      // Load data from localStorage
+      useEffect(() => {
+        try {
+          const saved = localStorage.getItem('sr-vocabulary-db');
+          if (saved) {
+            let loadedWords = JSON.parse(saved);
+            loadedWords = checkDueWords(loadedWords);
+            setWords(loadedWords);
+            localStorage.setItem('sr-vocabulary-db', JSON.stringify(loadedWords));
+          }
+        } catch (e) {
+          console.error('Load failed:', e);
+        }
+      }, []);
+
+      // Check which words are due for review
+      const checkDueWords = (wordList) => {
+        const todayStr = today();
+        return wordList.map(word => {
+          if (word.level > 0 && word.nextReviewDate && word.nextReviewDate <= todayStr) {
+            return { ...word, level: 0, lastLearnedDate: null, nextReviewDate: null };
+          }
+          return word;
+        });
+      };
+
+      const saveWords = (newWords) => {
+        setWords(newWords);
+        try {
+          localStorage.setItem('sr-vocabulary-db', JSON.stringify(newWords));
+        } catch (e) {
+          console.error('Save failed:', e);
+        }
+      };
+
+      const speak = (text, accent) => {
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = accent === 'UK' ? 'en-GB' : 'en-US';
+          utterance.rate = 0.8;
+          setSpeakingId(`${text}-${accent}`);
+          utterance.onend = () => setSpeakingId(null);
+          window.speechSynthesis.speak(utterance);
+        }
+      };
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        const todayStr = today();
+        
+        if (editingWord) {
+          const updated = words.map(w => w.id === editingWord.id ? { ...w, ...formData } : w);
+          saveWords(updated);
+          setEditingWord(null);
+        } else {
+          const newWord = {
+            ...formData,
+            id: Date.now(),
+            dateAdded: todayStr,
+            level: 0,
+            lastLearnedDate: null,
+            nextReviewDate: null,
+            history: []
+          };
+          saveWords([newWord, ...words]);
+        }
+        
+        setFormData({ word: "", ipaUK: "", ipaUS: "", meaningEN: "", meaningVI: "", example: "" });
+        setShowForm(false);
+      };
+
+      const handleEdit = (word) => {
+        setFormData({
+          word: word.word,
+          ipaUK: word.ipaUK,
+          ipaUS: word.ipaUS,
+          meaningEN: word.meaningEN,
+          meaningVI: word.meaningVI,
+          example: word.example
+        });
+        setEditingWord(word);
+        setShowForm(true);
+      };
+
+      const handleDelete = (id) => {
+        if (confirm('Xóa từ này?')) {
+          saveWords(words.filter(w => w.id !== id));
+          setSelectedWord(null);
+        }
+      };
+
+      // Mark word as learned - move to next level
+      const markAsLearned = (wordId) => {
+        const todayStr = today();
+        const updated = words.map(w => {
+          if (w.id === wordId) {
+            const newLevel = Math.min(w.level + 1, 6);
+            const interval = INTERVALS[newLevel];
+            const nextReview = addDays(todayStr, interval);
+            
+            return {
+              ...w,
+              level: newLevel,
+              lastLearnedDate: todayStr,
+              nextReviewDate: nextReview,
+              history: [...(w.history || []), { date: todayStr, fromLevel: w.level, toLevel: newLevel }]
+            };
+          }
+          return w;
+        });
+        saveWords(updated);
+      };
+
+      // Reset word to level 0
+      const resetWord = (wordId) => {
+        const updated = words.map(w => {
+          if (w.id === wordId) {
+            return { ...w, level: 0, lastLearnedDate: null, nextReviewDate: null };
+          }
+          return w;
+        });
+        saveWords(updated);
+      };
+
+      // Group words by level
+      const wordsByLevel = words.reduce((acc, word) => {
+        if (!acc[word.level]) acc[word.level] = [];
+        acc[word.level].push(word);
+        return acc;
+      }, {});
+
+      // Filter by search
+      const filterWords = (wordList) => {
+        if (!searchTerm) return wordList || [];
+        return (wordList || []).filter(w => 
+          w.word.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          w.meaningVI?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          w.meaningEN?.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+      };
+
+      // Stats
+      const stats = {
+        total: words.length,
+        byLevel: Object.fromEntries([0,1,2,3,4,5,6].map(l => [l, (wordsByLevel[l] || []).length])),
+        dueToday: words.filter(w => w.nextReviewDate === today()).length,
+        learned: words.filter(w => w.level > 0).length,
+        mastered: words.filter(w => w.level === 6).length
+      };
+
+      // Export/Import
+      const exportData = () => {
+        const data = JSON.stringify(words, null, 2);
+        const blob = new Blob([data], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `vocabulary_backup_${today()}.json`;
+        a.click();
+      };
+
+      const importData = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = (event) => {
+            try {
+              const imported = JSON.parse(event.target.result);
+              if (Array.isArray(imported)) {
+                if (confirm(`Import ${imported.length} từ? Dữ liệu hiện tại sẽ được gộp chung.`)) {
+                  const existingIds = new Set(words.map(w => w.id));
+                  const newWords = imported.filter(w => !existingIds.has(w.id));
+                  saveWords([...words, ...newWords]);
+                }
+              }
+            } catch (err) {
+              alert('File không hợp lệ!');
+            }
+          };
+          reader.readAsText(file);
+        }
+      };
+
+      const exportCSV = () => {
+        const headers = ["Word", "IPA UK", "IPA US", "Meaning EN", "Meaning VI", "Example", "Level", "Date Added", "Next Review"];
+        const rows = words.map(w => [w.word, w.ipaUK, w.ipaUS, w.meaningEN, w.meaningVI, w.example, LEVEL_NAMES[w.level], w.dateAdded, w.nextReviewDate || '-']);
+        const csv = [headers, ...rows].map(r => r.map(c => `"${(c || '').toString().replace(/"/g, '""')}"`).join(',')).join('\n');
+        const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `vocabulary_${today()}.csv`;
+        a.click();
+      };
+
+      const WordCard = ({ word, compact = false }) => {
+        const daysUntilReview = word.nextReviewDate ? daysBetween(today(), word.nextReviewDate) : null;
+        
+        return (
+          <div 
+            onClick={() => setSelectedWord(word)}
+            className={`bg-white rounded-lg shadow p-3 cursor-pointer hover:shadow-md transition border-l-4 ${LEVEL_COLORS[word.level].replace('bg-', 'border-')}`}
+          >
+            <div className="flex items-start justify-between gap-2 mb-1">
+              <span className="font-bold text-gray-800">{word.word}</span>
+              <div className="flex gap-1">
+                <button onClick={(e) => { e.stopPropagation(); speak(word.word, 'UK'); }}
+                  className={`p-1 rounded text-xs ${speakingId === `${word.word}-UK` ? 'bg-blue-600 text-white' : 'bg-blue-50 text-blue-600 hover:bg-blue-100'}`}>
+                  🔊UK
+                </button>
+                <button onClick={(e) => { e.stopPropagation(); speak(word.word, 'US'); }}
+                  className={`p-1 rounded text-xs ${speakingId === `${word.word}-US` ? 'bg-red-600 text-white' : 'bg-red-50 text-red-600 hover:bg-red-100'}`}>
+                  🔊US
+                </button>
+              </div>
+            </div>
+            
+            {!compact && (
+              <>
+                <p className="text-sm text-gray-600 mb-1">{word.meaningVI || word.meaningEN}</p>
+                {word.level > 0 && daysUntilReview !== null && (
+                  <div className="text-xs text-gray-400">
+                    {daysUntilReview > 0 ? `⏰ Ôn sau ${daysUntilReview} ngày` : daysUntilReview === 0 ? '⚠️ Cần ôn hôm nay!' : '⚠️ Quá hạn ôn!'}
+                  </div>
+                )}
+              </>
+            )}
+            
+            <div className="flex items-center justify-between mt-2 pt-2 border-t">
+              <button 
+                onClick={(e) => { e.stopPropagation(); markAsLearned(word.id); }}
+                className="px-2 py-1 bg-green-500 text-white rounded text-xs hover:bg-green-600 transition"
+              >
+                ✓ Đã học
+              </button>
+              {word.level > 0 && (
+                <button 
+                  onClick={(e) => { e.stopPropagation(); resetWord(word.id); }}
+                  className="px-2 py-1 bg-gray-200 text-gray-600 rounded text-xs hover:bg-gray-300 transition"
+                >
+                  ↺ Reset
+                </button>
+              )}
+            </div>
+          </div>
+        );
+      };
+
+      return (
+        <div className="min-h-screen bg-gray-100">
+          {/* Header */}
+          <div className="bg-white shadow-sm sticky top-0 z-10">
+            <div className="max-w-7xl mx-auto px-4 py-3">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <h1 className="text-xl font-bold text-gray-800">📚 Spaced Repetition Vocabulary</h1>
+                <div className="flex gap-2 flex-wrap">
+                  <button onClick={() => { setShowForm(!showForm); setEditingWord(null); setFormData({ word: "", ipaUK: "", ipaUS: "", meaningEN: "", meaningVI: "", example: "" }); }}
+                    className="px-3 py-1.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm">
+                    {showForm ? '✕ Đóng' : '+ Thêm từ'}
+                  </button>
+                  <button onClick={() => setShowStats(!showStats)}
+                    className="px-3 py-1.5 bg-purple-600 text-white rounded-lg hover:bg-purple-700 text-sm">
+                    📊 {showStats ? 'Ẩn' : 'Thống kê'}
+                  </button>
+                  <button onClick={exportData}
+                    className="px-3 py-1.5 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm">
+                    💾 Backup
+                  </button>
+                  <label className="px-3 py-1.5 bg-orange-500 text-white rounded-lg hover:bg-orange-600 text-sm cursor-pointer">
+                    📥 Import
+                    <input type="file" accept=".json" onChange={importData} className="hidden" />
+                  </label>
+                  <button onClick={exportCSV}
+                    className="px-3 py-1.5 bg-teal-600 text-white rounded-lg hover:bg-teal-700 text-sm">
+                    📄 CSV
+                  </button>
+                </div>
+              </div>
+
+              {/* Search */}
+              <div className="mt-3">
+                <input
+                  type="text"
+                  placeholder="🔍 Tìm kiếm từ..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                />
+              </div>
+
+              {/* Stats */}
+              {showStats && (
+                <div className="mt-3 grid grid-cols-2 md:grid-cols-5 gap-2">
+                  <div className="bg-gray-50 rounded-lg p-2 text-center">
+                    <div className="text-xl font-bold">{stats.total}</div>
+                    <div className="text-xs text-gray-500">Tổng từ</div>
+                  </div>
+                  <div className="bg-red-50 rounded-lg p-2 text-center">
+                    <div className="text-xl font-bold text-red-600">{stats.byLevel[0]}</div>
+                    <div className="text-xs text-gray-500">Cần học</div>
+                  </div>
+                  <div className="bg-yellow-50 rounded-lg p-2 text-center">
+                    <div className="text-xl font-bold text-yellow-600">{stats.dueToday}</div>
+                    <div className="text-xs text-gray-500">Ôn hôm nay</div>
+                  </div>
+                  <div className="bg-green-50 rounded-lg p-2 text-center">
+                    <div className="text-xl font-bold text-green-600">{stats.learned}</div>
+                    <div className="text-xs text-gray-500">Đã học</div>
+                  </div>
+                  <div className="bg-blue-50 rounded-lg p-2 text-center">
+                    <div className="text-xl font-bold text-blue-600">{stats.mastered}</div>
+                    <div className="text-xs text-gray-500">Thành thạo</div>
+                  </div>
+                </div>
+              )}
+
+              {/* Add Form */}
+              {showForm && (
+                <form onSubmit={handleSubmit} className="mt-3 bg-gray-50 rounded-lg p-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+                  <input type="text" placeholder="Từ mới *" required value={formData.word}
+                    onChange={e => setFormData({ ...formData, word: e.target.value })}
+                    className="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+                  <input type="text" placeholder="IPA (UK)" value={formData.ipaUK}
+                    onChange={e => setFormData({ ...formData, ipaUK: e.target.value })}
+                    className="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+                  <input type="text" placeholder="IPA (US)" value={formData.ipaUS}
+                    onChange={e => setFormData({ ...formData, ipaUS: e.target.value })}
+                    className="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+                  <input type="text" placeholder="Nghĩa tiếng Anh" value={formData.meaningEN}
+                    onChange={e => setFormData({ ...formData, meaningEN: e.target.value })}
+                    className="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+                  <input type="text" placeholder="Nghĩa tiếng Việt *" required value={formData.meaningVI}
+                    onChange={e => setFormData({ ...formData, meaningVI: e.target.value })}
+                    className="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+                  <input type="text" placeholder="Câu ví dụ" value={formData.example}
+                    onChange={e => setFormData({ ...formData, example: e.target.value })}
+                    className="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
+                  <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 md:col-span-3">
+                    {editingWord ? '💾 Cập nhật' : '➕ Thêm từ'}
+                  </button>
+                </form>
+              )}
+            </div>
+          </div>
+
+          {/* Main Content - Kanban Board */}
+          <div className="max-w-7xl mx-auto p-4">
+            {/* Level Info */}
+            <div className="mb-4 bg-white rounded-lg p-3 shadow-sm">
+              <div className="text-sm text-gray-600 flex flex-wrap gap-4">
+                <span><strong>Quy tắc ôn tập:</strong></span>
+                <span>Lần 1 → 3 ngày</span>
+                <span>Lần 2 → 1 tuần</span>
+                <span>Lần 3 → 2 tuần</span>
+                <span>Lần 4 → 1 tháng</span>
+                <span>Lần 5 → 2 tháng</span>
+                <span>Lần 6 → 3 tháng (lặp lại)</span>
+              </div>
+            </div>
+
+            {/* Kanban Columns */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
+              {[0, 1, 2, 3, 4, 5, 6].map(level => {
+                const levelWords = filterWords(wordsByLevel[level]);
+                return (
+                  <div key={level} className={`rounded-xl border-2 ${LEVEL_BG[level]} min-h-64`}>
+                    <div className={`${LEVEL_COLORS[level]} text-white px-3 py-2 rounded-t-lg flex justify-between items-center`}>
+                      <span className="font-semibold">{LEVEL_NAMES[level]}</span>
+                      <span className="bg-white/20 px-2 py-0.5 rounded-full text-sm">{levelWords.length}</span>
+                    </div>
+                    <div className="p-2 space-y-2 max-h-96 overflow-y-auto scrollbar-thin">
+                      {levelWords.map(word => (
+                        <WordCard key={word.id} word={word} compact={true} />
+                      ))}
+                      {levelWords.length === 0 && (
+                        <div className="text-center text-gray-400 text-sm py-4">
+                          {level === 0 ? 'Không có từ mới' : 'Trống'}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Word Detail Modal */}
+          {selectedWord && (
+            <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => setSelectedWord(null)}>
+              <div className="bg-white rounded-xl max-w-lg w-full max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+                <div className={`${LEVEL_COLORS[selectedWord.level]} text-white px-4 py-3 rounded-t-xl flex justify-between items-center`}>
+                  <span className="font-bold text-lg">{selectedWord.word}</span>
+                  <button onClick={() => setSelectedWord(null)} className="text-white/80 hover:text-white text-xl">✕</button>
+                </div>
+                
+                <div className="p-4 space-y-4">
+                  {/* Pronunciation */}
+                  <div className="flex flex-wrap gap-3">
+                    <div className="flex items-center gap-2">
+                      <span className="text-gray-500">UK:</span>
+                      <span className="font-mono">{selectedWord.ipaUK || '-'}</span>
+                      <button onClick={() => speak(selectedWord.word, 'UK')}
+                        className="px-2 py-1 bg-blue-100 text-blue-600 rounded hover:bg-blue-200">🔊</button>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-gray-500">US:</span>
+                      <span className="font-mono">{selectedWord.ipaUS || '-'}</span>
+                      <button onClick={() => speak(selectedWord.word, 'US')}
+                        className="px-2 py-1 bg-red-100 text-red-600 rounded hover:bg-red-200">🔊</button>
+                    </div>
+                  </div>
+
+                  {/* Meanings */}
+                  <div>
+                    <p className="text-gray-800"><strong>EN:</strong> {selectedWord.meaningEN || '-'}</p>
+                    <p className="text-gray-800"><strong>VI:</strong> {selectedWord.meaningVI || '-'}</p>
+                    {selectedWord.example && (
+                      <p className="text-gray-500 italic mt-2">"{selectedWord.example}"</p>
+                    )}
+                  </div>
+
+                  {/* Status */}
+                  <div className="bg-gray-50 rounded-lg p-3">
+                    <div className="grid grid-cols-2 gap-2 text-sm">
+                      <div><span className="text-gray-500">Cấp độ:</span> <strong>{LEVEL_NAMES[selectedWord.level]}</strong></div>
+                      <div><span className="text-gray-500">Ngày thêm:</span> {selectedWord.dateAdded}</div>
+                      <div><span className="text-gray-500">Học lần cuối:</span> {selectedWord.lastLearnedDate || '-'}</div>
+                      <div><span className="text-gray-500">Ôn tiếp:</span> {selectedWord.nextReviewDate || '-'}</div>
+                    </div>
+                  </div>
+
+                  {/* History */}
+                  {selectedWord.history && selectedWord.history.length > 0 && (
+                    <div>
+                      <p className="text-sm font-semibold text-gray-600 mb-2">Lịch sử học:</p>
+                      <div className="text-xs space-y-1 max-h-32 overflow-y-auto">
+                        {selectedWord.history.slice(-10).reverse().map((h, i) => (
+                          <div key={i} className="flex justify-between bg-gray-50 px-2 py-1 rounded">
+                            <span>{h.date}</span>
+                            <span>{LEVEL_NAMES[h.fromLevel]} → {LEVEL_NAMES[h.toLevel]}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Cambridge Link */}
+                  <a href={`https://dictionary.cambridge.org/dictionary/english/${selectedWord.word}`} 
+                    target="_blank" rel="noopener noreferrer"
+                    className="block text-center text-blue-600 hover:underline">
+                    📖 Xem trên Cambridge Dictionary
+                  </a>
+
+                  {/* Actions */}
+                  <div className="flex gap-2 pt-2 border-t">
+                    <button onClick={() => { markAsLearned(selectedWord.id); setSelectedWord(null); }}
+                      className="flex-1 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
+                      ✓ Đã học
+                    </button>
+                    {selectedWord.level > 0 && (
+                      <button onClick={() => { resetWord(selectedWord.id); setSelectedWord(null); }}
+                        className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">
+                        ↺ Reset
+                      </button>
+                    )}
+                    <button onClick={() => { handleEdit(selectedWord); setSelectedWord(null); }}
+                      className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+                      ✏️ Sửa
+                    </button>
+                    <button onClick={() => handleDelete(selectedWord.id)}
+                      className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
+                      🗑️
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>
+    <!-- Validate input before processing -->

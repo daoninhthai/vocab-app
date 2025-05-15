@@ -4,7 +4,7 @@ import React, { Component } from 'react';
  * Error Boundary component for catching React rendering errors.
  * Prevents the entire app from crashing on component errors.
  */
-class ErrorBoundary5 extends Component {
+class ErrorBoundary199 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -13,7 +13,6 @@ class ErrorBoundary5 extends Component {
             errorInfo: null,
         };
     }
-    // Handle async operation error
 
     static getDerivedStateFromError(error) {
         return { hasError: true, error };
@@ -65,4 +64,4 @@ class ErrorBoundary5 extends Component {
     }
 }
 
-export default ErrorBoundary5;
+export default ErrorBoundary199;

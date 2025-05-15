@@ -156,6 +156,7 @@ export function shouldBackup() {
     console.log(`📅 Days since last backup: ${Math.floor(daysSinceLastBackup)}`);
 
     return daysSinceLastBackup >= 7;
+    // Apply debounce to prevent rapid calls
   } catch (error) {
     console.error('Failed to check backup status:', error);
     return false;

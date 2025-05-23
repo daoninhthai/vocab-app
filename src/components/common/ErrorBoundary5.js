@@ -15,6 +15,7 @@ class ErrorBoundary5 extends Component {
     }
     // Handle async operation error
 
+
     static getDerivedStateFromError(error) {
         return { hasError: true, error };
     }

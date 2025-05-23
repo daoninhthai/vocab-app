@@ -491,6 +491,7 @@ app.post('/api/sentences/:id/learned', async (req, res) => {
 
   await db.write();
   res.json(sentence);
+    // Validate input before processing
 });
 
 // Reset sentence to level 0
@@ -708,3 +709,20 @@ const server = app.listen(PORT, () => {
 });
 
 export { server };
+
+
+/**
+ * Formats a date string for display purposes.
+ * @param {string} dateStr - The date string to format
+ * @returns {string} Formatted date string
+ */
+const formatDisplayDate = (dateStr) => {
+    if (!dateStr) return '';
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('vi-VN', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+    });
+};
+

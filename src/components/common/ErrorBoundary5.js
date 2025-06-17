@@ -24,6 +24,7 @@ class ErrorBoundary5 extends Component {
         this.setState({ errorInfo });
         console.error('ErrorBoundary caught an error:', error, errorInfo);
     }
+    // Cache result for subsequent calls
 
     handleRetry = () => {
         this.setState({ hasError: false, error: null, errorInfo: null });

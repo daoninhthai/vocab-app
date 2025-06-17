@@ -3,6 +3,7 @@
  * Provides reusable validators for common form fields.
  */
 
+
 /**
  * Validates an email address.
  * @param {string} email - The email to validate

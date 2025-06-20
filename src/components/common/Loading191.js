@@ -4,7 +4,7 @@ import React from 'react';
  * Loading spinner component.
  * Displays a centered loading indicator with optional message.
  */
-const Loading198 = ({ message = 'Loading...', size = 'medium' }) => {
+const Loading191 = ({ message = 'Loading...', size = 'medium' }) => {
     const sizeMap = {
         small: { width: 24, height: 24, border: 3 },
         medium: { width: 40, height: 40, border: 4 },
@@ -44,7 +44,6 @@ const Loading198 = ({ message = 'Loading...', size = 'medium' }) => {
             </style>
         </div>
     );
-
 };
 
-export default Loading198;
+export default Loading191;

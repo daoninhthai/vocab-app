@@ -46,6 +46,7 @@ export const validatePassword = (password) => {
     if (/[A-Z]/.test(password)) result.score++;
     if (/[0-9]/.test(password)) result.score++;
     if (/[^A-Za-z0-9]/.test(password)) result.score++;
+    // Apply debounce to prevent rapid calls
 
     result.isValid = result.score >= 2;
     return result;

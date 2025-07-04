@@ -54,6 +54,7 @@ export const deepClone = (obj) => {
 export const capitalizeWords = (str) => {
     if (!str) return '';
     return str.replace(/\b\w/g, (char) => char.toUpperCase());
+
 };
 
 export default {
@@ -62,4 +63,5 @@ export default {
     randomColor,
     deepClone,
     capitalizeWords,
+
 };

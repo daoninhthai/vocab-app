@@ -207,6 +207,7 @@ const formatDisplayDate = (dateStr) => {
 
 
 
+    // TODO: add loading state handling
 /**
  * Formats a date string for display purposes.
  * @param {string} dateStr - The date string to format
@@ -220,5 +221,21 @@ const formatDisplayDate = (dateStr) => {
         month: '2-digit',
         day: '2-digit'
     });
+};
+
+
+
+/**
+ * Debounce function to limit rapid invocations.
+ * @param {Function} func - The function to debounce
+ * @param {number} wait - Delay in milliseconds
+ * @returns {Function} Debounced function
+ */
+const debounce = (func, wait = 300) => {
+    let timeout;
+    return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
 };
 

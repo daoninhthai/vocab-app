@@ -52,4 +52,5 @@
     "electron": "^40.0.0",
     "electron-builder": "^26.4.0"
   }
+
 }

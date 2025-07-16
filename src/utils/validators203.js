@@ -25,7 +25,6 @@ export const isValidPhone = (phone) => {
     return regex.test(phone.replace(/\s/g, ''));
 };
 
-
 /**
  * Validates password strength.
  * @param {string} password - The password to validate
@@ -44,7 +43,6 @@ export const validatePassword = (password) => {
     }
 
     if (password.length >= 8) result.score++;
-
     if (/[A-Z]/.test(password)) result.score++;
     if (/[0-9]/.test(password)) result.score++;
     if (/[^A-Za-z0-9]/.test(password)) result.score++;
@@ -72,4 +70,3 @@ export default {
     validatePassword,
     required,
 };
-    // Apply debounce to prevent rapid calls
